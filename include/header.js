@@ -5,12 +5,15 @@ class Header extends HTMLElement {
 
     connectedCallback(){
         this.innerHTML = `
+    <header>
         <div class = header>
-        <h1 class = "logo-name">WAVEZ</h1>
-        <p class = "Header-login">Login</p>
-        <p class = "Header-sign_up">Sign Up</p>
-        <button class = "Header-button">Get Started</button>
-    </div>
+            <h1 class = "Logo-name">WAVEZ</h1>
+                <p class = "Header-login">Login</p>
+                <p class = "Header-sign_up">Sign Up</p>
+                    <button class = "Header-btn">Get Started</button>
+                    <img class = "Logo" src = "assets/wavesLogo.png" alt = "Logo">
+        </div>
+    </header>
         `;
     }
 }

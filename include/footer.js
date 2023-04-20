@@ -5,9 +5,13 @@ class Footer extends HTMLElement {
 
     connectedCallback(){
         this.innerHTML = `
-            <h1>THIS IS A TEST FOOTER</h1>
+    <footer>
+    <div class = "footer">
+    <p1 class = "Footer-Co_txt">Company</p1>
+    </div>
+    </footer>
         `;
-    }
+    }        
 }
 
 customElements.define('footer-component', Footer);
