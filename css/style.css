@@ -1,0 +1,258 @@
+.header{
+    width: 1920px;
+    height: 147px;
+    background: #04151D;
+}
+
+.Logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 3.64px;
+
+    position: absolute;
+    width: 76px;
+    height: 59.64px;
+    left: 49px;
+    top: 43px;
+}
+
+.Logo-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 196px;
+    height: 81px;
+    left: 137px;
+    top: 10px; /* CLUNKY */
+    color: #FFFFFF;
+
+    width: 176px;
+    height: 61px;
+    
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 61px;
+    /* identical to box height */
+    
+    letter-spacing: 0.18em;
+    text-transform: capitalize;
+}
+
+.Header-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+        
+    position: absolute;
+    width: 68px;
+    height: 46px;
+    right: 550px;
+    top: 35px;
+        
+    width: 48px;
+    height: 26px;
+
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.16px;
+    line-height: 26px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+
+    }
+
+.Header-sign_up{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 87px;
+    height: 46px;
+    right: 401px;
+    top: 35px;
+    
+    width: 67px;
+    height: 26px;
+
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.16px;
+    line-height: 26px;
+    text-transform: capitalize;
+
+    color: #FFFFFF;
+}
+
+.Header-btn{
+    position: absolute;
+    width: 263px;
+    height: 59.08px;
+    right: 66px;
+    top: 43px;
+}
+
+
+.footer{
+        position: relative;
+        width: 1920px;
+        height: 269.49px;
+        background: #04151D;
+
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 86.54%;
+        bottom: -0.02%;
+
+}
+
+.Footer-Co_txt{
+    position: absolute;
+    width: 76px;
+    height: 59.64px;
+    left: 49px;
+    top: 43px;
+}
+
+.Footer-Com_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    
+    position: absolute;
+    width: 115px;
+    height: 146px;
+    left: 569.78px;
+    top: 36.25px;
+    
+}
+
+.Footer-Use_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    
+    position: absolute;
+    width: 102px;
+    height: 186px;
+    left: 792.56px;
+    top: 36.25px;
+}
+
+.company-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    
+    position: absolute;
+    width: 102px;
+    height: 186px;
+    left: 792.56px;
+    top: 36.25px;
+    
+}
+
+.about-txt{
+    width: 54px;
+    height: 26px;
+    
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.1641px;
+    line-height: 26px;
+    text-transform: capitalize;
+    
+    color: #747474;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.jobs-txt{
+    width: 41px;
+    height: 26px;
+    
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.1641px;
+    line-height: 26px;
+    text-transform: capitalize;
+    
+    color: #747474;
+    
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.ftr-txt{
+    width: 127px;
+    height: 26px;
+    
+    font-family: 'Alata';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.1641px;
+    line-height: 26px;
+    text-transform: capitalize;
+    
+    color: #747474;
+    
+    
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.FB-circle{
+position: absolute;
+width: 59.89px;
+height: 59.89px;
+right: 203.62px;
+top: 28.75px;
+
+background: rgba(154, 127, 105, 0.4);
+}
+
+
+.FB-icon{
+position: absolute;
+width: 45.51px;
+height: 45.51px;
+right: 210.8px;
+top: 35.93px;
+
+background: #E9EBE9;
+}
+
+
+
+
+
