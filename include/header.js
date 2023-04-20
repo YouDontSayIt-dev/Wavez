@@ -1,4 +1,8 @@
-class webHeader extends HTMLElement{
+class Header extends HTMLElement {
+    constructor() {
+      super();
+    }
+
     connectedCallback(){
         this.innerHTML = `
         <div class = header>
@@ -11,15 +15,4 @@ class webHeader extends HTMLElement{
     }
 }
 
-customElements.define('web-header', webHeader);
-
-
-class webFooter extends HTMLElement{
-    connectedCallback(){
-        this.innerHTML = `
-            <h1>Web Footer</h1>
-        `;
-    }
-}
-
-customElements.define('web-footer', webFooter);
+customElements.define('header-component', Header);
