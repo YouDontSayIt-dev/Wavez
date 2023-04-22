@@ -9,38 +9,42 @@
     <!-- <link href="css/style.css" rel="stylesheet" type="text/css" /> -->
     <!-- parang di na natin need ng separate css file dahil may tailwind na tayo -->
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+    </style>
     <title>TEST</title>
     
        
     </head>
-    <body class="bg-custom-color">
+    <body class="bg-custom-color font-alata">
         <div class="flex">
             <!-- SIDEBAR -->
-            <div class="w-80 h-screen space-y-6 bg-red-900">
-                <!-- Logo -->
+            <div class="w-80 h-screen">
+                <!-- LOGO -->
                 <img src="/assets/wavesLogo.png" class="mx-auto my-6 w-15 h-12" alt="Logo">
 
                 <!-- Navigation -->
-                <nav>
-                    <a href="" class="flex justify-center text-white px-6 py-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <nav class="font-alata font-semibold text-base pt-7">
+                    
+                    <a href="" class="flex justify-center text-white px-4 py-4 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                           </svg>
                           
-                        <span class="pl-6">Home</span></a>
-                    <a href="" class="flex text-white justify-center px-6 py-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <span class="pl-6 ">Home</span></a>
+                    <a href="" class="flex text-white justify-center px-6 py-4 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                         </svg>
                       <span class="pl-6">Search</span></a>
-                    <a href="" class="flex justify-center text-white px-6 py-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <a href="" class="flex justify-center text-white px-6 py-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
                         </svg>
                         <span class="pl-6">Queue</span>                          
                     </a>
-                    <a href="" class="flex justify-center text-white px-6 py-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <a href="" class="flex justify-center text-white px-6 py-4 rounded-full ml-10 mr-10  bg-custom-color-sidebar-brown hover:bg-blue-700 focus:bg-blue-700 focus:outline-none active:bg-blue-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                         </svg>
                         <span class="pl-6">Library</span>                          
@@ -49,13 +53,13 @@
                     <!-- DIVIDER -->
                     <div class="mx-auto w-3/4 border-t-2 border-white my-2"></div>
 
-                    <a href="" class="flex justify-center text-white px-6 pt-6 py-6">
+                    <a href="" class="flex justify-center text-white px-6 pt-6 py-4">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                           </svg>                    
                         <span class="pl-6">Create Playlist</span>                          
                     </a>
-                    <a href="" class="flex justify-center text-white px-6py-6" >
+                    <a href="" class="flex justify-center text-white px-6 py-4" >
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                             <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                           </svg>                          

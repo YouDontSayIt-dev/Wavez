@@ -6,8 +6,12 @@ module.exports = {
       colors: {
         'custom-color': '#04151D',
         // custom-color for the whole website body
+
+        'custom-color-sidebar-brown': '#9A7F69',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 }
