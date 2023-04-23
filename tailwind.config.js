@@ -9,6 +9,9 @@ module.exports = {
 
         'custom-color-sidebar-brown': '#9A7F69',
       },
+      fontFamily: {
+        'alata': ['Alata', 'sans-serif'],
+      },
     },
   },
   plugins: [
