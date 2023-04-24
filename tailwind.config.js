@@ -15,6 +15,9 @@ module.exports = {
         
         // custom-color for the footer texts
         'custom-color-footer-text': '#747474',
+
+        // custom-color for the footer social icons
+        'custom-color-footer-social-icons': 'rgba(154, 127, 105, 0.4)',
         
       },
       fontFamily: {
@@ -25,6 +28,8 @@ module.exports = {
         '324': '324px',
         '102': '102px',
         '648': '649px',
+        '15': '59.89px',
+        '45px': '45.51px',
         '79': '318px',
       },
     },
