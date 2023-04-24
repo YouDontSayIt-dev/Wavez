@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         'alata': ['Alata', 'sans-serif'],
       },
+      spacing: {
+        '79': '318px',
+      },
     },
   },
   plugins: [
