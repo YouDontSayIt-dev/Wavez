@@ -536,10 +536,6 @@ video {
   left: 318px;
 }
 
-.left-80 {
-  left: 20rem;
-}
-
 .right-96 {
   right: 24rem;
 }
@@ -773,6 +769,16 @@ video {
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-custom-color-sidebar-brown-hover:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(154 127 105 / var(--tw-bg-opacity));
+}
+
+.hover\:text-custom-color-sidebar-brown-hover:hover {
+  --tw-text-opacity: 1;
+  color: rgb(154 127 105 / var(--tw-text-opacity));
 }
 
 .focus\:bg-blue-700:focus {
