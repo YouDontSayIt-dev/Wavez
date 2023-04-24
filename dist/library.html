@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="flex bg-custom-color">
+<body class="p-0 m-0 font-alata">
+    <div class="flex bg-custom-color h-auto">
         <!-- SIDE NAVBAR -->
         <aside class="w-80 fixed left-0 top-0 h-screen">
             <!-- LOGO -->
             <img src="/assets/wavesLogo.png" class="mx-auto my-6 w-15 h-12" alt="Logo">
 
             <!-- Navigation -->
-            <nav class="font-alata font-semibold text-base pt-7">
+            <nav class="font-semibold text-base pt-7">
                 
                 <a href="" class="flex justify-center text-white px-4 py-4">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
@@ -63,7 +63,7 @@
         </aside>
 
         <!-- MAIN CONTENT -->
-        <main class="flex-grow pl-80 pt-16 text-white">
+        <main class="flex-col flex-grow pl-80 pt-16 text-white">
             <!-- TOP NAVBAR -->
             <div class="w-screen fixed top-0 h-16 bg-gray-500">
                 <button class="absolute right-96 top-4 w-48 h-10 rounded-full bg-blue-300">
@@ -83,13 +83,39 @@
             <div class="h-96 bg-yellow-400">
                 <h1 class="text-4xl">Middle Content</h1>
             </div>
-            <div class="h-96 bg-pink-500">
-                <h1 class="text-4xl">Footer</h1>
+
+            <!-- FOOTER -->
+            <div class="flex flex-row h-72 flex-wrap">
+                <div class="w-36 h-36 mx-5 my-2">
+                    <ul class="text-custom-color-footer-text font-semibold px-3 space-y-2">
+                        <li class="text-white py-3">Company</li>
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Jobs</a></li>
+                        <li><a href="#" class="hover:text-white">For The Record</a></li>
+                    </ul>
+                </div>
+                <div class="w-32 h-36 mx-5 my-2">
+                    <ul class="text-custom-color-footer-text font-semibold px-3 space-y-2">
+                        <li class="text-white py-3">Communities</li>
+                        <li><a href="#" class="hover:text-white">Developers</a></li>
+                        <li><a href="#" class="hover:text-white">Advertising</a></li>
+                        <li><a href="#" class="hover:text-white">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="w-32 h-36 mx-5 my-2">
+                    <ul class="text-custom-color-footer-text font-semibold px-3 space-y-2">
+                        <li class="text-white py-3">Support</li>
+                        <li><a href="#" class="hover:text-white">Support</a></li>
+                        <li><a href="#" class="hover:text-white">Legal</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy</a></li>
+                        <li><a href="#" class="hover:text-white">Cookies</a></li>
+                    </ul>
+                </div>
             </div>
         </main>
 
         <!-- PLAYBAR -->
-        <div class="w-screen fixed h-20 left-0 bottom-0 bg-blue-900">
+        <div class="w-screen fixed h-20 left-0 bottom-0 bg-blue-900 mt-auto">
             <h1 class="text-white text-4xl">Playbar</h1>
         </div>
     </div>
