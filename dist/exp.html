@@ -15,19 +15,19 @@ niyo para walang compatability issues kapag nag push kayo sa repo. Thanks! -->
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
-    <div class="flex bg-custom-color">
+<body class="p-0 m-0 font-alata h-screen bg-custom-color">
+    <div class="flex">
         <!-- SIDE NAVBAR -->
-        <aside class="w-80 fixed left-0 top-0 h-screen">
+        <aside class="w-80 fixed left-0 top-0 h-full">
             <!-- LOGO -->
             <h1 class="text-4xl text-white">SIDEBAR</h1>
             <!-- Navigation -->
         </aside>
 
         <!-- MAIN CONTENT -->
-        <main class="flex-grow pl-80 pt-16 text-white">
+        <main class="flex flex-col flex-grow pl-80 text-white h-auto">
             <!-- TOP NAVBAR -->
-            <div class="w-screen fixed top-0 h-16 bg-gray-500">
+            <div class="sticky top-0 pt-16 bg-gray-500">
                 <h1 class="text-4xl">Top Navbar</h1>
             </div>
 
@@ -44,7 +44,7 @@ niyo para walang compatability issues kapag nag push kayo sa repo. Thanks! -->
         </main>
 
         <!-- PLAYBAR -->
-        <div class="w-screen fixed h-20 left-0 bottom-0 bg-blue-900">
+        <div class="w-screen fixed h-20 left-0 bg-cyan-600 bottom-0  mt-auto">
             <h1 class="text-white text-4xl">Playbar</h1>
         </div>
     </div>
