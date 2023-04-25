@@ -18,6 +18,9 @@ module.exports = {
 
         // custom-color for the footer social icons
         'custom-color-footer-social-icons': 'rgba(154, 127, 105, 0.4)',
+
+        // custom-color for when hovering the navbar icons
+        'custom-color-navbar-icons-hover': '#53A8AA',
         
       },
       fontFamily: {
@@ -29,7 +32,11 @@ module.exports = {
         '102': '102px',
         '648': '649px',
         '15': '59.89px',
+        '43px': '43px',
         '45px': '45.51px',
+        '145px': '145px',
+        '248px': '248px',
+        '1619px': '1619px',
         '79': '318px',
       },
     },
