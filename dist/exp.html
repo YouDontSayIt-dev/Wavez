@@ -1,0 +1,52 @@
+<!-- Dito nalang kayo mag experiment muna bago niyo lagay sa proper pages niyo.
+Nandito yung mga divs na ginamit ko sa Library page natin. 
+Run niyo to and check niyo kung parehas tayo ng layout sa pages niyo.
+If yes, then you can start working on your pages na. -->
+
+<!-- IMPORTANT: Everytime na tapos niyo na gamitin yung exp.html (i.e magppush na kayo ng changes sa repo), pakibura lahat ng laman ng divs
+niyo para walang compatability issues kapag nag push kayo sa repo. Thanks! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="p-0 m-0 font-alata h-screen bg-custom-color">
+    <div class="flex">
+        <!-- SIDE NAVBAR -->
+        <aside class="w-80 fixed left-0 top-0 h-full">
+            <!-- LOGO -->
+            <h1 class="text-4xl text-white">SIDEBAR</h1>
+            <!-- Navigation -->
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="flex flex-col flex-grow pl-80 text-white h-auto">
+            <!-- TOP NAVBAR -->
+            <div class="sticky top-0 pt-16 bg-gray-500">
+                <h1 class="text-4xl">Top Navbar</h1>
+            </div>
+
+            <!-- CONTENTS -->
+            <div class="h-96 bg-green-300">
+                <h1 class="text-4xl">Top Content</h1>
+            </div>
+            <div class="h-96 bg-yellow-400">
+                <h1 class="text-4xl">Middle Content</h1>
+            </div>
+            <div class="h-96 bg-pink-500">
+                <h1 class="text-4xl">Footer</h1>
+            </div>
+        </main>
+
+        <!-- PLAYBAR -->
+        <div class="w-screen fixed h-20 left-0 bg-cyan-600 bottom-0  mt-auto">
+            <h1 class="text-white text-4xl">Playbar</h1>
+        </div>
+    </div>
+</body>
+</html>
