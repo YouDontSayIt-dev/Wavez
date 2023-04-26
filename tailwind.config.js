@@ -29,6 +29,9 @@ module.exports = {
 
         // custom-color for when hovering the navbar icons
         "custom-color-navbar-icons-hover": "#53A8AA",
+
+        // custom-color for playlist cards
+        "custom-color-playlist-card": "#9A8483",
       },
       fontFamily: {
         alata: ["Alata", "sans-serif"],
@@ -39,7 +42,7 @@ module.exports = {
         "324px": "324px",
         "102px": "102px",
         "64px": "649px",
-        15: "59.89px",
+        "15": "59.89px",
         "43px": "43px",
         "45px": "45.51px",
         "145px": "145px",
@@ -47,7 +50,7 @@ module.exports = {
         "345px": "345.79px",
         "578px": "578px",
         "1619px": "1619px",
-        79: "318px",
+        "79": "318px",
         "265.65px": "265.65px",
       },
       width: {
