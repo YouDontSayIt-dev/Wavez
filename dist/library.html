@@ -12,14 +12,14 @@
 <body class="p-0 m-0 font-alata h-screen bg-custom-color">
     <div class="flex">
         <!-- SIDE NAVBAR -->
-        <aside class="w-80 fixed left-0 top-0 h-full z-30 bg-custom-color">
+        <aside class="w-80 fixed left-0 top-0 h-full z-50 bg-custom-color">
             <!-- LOGO -->
             <a href="#">
                 <img src="/assets/wavesLogo.png" class="mx-auto my-6 w-15 h-12" alt="Logo">
             </a>
 
             <!-- Navigation -->
-            <nav class="font-semibold text-base pt-7">
+            <nav class="font-normal text-xl pt-7">
                 
                 <a href="" class="flex justify-center text-white px-4 py-4 hover:text-custom-color-sidebar-brown-hover">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
@@ -69,7 +69,7 @@
         <!-- MAIN CONTENT -->
         <main class="flex flex-col flex-grow pl-80 text-white h-auto">
             <!-- TOP NAVBAR -->
-            <div class="sticky top-0 flex flex-row items-end justify-end bg-custom-color space-x-7 pr-16 pb-3 pt-16 z-50">
+            <div class="sticky top-0 flex flex-row items-end justify-end bg-custom-color space-x-7 pr-16 pb-3 pt-16 z-40">
                 <a href="#">
                     <svg class="text-white fill-current w-6 h-7 hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
@@ -92,8 +92,14 @@
             <!-- PLAYLIST HEADER -->
             <div class="flex flex-grow ml-5 h-14 text-4xl">Playlist</div>
 
+
+            <!-- ELLIPSE -->
+            <div class="absolute z-10 pl-20">
+                <img src="/assets/playlist-assets/ellipse-big.png">
+            </div>
+
             <!-- PLAYLISTS LISTS -->
-            <div class="flex h-auto flex-wrap justify-around pb-10 text-white">
+            <div class="flex h-auto flex-wrap justify-around pb-10 text-white z-20">
 
                 <!-- PINNED LIKED SONGS  -->
                 <div class="flex flex-col w-578px h-345px my-5 bg-cover rounded-lg" style="background-image: url(/assets/liked-songs-default.png);">
@@ -111,14 +117,82 @@
                         <p class="w-full h-1/3 text-center py-3"><span>52</span> songs</p>
                     </div>
                 </div>
-                <div class="bg-pink-400 w-265.65px h-345px outline-dashed my-5"></div>
-                <div class="bg-pink-400 w-265.65px h-345px outline-dashed my-5"></div>
-                <div class="bg-pink-400 w-265.65px h-345px outline-dashed my-5"></div>
-                <div class="bg-pink-400 w-265.65px h-345px outline-dashed my-5"></div>
-                <div class="bg-pink-400 w-265.65px h-345px outline-dashed my-5"></div>
-                <div class="bg-pink-400 w-265.65px h-345px outline-dashed my-5"></div>
-                <div class="bg-pink-400 w-265.65px h-345px outline-dashed my-5"></div>
-                <div class="bg-pink-400 w-265.65px h-345px outline-dashed my-5"></div>
+
+
+
+                <!-- USER PLAYLISTS -->
+                <div class="flex flex-col  bg-custom-color-playlist-card-non-pinned w-265px h-345px my-5 rounded-lg">
+                    <!-- PLAYLIST IMAGE -->
+                    <div class="bg-cover h-253px w-240px mt-3 mx-3" style="background-image: url(/assets/playlist-assets/newjeans-playlist.png);"></div>
+                    <!-- PLAYLIST INFO -->
+                    <div class="h-72px w-full mt-1 px-4 py-2">
+                        <h1 class="text-lg">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    </div>
+                </div>
+                <div class="flex flex-col  bg-custom-color-playlist-card-non-pinned w-265px h-345px my-5 rounded-lg">
+                    <!-- PLAYLIST IMAGE -->
+                    <div class="bg-cover h-253px w-240px mt-3 mx-3" style="background-image: url(/assets/playlist-assets/taylorswift-playlist.png);"></div>
+                    <!-- PLAYLIST INFO -->
+                    <div class="h-72px w-full mt-1 px-4 py-2">
+                        <h1 class="text-lg">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    </div>
+                </div>
+                <div class="flex flex-col  bg-custom-color-playlist-card-non-pinned w-265px h-345px my-5 rounded-lg">
+                    <!-- PLAYLIST IMAGE -->
+                    <div class="bg-cover h-253px w-240px mt-3 mx-3" style="background-image: url(/assets/playlist-assets/randomguy-playlist.png);"></div>
+                    <!-- PLAYLIST INFO -->
+                    <div class="h-72px w-full mt-1 px-4 py-2">
+                        <h1 class="text-lg">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    </div>
+                </div>
+                <div class="flex flex-col  bg-custom-color-playlist-card-non-pinned w-265px h-345px my-5 rounded-lg">
+                    <!-- PLAYLIST IMAGE -->
+                    <div class="bg-cover h-253px w-240px mt-3 mx-3" style="background-image: url(/assets/playlist-assets/theweekend-playlist.png);"></div>
+                    <!-- PLAYLIST INFO -->
+                    <div class="h-72px w-full mt-1 px-4 py-2">
+                        <h1 class="text-lg">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    </div>
+                </div>
+                <div class="flex flex-col  bg-custom-color-playlist-card-non-pinned w-265px h-345px my-5 rounded-lg">
+                    <!-- PLAYLIST IMAGE -->
+                    <div class="bg-cover h-253px w-240px mt-3 mx-3" style="background-image: url(/assets/playlist-assets/twice-playlist.png);"></div>
+                    <!-- PLAYLIST INFO -->
+                    <div class="h-72px w-full mt-1 px-4 py-2">
+                        <h1 class="text-lg">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    </div>
+                </div>
+                <div class="flex flex-col  bg-custom-color-playlist-card-non-pinned w-265px h-345px my-5 rounded-lg">
+                    <!-- PLAYLIST IMAGE -->
+                    <div class="bg-cover h-253px w-240px mt-3 mx-3" style="background-image: url(/assets/playlist-assets/eminem-playlist.png);"></div>
+                    <!-- PLAYLIST INFO -->
+                    <div class="h-72px w-full mt-1 px-4 py-2">
+                        <h1 class="text-lg">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    </div>
+                </div>
+                <div class="flex flex-col  bg-custom-color-playlist-card-non-pinned w-265px h-345px my-5 rounded-lg">
+                    <!-- PLAYLIST IMAGE -->
+                    <div class="bg-cover h-253px w-240px mt-3 mx-3" style="background-image: url(/assets/playlist-assets/twice2-playlist.png);"></div>
+                    <!-- PLAYLIST INFO -->
+                    <div class="h-72px w-full mt-1 px-4 py-2">
+                        <h1 class="text-lg">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    </div>
+                </div>
+                <div class="flex flex-col  bg-custom-color-playlist-card-non-pinned w-265px h-345px my-5 rounded-lg">
+                    <!-- PLAYLIST IMAGE -->
+                    <div class="bg-cover h-253px w-240px mt-3 mx-3" style="background-image: url(/assets/playlist-assets/taylorswift2-playlist.png);"></div>
+                    <!-- PLAYLIST INFO -->
+                    <div class="h-72px w-full mt-1 px-4 py-2">
+                        <h1 class="text-lg">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    </div>
+                </div>
             </div>
 
             <!-- FOOTER -->
@@ -182,7 +256,7 @@
         </main>
 
         <!-- PLAYBAR -->
-        <div class="w-screen fixed h-20 left-0 bg-cyan-600 bottom-0  mt-auto z-50">
+        <div class="w-screen fixed h-20 left-0 bottom-0  mt-auto z-50 bg-pink-400">
             <h1 class="text-white text-4xl">Playbar</h1>
         </div>
     </div>
