@@ -697,6 +697,10 @@ video {
   margin-top: auto;
 }
 
+.mr-auto {
+  margin-right: auto;
+}
+
 .flex {
   display: flex;
 }
@@ -779,6 +783,14 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[550px\] {
+  height: 550px;
+}
+
+.h-\[147px\] {
+  height: 147px;
 }
 
 .min-h-screen {
@@ -867,6 +879,14 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[1243px\] {
+  width: 1243px;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .shrink-0 {
@@ -1154,6 +1174,11 @@ video {
   padding-bottom: 1rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1240,6 +1265,18 @@ video {
   line-height: 1rem;
 }
 
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[96px\] {
+  font-size: 96px;
+}
+
+.text-\[44px\] {
+  font-size: 44px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1250,6 +1287,10 @@ video {
 
 .font-normal {
   font-weight: 400;
+}
+
+.font-\[19px\] {
+  font-weight: 19px;
 }
 
 .leading-5 {
@@ -1264,12 +1305,32 @@ video {
   line-height: 2rem;
 }
 
+.leading-\[120px\] {
+  line-height: 120px;
+}
+
+.leading-\[26px\] {
+  line-height: 26px;
+}
+
+.leading-\[33px\] {
+  line-height: 33px;
+}
+
+.leading-\[53px\] {
+  line-height: 53px;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
 
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.tracking-\[0\.18rem\] {
+  letter-spacing: 0.18rem;
 }
 
 .text-\[\#07405b\] {
