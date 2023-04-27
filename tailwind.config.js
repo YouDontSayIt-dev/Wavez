@@ -5,8 +5,6 @@ module.exports = {
     extend: {
       colors: {
         "custom-color": "#04151D",
-        "login-color": "#e9ebe9",
-        "wavez-color": "#07405b",
         "input-color": "rgb(33, 49, 60)",
         "input-bg-color": "rgb(255, 255, 255)",
         "border-color": "rgb(124, 138, 255)",
