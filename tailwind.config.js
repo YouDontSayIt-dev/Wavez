@@ -27,6 +27,15 @@ module.exports = {
 
         // custom-color for when hovering the navbar icons
         "custom-color-navbar-icons-hover": "#53A8AA",
+
+        // custom-color for playlist cards
+        "custom-color-playlist-card": "#9A8483",
+
+        // custom-color for the playlist cards non-pinned
+        "custom-color-playlist-card-non-pinned": "#000B11",
+
+        // custom-color for the playlist cards non-pinned text
+        "custom-color-playlist-card-non-pinned-text": "#797979",
       },
       fontFamily: {
         alata: ["Alata", "sans-serif"],
@@ -37,7 +46,7 @@ module.exports = {
         "324px": "324px",
         "102px": "102px",
         "64px": "649px",
-        15: "59.89px",
+        "15": "59.89px",
         "43px": "43px",
         "45px": "45.51px",
         "145px": "145px",
@@ -45,8 +54,13 @@ module.exports = {
         "345px": "345.79px",
         "578px": "578px",
         "1619px": "1619px",
-        79: "318px",
-        "265.65px": "265.65px",
+        "79": "318px",
+        "265px": "265.65px",
+        "240px": "240.4px",
+        "253px": "253.97px",
+        "72px": "72.67px",
+        "890px": "890px",
+        "119px": "-119px",
       },
       width: {
         "container-width": "800px",
