@@ -36,6 +36,9 @@ module.exports = {
 
         // custom-color for the playlist cards non-pinned text
         "custom-color-playlist-card-non-pinned-text": "#797979",
+
+        // custom-color for the search bar
+        "custom-color-search-bar": "#D7E4EB",
       },
       fontFamily: {
         alata: ["Alata", "sans-serif"],
@@ -46,7 +49,7 @@ module.exports = {
         "324px": "324px",
         "102px": "102px",
         "64px": "649px",
-        15: "59.89px",
+        "15": "59.89px",
         "43px": "43px",
         "45px": "45.51px",
         "145px": "145px",
@@ -54,13 +57,14 @@ module.exports = {
         "345px": "345.79px",
         "578px": "578px",
         "1619px": "1619px",
-        79: "318px",
+        "79": "318px",
         "265px": "265.65px",
         "240px": "240.4px",
         "253px": "253.97px",
         "72px": "72.67px",
         "890px": "890px",
         "119px": "-119px",
+        "510px": "510px",
       },
     },
   },
