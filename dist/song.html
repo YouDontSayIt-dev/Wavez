@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
+    <script src="/include/profile.js"> </script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/assets/wavesLogo.png">
+    <title>Wavez - Collide With The Sky</title>
+
+</head>
+<body class="p-0 m-0 font-alata h-screen bg-custom-color">
+    <div class="flex">
+        <!-- SIDE NAVBAR -->
+        <aside class="w-80 fixed left-0 top-0 h-full">
+          <div class="w-64 items-center space-y-6 py-7 px-2">
+            <!-- Logo -->
+            <div class="mt-10 ml-20 w-20 h-16 ">
+              <img src="/assets/wavesLogo.png" alt="logo">
+              </div>
+
+            <!-- Navigation Links -->
+            <nav class="mt-5 ml-10 space-y-1 flex items-center justify-between relative">
+              <ul>
+              <li class="w-48 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
+                <a href="#" class="flex py-2.5 px-4 ">
+                  <svg class="w-7 h-7 pr-3" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_779_1132)">
+                    <path d="M5.5 10.4999L16 2.33325L26.5 10.4999V23.3333C26.5 23.9521 26.2542 24.5456 25.8166 24.9832C25.379 25.4208 24.7855 25.6666 24.1667 25.6666H7.83333C7.21449 25.6666 6.621 25.4208 6.18342 24.9832C5.74583 24.5456 5.5 23.9521 5.5 23.3333V10.4999Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.5 25.6667V14H19.5V25.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_779_1132" x="-2" y="0" width="36" height="36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_779_1132"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_779_1132" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+                    <p class="mt-1">Home</p>
+                </a>
+              </li>
+              <li class="w-48 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover ">
+                <a href="#" class="flex py-2.5 px-4">
+                  <svg class="w-7 h-7 pr-3" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.8333 22.1667C17.988 22.1667 22.1667 17.988 22.1667 12.8333C22.1667 7.67868 17.988 3.5 12.8333 3.5C7.67868 3.5 3.5 7.67868 3.5 12.8333C3.5 17.988 7.67868 22.1667 12.8333 22.1667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24.4998 24.5L19.4248 19.425" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    
+                    <p class="mt-1">Search</p>
+                </a>
+              </li>
+              <li class="w-52 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
+                <a href="#" class="flex py-2.5 px-4 ">
+                  <svg class="w-7 h-7 pr-3" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 24.5C8.933 24.5 10.5 22.933 10.5 21C10.5 19.067 8.933 17.5 7 17.5C5.067 17.5 3.5 19.067 3.5 21C3.5 22.933 5.067 24.5 7 24.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 21V5.83333L24.5 3.5V18.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 22.1667C22.933 22.1667 24.5 20.5997 24.5 18.6667C24.5 16.7338 22.933 15.1667 21 15.1667C19.067 15.1667 17.5 16.7338 17.5 18.6667C17.5 20.5997 19.067 22.1667 21 22.1667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p class="mt-1">Queue</p>
+                </a>
+              </li>
+              <li class="w-52 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
+                <a href="#" class="flex py-2.5 px-4 ">
+              <svg class="w-7 h-7 pr-3" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.3335 21H24.5002" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.5 21H3.51167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.3335 14H24.5002" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.5 14H3.51167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.3335 7H24.5002" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.5 7H3.51167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="mt-1">Library</p>
+                </a>
+              </li>
+              <hr class="mt-1 mb-1">
+              <li class="w-52 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
+                <a href="#" class="flex py-2.5 px-4 ">
+                  <svg class="w-7 h-7 pr-3" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.3125 8.59375H13.2812V1.5625C13.2812 0.699707 12.5815 0 11.7188 0H10.1562C9.29346 0 8.59375 0.699707 8.59375 1.5625V8.59375H1.5625C0.699707 8.59375 0 9.29346 0 10.1562V11.7188C0 12.5815 0.699707 13.2812 1.5625 13.2812H8.59375V20.3125C8.59375 21.1753 9.29346 21.875 10.1562 21.875H11.7188C12.5815 21.875 13.2812 21.1753 13.2812 20.3125V13.2812H20.3125C21.1753 13.2812 21.875 12.5815 21.875 11.7188V10.1562C21.875 9.29346 21.1753 8.59375 20.3125 8.59375Z" fill="#E9EBE9"/>
+                    </svg>
+                <p class="mt-1">Create Playlist</p>
+                </a>
+              </li>
+              <li class="flex w-52  text-custom-color-song-font rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
+                <a href="#" class="flex py-2.5 px-4">
+                  <svg class="w-7 h-7 pr-3" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5738 1.49576C19.8981 -0.784512 15.9186 -0.374356 13.4625 2.15982L12.5006 3.15104L11.5387 2.15982C9.08751 -0.374356 5.10314 -0.784512 2.42736 1.49576C-0.639049 4.11295 -0.800182 8.81021 1.94396 11.6471L11.3922 21.403C12.0026 22.0329 12.9938 22.0329 13.6041 21.403L23.0524 11.6471C25.8014 8.81021 25.6402 4.11295 22.5738 1.49576Z" fill="#E9EBE9"/>
+                    </svg>
+                <p class="mt-1">Liked Songs</p>
+                </a>
+              </li>
+            </ul>
+            </nav>
+          </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="flex flex-col flex-grow pl-80 h-auto">
+            <!-- TOP NAVBAR -->
+            <div class="sticky top-0 pt-16 z-10 w-full">
+              <div class="flex items-center w-auto pr-2 mr-8 mb-3 justify-end relative">
+                <nav class="w-52 flex items-center justify-between relative">
+                  <ul>
+                    <!--Notif button-->
+                    <li class="inline-block"><a href="#" class= "flex"> 
+                      <svg class="w-6 h-6 ml-2" viewBox="0 0 25 28" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.5 28C14.471 28 16.0697 26.4332 16.0697 24.5H8.93026C8.93026 26.4332 10.529 28 12.5 28ZM24.5195 19.8127C23.4414 18.6774 21.4241 16.9695 21.4241 11.375C21.4241 7.12578 18.3839 3.72422 14.2846 2.88969V1.75C14.2846 0.783672 13.4855 0 12.5 0C11.5145 0 10.7154 0.783672 10.7154 1.75V2.88969C6.61609 3.72422 3.57592 7.12578 3.57592 11.375C3.57592 16.9695 1.55863 18.6774 0.480506 19.8127C0.145685 20.1655 -0.00275159 20.5871 3.85818e-05 21C0.00617696 21.8969 0.724367 22.75 1.79133 22.75H23.2087C24.2756 22.75 24.9944 21.8969 25 21C25.0028 20.5871 24.8543 20.1649 24.5195 19.8127Z" fill="#E9EBE9"/>
+                        </svg></a></li>
+                    <!--Settings buttons-->
+                    <li class="inline-block"><a href="#" class= "flex"> 
+                        <svg class="w-6 h-6" viewBox="0 0 26 27" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M25.6679 16.7443L23.3352 15.4052C23.5707 14.1423 23.5707 12.8468 23.3352 11.5839L25.6679 10.2448C25.9362 10.0924 26.0567 9.77663 25.9691 9.48268C25.3613 7.54478 24.3264 5.79197 22.9738 4.3331C22.7658 4.10991 22.4263 4.05548 22.1634 4.2079L19.8308 5.54701C18.8506 4.7087 17.7226 4.06092 16.5015 3.63633V0.963555C16.5015 0.658718 16.288 0.391985 15.9868 0.326663C13.9772 -0.119707 11.9183 -0.0979325 10.0073 0.326663C9.7061 0.391985 9.49255 0.658718 9.49255 0.963555V3.64177C8.27693 4.07181 7.14892 4.71959 6.16329 5.55245L3.8361 4.21334C3.56779 4.06092 3.23376 4.10991 3.02569 4.33854C1.67318 5.79197 0.63826 7.54478 0.0304517 9.48812C-0.062636 9.78207 0.0633062 10.0978 0.331618 10.2502L2.66429 11.5893C2.42883 12.8522 2.42883 14.1478 2.66429 15.4107L0.331618 16.7498C0.0633062 16.9022 -0.0571603 17.2179 0.0304517 17.5119C0.63826 19.4498 1.67318 21.2026 3.02569 22.6615C3.23376 22.8846 3.57326 22.9391 3.8361 22.7867L6.16877 21.4476C7.14893 22.2859 8.27693 22.9336 9.49802 23.3582V26.0364C9.49802 26.3413 9.71158 26.608 10.0127 26.6733C12.0223 27.1197 14.0812 27.0979 15.9923 26.6733C16.2934 26.608 16.507 26.3413 16.507 26.0364V23.3582C17.7226 22.9282 18.8506 22.2804 19.8362 21.4476L22.1689 22.7867C22.4372 22.9391 22.7712 22.8901 22.9793 22.6615C24.3318 21.208 25.3667 19.4552 25.9745 17.5119C26.0567 17.2125 25.9362 16.8968 25.6679 16.7443ZM12.997 17.8494C10.5822 17.8494 8.61643 15.8952 8.61643 13.4946C8.61643 11.094 10.5822 9.13973 12.997 9.13973C15.4118 9.13973 17.3776 11.094 17.3776 13.4946C17.3776 15.8952 15.4118 17.8494 12.997 17.8494Z" fill="#E9EBE9"/>
+                          </svg></a></li>
+                  </ul>
+                  <!--Profile button-->
+                  <div class="relative inline-block dropdown"> 
+                    <button class="bg-custom-color-song-button hover:bg-custom-color-song-button text-white text-base rounded-2xl py-1 px-4 z-10 inline-flex items-center" id="dropdownMenu"> 
+                      <img src="/assets/song-assets/profilesample.jpg" alt="profile pic" class="rounded-full h-10 w-10"> 
+                      <span class="ml-3">Profile</span> 
+                      <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
+                        <path d="M7 10l5 5 5-5z" /> 
+                      </svg> 
+                    </button> 
+                    <!--profile dropdown-->                
+                    <ul class="absolute hidden text-custom-color-song-font w-36 pt-1"> 
+                      <li><a class="rounded-t bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Account</a></li> 
+                      <li><a class="rounded-t bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Profile</a></li> 
+                      <li><a class="rounded-t bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Settings</a></li> 
+                      <li><a class="rounded-t bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Support</a></li>
+                      <hr class="bg-black">
+                      <li><a class="rounded-b bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Logout</a></li> 
+                    </ul> 
+                  </div>
+
+                  <script>
+                    initDropdown();
+                  </script>
+                </nav>
+              </div> 
+            </div>
+
+            <!-- CONTENTS -->
+            <div class="h-auto">
+                <!--first part-->
+                <div class="container flex flex-col">
+                  <!--Album Main Content-->
+                    <div class="flex mt-5 mb-2">
+                        <div class="flex relative w-64 h-64">
+                            <img src="/assets/song-assets/album pic.png" class="relative w-60 h-60 ml-6 rounded-3xl" alt="albumpic">
+                        </div>
+                        <div class="flex h-60 pl-8 w-auto relative">
+                            <h4 class="absolute text-custom-color-font-album top-24 left-50 text-2xl"> 
+                                Album
+                            </h4>
+                            <h1 class="relative text-white h-12 left-55 top-36 text-4xl">
+                                Collide With The Sky
+                            </h1>
+                            <!--Singer part-->
+                            <img src="/assets/song-assets/piercethevielprofilepic.jpg" alt="artist" class="absolute rounded-full left-10 top-52 h-8 w-8 flex">
+                            <h4 class="relative text-custom-color-font-album text-2x1 top-52 right-80 h-8 align-center pt-2 pl-8">
+                                Pierce The Viel  12 songs
+                            </h4>
+                        </div>
+                    </div>
+                    <!--buttons-->
+                    <div class="relative flex h-15 w-full p-3">
+                        <!--play button-->
+                        <button class="bg-custom-color-song-button hover:bg-custom-color-song-hover text-custom-color-song-font text-base ml-6 py-1 h-8 px-2 rounded-2xl flex">
+                        <svg class="w-6 h-6 mr-1 flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M5 3l10 7-10 7V3z" />
+                        </svg>
+                        Play
+                        </button>
+                        <!--shuffle button-->
+                        <button type="button" class="bg-custom-color-song-button hover:bg-custom-color-song-hover text-custom-color-song-font text-base w-auto ml-3 py-1 px-2 h-8 rounded-2xl flex">
+                            <div>
+                              <svg class="w-8 h-5 mr-1 flex" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 5.46992V4.68867C0 4.04145 0.524658 3.51679 1.17188 3.51679H18.75V1.17304C18.75 0.129733 20.0146 -0.391507 20.7505 0.344381L24.6568 4.25063C25.1144 4.7083 25.1144 5.45029 24.6568 5.90791L20.7505 9.81416C20.0174 10.5472 18.75 10.0332 18.75 8.98554V6.64179H1.17188C0.524658 6.64179 0 6.11714 0 5.46992ZM23.8281 12.8918H6.25V10.548C6.25 9.50732 4.98721 8.98164 4.24946 9.71938L0.343213 13.6256C-0.114404 14.0833 -0.114404 14.8253 0.343213 15.2829L4.24946 19.1892C4.98325 19.9229 6.25 19.4073 6.25 18.3605V16.0168H23.8281C24.4753 16.0168 25 15.4921 25 14.8449V14.0637C25 13.4165 24.4753 12.8918 23.8281 12.8918Z" fill="#E9EBE9"/>
+                              </svg>
+                            </div>
+                          Shuffle
+                        </button>
+                        <!--add button-->
+                        <span class="inline-flex rounded-md shadow-sm">
+                          <button type="button" class="inline-flex items-center px-2 py-1 ml-3 h-8 border border-transparent text-base font-medium text-custom-color-song-add bg-custom-color hover:bg-custom-color-song-button rounded-2xl">
+                            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+                            </svg> 
+                            Add
+                          </button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--Songs-->
+            <div class="h-auto">
+                <div class="container h-auto mx-auto px-4 mt-0 pt-0">
+                    <div class=" flex flex-col my-1 text-base">
+                      <!--Song list Labels-->
+                      <div class="flex items-center justify-between py-2 ml-2 border-b border-gray-300">
+                        <div class="text-custom-color-font-album">#</div>
+                        <div class="text-custom-color-font-album flex-1 ml-10">Title</div>
+                        <div class="text-gray-500">
+                          <svg class="w-5 h-5 mr-4" viewBox="0 0 26 26" fill="custom-color-song" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 0C5.81855 0 0 5.81855 0 13C0 20.1814 5.81855 26 13 26C20.1814 26 26 20.1814 26 13C26 5.81855 20.1814 0 13 0ZM15.9931 18.352L11.3698 14.9919C11.2073 14.8714 11.1129 14.6827 11.1129 14.4835V5.66129C11.1129 5.31532 11.396 5.03226 11.7419 5.03226H14.2581C14.604 5.03226 14.8871 5.31532 14.8871 5.66129V12.8794L18.2157 15.3012C18.4988 15.5056 18.5565 15.8988 18.352 16.1819L16.8738 18.2157C16.6694 18.4935 16.2762 18.5565 15.9931 18.352Z" fill="#676F70"/>
+                            </svg>
+                        </div>
+                      </div>
+                      <ul>
+                        <!--Song 1-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">1</h4></span>
+                          <button href="#" class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">May These Noises Startle You in Your Sleep Tonight</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">1:22</h4></span>
+                          </div>
+                        </li>
+                        <!--Song 2-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">2</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">Hell Above</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">3:37</h4></span>
+                          </div>
+                        </li>
+                        <!--Song 3-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">3</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">March Into Water</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">3:57</h4></span>
+                          </div>
+                        </li>
+                        <!--Song 4-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">4</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">King For A Day</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">3:57</h4></span>
+                          </div>
+                        </li>                   
+                        <!--Song 5-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">5</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">Bulls in the Bronx</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">4:28</h4></span>
+                          </div>
+                        </li>                       
+                        <!--Song 6-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">6</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">Props & Mayhem</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">3:28</h4></span>
+                          </div>
+                        </li>                        
+                        <!--Song 7-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">7</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">Tangled in the Great Escape</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">5:57</h4></span>
+                          </div>
+                        </li>
+                        <!--Song 8-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">8</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">I'm Low on Gas and You Need a Jacket</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">4:28</h4></span>
+                          </div>
+                        </li>                      
+                        <!--Song 9-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">9</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">The First Punch</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">3:26</h4></span>
+                          </div>
+                        </li>                       
+                        <!--Song 10-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">10</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">One Hundred Sleepless Nights</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">3:42</h4></span>
+                          </div>
+                        </li>                       
+                        <!--Song 11-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">11</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">Stained Glass Eyes and Colorful Tears</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">3:39</h4></span>
+                          </div>
+                        </li>                        
+                        <!--Song 12-->
+                        <li class="list">
+                          <div class="flex items-center justify-between w-full px-2 ">
+                          <span class="number"><h4 class="text-custom-color-song-font">12</h4></span>
+                          <button class="play-button"> <i class="fas fa-play"></i></button>
+                          <div class="flex-1 ml-10">
+                          <span class="song-name"><a href="#" class="font-medium text-custom-color-song-font">Hold on Till May</a></span></div>
+                          <span class="mr-4">
+                          <button class="heart-button"><i class="fas fa-heart"></i></button></span>
+                          <span class="duration"><h4 class="text-custom-color-song-font">4:39</h4></span>
+                          </div>
+                        </li>
+                      </ul>         
+                    </div>
+                  <!--copyright part-->
+                  <div class="flex flex-col p-2 ">
+                    <p class="flex text-custom-color-font-album"> July 17, 2012 </p> 
+                    <p class="flex text-custom-color-font-album"> © 2012 Fearless Records, a division of Concord Music Group, Inc.</p>                   
+                  </div>
+                </div>
+            
+            <!--More like this-->
+            <div class="flex h-auto mb-3">
+              <div class="w-auto h-10">
+                <h4 class="absolute w-auto h-9 text-custom-color-song-font"> More By Pierce The Viel</h4>
+              </div>
+              <!--More Albums-->
+              <div class="flex container text-base capitalize mt-12 w-auto justify-between items-center">
+                <!--Album 1-->
+                <div class="flex flex-col w-64 h-auto justify-start">
+                  <img src="/assets/song-assets/Album1.jpg" alt="Album 1" class="h-64 w-64 relative rounded-xl">
+                  <p class="relative flex text-custom-color-song-font"> Selfish Machines</p>
+                  <p class="text-custom-color-font-album">Pierce The Viel</p>
+                </div>
+                <!--Album 2-->
+                <div class="flex flex-col w-64 h-auto ml-5 justify-start">
+                  <img src="/assets/song-assets/album2.jpg" alt="Album 2" class="h-64 w-64 relative rounded-xl">
+                  <p class="relative flex text-custom-color-song-font"> Selfish Machines</p>
+                  <p class="text-custom-color-font-album">Pierce The Viel</p>
+                </div>
+                <!--Album 3-->
+                <div class="flex flex-col w-64 h-auto ml-5 justify-start">
+                  <img src="/assets/song-assets/Album3.jpg" alt="Album 3" class="h-64 w-64 relative rounded-xl">
+                  <p class="relative flex text-custom-color-song-font"> Selfish Machines</p>
+                  <p class="text-custom-color-font-album">Pierce The Viel</p>
+                </div> 
+              </div>
+            </div>
+            </div>
+
+           <footer-component></footer-component>
+            <script src="/include/footer.js"></script>
+        </main>
+
+        <!-- PLAYBAR -->
+        <div class="w-screen fixed h-20 left-0 bg-cyan-600 bottom-0  mt-auto">
+            <h1 class="text-white text-4xl">Playbar</h1>
+        </div>
+    </div> 
+    
+    
+</body>
+</html>
