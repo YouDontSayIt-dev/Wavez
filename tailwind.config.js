@@ -39,6 +39,42 @@ module.exports = {
 
         // custom-color for the search bar
         "custom-color-search-bar": "#D7E4EB",
+
+        'custom-color-font-album': '#676F70',
+        //for specific part in the album/song page
+
+        'custom-color-song-button': '#9A7F69',
+        //for play and shuffle button in song page
+
+        'custom-color-song-add': '#092431',
+        //for add button in song page
+
+        'custom-color-song-hover': '#092431',
+        //hover song
+
+        'custom-color-song-font': '#E9EBE9',
+        //song page font color
+
+        'custom-color-song-more': '#797979',
+        //song page in artists more like this
+
+        'custom-color-song-add': '#A88E78',
+        //song page for add button
+
+        'custom-color-addpl-blur': '#1C2C36',
+        //add playlist
+
+        'custom-color-add-searchfont': '#676F70',
+
+        'custom-color-add-searchbar': "rgba(215, 228, 235, 0.8)",
+        //search bar 
+
+        'custom-color-navbar-hover': "rgba(154, 127, 105, 0.8);",
+        //song-addpl nav bar
+
+        'custom-color-playbar': '#184550',
+        //playbar color
+
       },
       fontFamily: {
         alata: ["Alata", "sans-serif"],
