@@ -70,8 +70,10 @@ module.exports = {
         //search bar 
 
         'custom-color-navbar-hover': "rgba(154, 127, 105, 0.8);",
+        //song-addpl nav bar
 
         'custom-color-playbar': '#184550',
+        //playbar color
 
       },
       fontFamily: {
