@@ -75,6 +75,9 @@ module.exports = {
         'custom-color-playbar': '#184550',
         //playbar color
 
+        // custom-color for playlist hover 
+        'custom-color-playlist-hover': '#001724',
+
       },
       fontFamily: {
         alata: ["Alata", "sans-serif"],
