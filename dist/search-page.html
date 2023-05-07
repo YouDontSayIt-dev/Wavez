@@ -221,34 +221,71 @@
                 <div class="flex flex-grow w-auto h-auto justify-end pr-7 z-20"><a href="#" class="hover:text-custom-color-sidebar-brown-hover">See All</a></div>
             </div>
 
-            <!-- ELLIPSE -->
-            <!-- <div class="absolute z-10 -top-96 left-0 rotate-180">
-                <img src="/assets/playlist-assets/ellipse-big.png">
-            </div> -->
-
             <!-- CATEGORIES LISTS -->
             <div class="flex h-auto flex-wrap justify-start pb-10 mr-10 text-white z-20">
                 <!-- PLAYLISTS BY CATEGORIES -->
-                <div class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center" style="background-image: url(/assets/search-assets/categories-bg.png);">
+                <div id="playlist-profile-POP" class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
                     <h1 class="text-4xl">POP</h1>
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-POP" class="profile-btn absolute bottom-2 right-1/3 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 duration-300">
+                        <a href="exp.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </a>
+                    </button>
                 </div>
-                <div class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center" style="background-image: url(/assets/search-assets/categories-bg.png);">
+                <div id="playlist-profile-HIPHOP" class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center cursor-pointer items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105" style="background-image: url(/assets/search-assets/categories-bg.png);">
                     <h1 class="text-4xl">HIPHOP</h1>
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-HIPHOP" class="profile-btn absolute bottom-2 right-1/3 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 duration-300">
+                        <a href="exp.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </a>
+                    </button>
                 </div>
-                <div class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center" style="background-image: url(/assets/search-assets/categories-bg.png);">
+                <div id="playlist-profile-INDIE" class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg cursor-pointer justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105" style="background-image: url(/assets/search-assets/categories-bg.png);">
                     <h1 class="text-4xl">INDIE</h1>
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-INDIE" class="profile-btn absolute bottom-2 right-1/3 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 duration-300">
+                        <a href="exp.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </a>
+                    </button>
                 </div>
-                <div class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center" style="background-image: url(/assets/search-assets/categories-bg.png);">
+                <div id="playlist-profile-EDM" class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center cursor-pointer items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105" style="background-image: url(/assets/search-assets/categories-bg.png);">
                     <h1 class="text-4xl">EDM</h1>
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-EDM" class="profile-btn absolute bottom-2 right-1/3 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 duration-300">
+                        <a href="exp.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </a>
+                    </button>
                 </div>
-                <div class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center" style="background-image: url(/assets/search-assets/categories-bg.png);">
+                <div id="playlist-profile-KPOP" class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center cursor-pointer hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105" style="background-image: url(/assets/search-assets/categories-bg.png);">
                     <h1 class="text-4xl">K-POP</h1>
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-KPOP" class="profile-btn absolute bottom-2 right-1/3 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 duration-300">
+                        <a href="exp.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </a>
+                    </button>
                 </div>
-                <div class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center" style="background-image: url(/assets/search-assets/categories-bg.png);">
+                <div id="playlist-profile-RNB" class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center cursor-pointer hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105" style="background-image: url(/assets/search-assets/categories-bg.png);">
                     <h1 class="text-4xl">R&B</h1>
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-RNB" class="profile-btn absolute bottom-2 right-1/3 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 duration-300">
+                        <a href="exp.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </a>
+                    </button>
                 </div>
-                <div class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center" style="background-image: url(/assets/search-assets/categories-bg.png);">
+                <div id="playlist-profile-OPM" class="flex flex-col bg-cover w-52 h-48 my-5 ml-5 rounded-lg justify-center items-center cursor-pointer hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105" style="background-image: url(/assets/search-assets/categories-bg.png);">
                     <h1 class="text-4xl">OPM</h1>
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-OPM" class="profile-btn absolute bottom-2 right-1/3 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 duration-300">
+                        <a href="exp.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </a>
+                    </button>
                 </div>
             </div>
 
