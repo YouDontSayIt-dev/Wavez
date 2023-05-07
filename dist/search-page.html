@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Search</title>
     <script src="https://kit.fontawesome.com/af7e1c2216.js" crossorigin="anonymous"></script>
 </head>
 <body class="p-0 m-0 font-alata h-screen bg-custom-color">
@@ -34,7 +34,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10  bg-custom-color-sidebar-brown  hover:bg-custom-color-navbar-icons-hover focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                             </svg>
@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10  bg-custom-color-sidebar-brown  hover:bg-black focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-custom-color-sidebar-brown-hover">
+                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                             </svg>
@@ -138,7 +138,14 @@
             <div class="flex h-auto flex-wrap justify-start pb-10 mr-10 text-white z-20">
 
                 <!-- RECENT BROWSED PLAYLISTS -->
-                <div class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105">
+                <div class="playlist-profile flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105">
+                    <!-- HOVER PLAY-BTN -->
+                    <button class="profile-btn absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 duration-300">
+                        <a href="exp.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </a>
+                    </button>
+                    
                     <!-- PLAYLIST IMAGE -->
                     <div class="w-full h-48">
                         <img src="/assets/playlist-assets/newjeans-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
@@ -150,10 +157,17 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105">
+                <div id="playlist-profile" class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105">
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 duration-300">
+                        <a href="exp.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </a>
+                    </button>
+                    
                     <!-- PLAYLIST IMAGE -->
                     <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/theweekend-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
+                        <img src="/assets/playlist-assets/newjeans-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
                     </div>
                     <!-- PLAYLIST INFO -->
                     <div class="h-auto w-full pt-1 px-4">
@@ -161,67 +175,6 @@
                         <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
                     </div>
                 </div>
-
-                <div class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105">
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/taylorswift-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105">
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/randomguy-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105">
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/twice2-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105">
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/twice-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
-                    </div>
-                </div>
-
-                <div class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105">
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/eminem-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
-                    </div>
-                </div>
-
             </div>
 
             <!-- BROWSE CATEGORIES -->
@@ -322,5 +275,19 @@
             <h1 class="text-white text-4xl">Playbar</h1>
         </div>
     </div>
+
+    <!-- SCRIPTS -->
+    <script>
+        const parentDiv = document.getElementsByClassName('playlist-profile');
+        const childDiv = document.getElementsByClassName('play-btn');
+      
+        parentDiv.addEventListener('mouseenter', () => {
+          childDiv.classList.add('opacity-100');
+        });
+      
+        parentDiv.addEventListener('mouseleave', () => {
+          childDiv.classList.remove('opacity-100');
+        });
+    </script>
 </body>
 </html>
