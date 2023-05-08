@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./dist/*.{html,js}","./include/*.js"],
+  content: ["./dist/*.{html,js}", "./include/*.js"],
   theme: {
     borderWidth: {
       1: '1px'
@@ -12,6 +12,11 @@ module.exports = {
         "input-bg-color": "rgb(255, 255, 255)",
         "border-color": "rgb(124, 138, 255)",
         "button-color": "rgba(154, 127, 105, 0.9)",
+
+        "toppick1-title-color": "rgba(105, 74, 70, 0.8)",
+        "toppick2-title-color": "rgba(43, 42, 27, 0.8)",
+        "toppick3-title-color": "rgba(6, 26, 62, 0.8)",
+        "toppick4-title-color": "rgba(5, 87, 110, 0.8)",
 
         "custom-color": "#04151D",
         // custom-color for the whole website body
@@ -43,39 +48,39 @@ module.exports = {
         // custom-color for the search bar
         "custom-color-search-bar": "#D7E4EB",
 
-        'custom-color-font-album': '#676F70',
+        "custom-color-font-album": "#676F70",
         //for specific part in the album/song page
 
-        'custom-color-song-button': '#9A7F69',
+        "custom-color-song-button": "#9A7F69",
         //for play and shuffle button in song page
 
-        'custom-color-song-add': '#092431',
+        "custom-color-song-add": "#092431",
         //for add button in song page
 
-        'custom-color-song-hover': '#092431',
+        "custom-color-song-hover": "#092431",
         //hover song
 
-        'custom-color-song-font': '#E9EBE9',
+        "custom-color-song-font": "#E9EBE9",
         //song page font color
 
-        'custom-color-song-more': '#797979',
+        "custom-color-song-more": "#797979",
         //song page in artists more like this
 
-        'custom-color-song-add': '#A88E78',
+        "custom-color-song-add": "#A88E78",
         //song page for add button
 
-        'custom-color-addpl-blur': '#1C2C36',
+        "custom-color-addpl-blur": "#1C2C36",
         //add playlist
 
-        'custom-color-add-searchfont': '#676F70',
+        "custom-color-add-searchfont": "#676F70",
 
-        'custom-color-add-searchbar': "rgba(215, 228, 235, 0.8)",
-        //search bar 
+        "custom-color-add-searchbar": "rgba(215, 228, 235, 0.8)",
+        //search bar
 
-        'custom-color-navbar-hover': "rgba(154, 127, 105, 0.8);",
+        "custom-color-navbar-hover": "rgba(154, 127, 105, 0.8);",
         //song-addpl nav bar
 
-        'custom-color-playbar': '#184550',
+        "custom-color-playbar": "#184550",
         //playbar color
 
         // custom-color for playlist hover 
@@ -95,7 +100,7 @@ module.exports = {
         "324px": "324px",
         "102px": "102px",
         "64px": "649px",
-        "15": "59.89px",
+        15: "59.89px",
         "43px": "43px",
         "45px": "45.51px",
         "145px": "145px",
@@ -103,7 +108,7 @@ module.exports = {
         "345px": "345.79px",
         "578px": "578px",
         "1619px": "1619px",
-        "79": "318px",
+        79: "318px",
         "265px": "265.65px",
         "240px": "240.4px",
         "253px": "253.97px",
