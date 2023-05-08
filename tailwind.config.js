@@ -78,9 +78,13 @@ module.exports = {
         'custom-color-playbar': '#184550',
         //playbar color
 
+        // custom-color for playlist hover 
+        'custom-color-playlist-hover': '#001724',
+
         'custom-color-b-border': '#CAC6C7',
         'webheffect': 'rgb(9, 36, 49,0.5)',
         'webdropdown': 'rgb(5, 19, 26,0.9)',
+
       },
       fontFamily: {
         alata: ["Alata", "sans-serif"],
@@ -107,6 +111,7 @@ module.exports = {
         "890px": "890px",
         "119px": "-119px",
         "510px": "510px",
+        "452px": "452px",
       },
     },
   },
