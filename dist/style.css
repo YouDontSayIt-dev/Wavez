@@ -937,6 +937,7 @@ video {
   margin-top: 30px;
 }
 
+<<<<<<< Updated upstream
 .mt-\[52px\] {
   margin-top: 52px;
 }
@@ -945,6 +946,8 @@ video {
   margin-top: auto;
 }
 
+=======
+>>>>>>> Stashed changes
 .block {
   display: block;
 }
