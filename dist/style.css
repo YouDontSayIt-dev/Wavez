@@ -565,7 +565,8 @@ video {
 }
 
 .play-button,
-      .heart-button {
+     .heart-button,
+     .ellipsis-button {
   display: none;
 }
 
@@ -574,9 +575,21 @@ video {
 }
 
 .list:hover .play-button,
-      .list:hover .heart-button {
+     .list:hover .heart-button,
+     .list:hover .ellipsis-button {
   display: block;
   color: #9A7F69;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown > .flex-col {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1;
 }
 
 .fixed {
@@ -627,10 +640,6 @@ video {
   left: 0px;
 }
 
-.left-10 {
-  left: 2.5rem;
-}
-
 .left-2 {
   left: 0.5rem;
 }
@@ -649,10 +658,6 @@ video {
 
 .right-5 {
   right: 1.25rem;
-}
-
-.right-80 {
-  right: 20rem;
 }
 
 .top-0 {
@@ -681,6 +686,18 @@ video {
 
 .top-9 {
   top: 2.25rem;
+}
+
+.-left-24 {
+  left: -6rem;
+}
+
+.bottom-16 {
+  bottom: 4rem;
+}
+
+.left-14 {
+  left: 3.5rem;
 }
 
 .z-10 {
@@ -751,6 +768,16 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .mb-1 {
@@ -843,6 +870,10 @@ video {
 
 .ml-7 {
   margin-left: 1.75rem;
+}
+
+.ml-9 {
+  margin-left: 2.25rem;
 }
 
 .ml-auto {
@@ -947,6 +978,10 @@ video {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .block {
@@ -1107,6 +1142,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-24 {
+  height: 6rem;
 }
 
 .min-h-screen {
@@ -1631,6 +1670,11 @@ video {
   background-color: rgba(5, 87, 110, 0.8);
 }
 
+.bg-violet-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(196 181 253 / var(--tw-bg-opacity));
+}
+
 .bg-webheffect {
   background-color: rgb(9, 36, 49,0.5);
 }
@@ -1643,6 +1687,16 @@ video {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1962,6 +2016,10 @@ video {
   padding-top: 1.75rem;
 }
 
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2168,6 +2226,11 @@ video {
 .text-custom-color-song-add {
   --tw-text-opacity: 1;
   color: rgb(168 142 120 / var(--tw-text-opacity));
+}
+
+.text-custom-color-song-button {
+  --tw-text-opacity: 1;
+  color: rgb(154 127 105 / var(--tw-text-opacity));
 }
 
 .text-custom-color-song-font {

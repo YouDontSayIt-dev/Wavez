@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.15/tailwind.min.css">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <script src="/include/profile.js"> </script>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" href="/assets/wavesLogo.png">
@@ -16,132 +16,112 @@
 </head>
 <body class="p-0 m-0 font-alata h-screen bg-custom-color">
     <div class="flex">
-        <!-- SIDE NAVBAR -->
-        <aside class="w-80 fixed left-0 top-0 h-full">
-            <div class="w-64 items-center space-y-6 py-7 px-2">
-              <!-- Logo -->
-              <div class="mt-10 ml-20 w-20 h-16 ">
-                <img src="/assets/wavesLogo.png" alt="logo">
-                </div>
+            <!-- SIDE NAVBAR -->
+        <aside class="w-60 fixed left-0 top-0 h-full z-50 bg-gradient-to-t from-custom-color-playlist-card-non-pinned-text to-custom-color">
+          <!-- LOGO -->
+          <a href="#">
+              <img src="/assets/wavesLogo.png" class="mx-auto my-6 w-15 h-12" alt="Logo">
+          </a>
 
-              <!-- Navigation Links -->
-              <nav class="mt-5 ml-10 space-y-1 flex items-center justify-between relative">
-                <ul>
-                <li class="w-48 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
-                  <a href="#" class="flex py-2.5 px-4 ">
-                    <svg class="w-7 h-7 pr-3" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g filter="url(#filter0_d_779_1132)">
-                      <path d="M5.5 10.4999L16 2.33325L26.5 10.4999V23.3333C26.5 23.9521 26.2542 24.5456 25.8166 24.9832C25.379 25.4208 24.7855 25.6666 24.1667 25.6666H7.83333C7.21449 25.6666 6.621 25.4208 6.18342 24.9832C5.74583 24.5456 5.5 23.9521 5.5 23.3333V10.4999Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12.5 25.6667V14H19.5V25.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </g>
-                      <defs>
-                      <filter id="filter0_d_779_1132" x="-2" y="0" width="36" height="36" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                      <feOffset dy="4"/>
-                      <feGaussianBlur stdDeviation="2"/>
-                      <feComposite in2="hardAlpha" operator="out"/>
-                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_779_1132"/>
-                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_779_1132" result="shape"/>
-                      </filter>
-                      </defs>
-                      </svg>
-                      <p class="mt-1">Home</p>
-                  </a>
-                </li>
-                <li class="w-48 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover ">
-                  <a href="#" class="flex py-2.5 px-4">
-                    <svg class="w-7 h-7 pr-3" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12.8333 22.1667C17.988 22.1667 22.1667 17.988 22.1667 12.8333C22.1667 7.67868 17.988 3.5 12.8333 3.5C7.67868 3.5 3.5 7.67868 3.5 12.8333C3.5 17.988 7.67868 22.1667 12.8333 22.1667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M24.4998 24.5L19.4248 19.425" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                      
-                      <p class="mt-1">Search</p>
-                  </a>
-                </li>
-                <li class="w-52 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
-                  <a href="#" class="flex py-2.5 px-4 ">
-                    <svg class="w-7 h-7 pr-3" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M7 24.5C8.933 24.5 10.5 22.933 10.5 21C10.5 19.067 8.933 17.5 7 17.5C5.067 17.5 3.5 19.067 3.5 21C3.5 22.933 5.067 24.5 7 24.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M10.5 21V5.83333L24.5 3.5V18.6667" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M21 22.1667C22.933 22.1667 24.5 20.5997 24.5 18.6667C24.5 16.7338 22.933 15.1667 21 15.1667C19.067 15.1667 17.5 16.7338 17.5 18.6667C17.5 20.5997 19.067 22.1667 21 22.1667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                      <p class="mt-1">Queue</p>
-                  </a>
-                </li>
-                <li class="w-52 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
-                  <a href="#" class="flex py-2.5 px-4 ">
-                <svg class="w-7 h-7 pr-3" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.3335 21H24.5002" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3.5 21H3.51167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.3335 14H24.5002" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3.5 14H3.51167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M9.3335 7H24.5002" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M3.5 7H3.51167" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <p class="mt-1">Library</p>
-                  </a>
-                </li>
-                <hr class="mt-1 mb-1">
-                <li class="w-52 text-custom-color-song-font inline-block rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
-                  <a href="#" class="flex py-2.5 px-4 ">
-                    <svg class="w-7 h-7 pr-3" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20.3125 8.59375H13.2812V1.5625C13.2812 0.699707 12.5815 0 11.7188 0H10.1562C9.29346 0 8.59375 0.699707 8.59375 1.5625V8.59375H1.5625C0.699707 8.59375 0 9.29346 0 10.1562V11.7188C0 12.5815 0.699707 13.2812 1.5625 13.2812H8.59375V20.3125C8.59375 21.1753 9.29346 21.875 10.1562 21.875H11.7188C12.5815 21.875 13.2812 21.1753 13.2812 20.3125V13.2812H20.3125C21.1753 13.2812 21.875 12.5815 21.875 11.7188V10.1562C21.875 9.29346 21.1753 8.59375 20.3125 8.59375Z" fill="#E9EBE9"/>
-                      </svg>
-                  <p class="mt-1">Create Playlist</p>
-                  </a>
-                </li>
-                <li class="flex w-52  text-custom-color-song-font rounded-3xl transition duration-200 hover:bg-custom-color-navbar-hover">
-                  <a href="#" class="flex py-2.5 px-4">
-                    <svg class="w-7 h-7 pr-3" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M22.5738 1.49576C19.8981 -0.784512 15.9186 -0.374356 13.4625 2.15982L12.5006 3.15104L11.5387 2.15982C9.08751 -0.374356 5.10314 -0.784512 2.42736 1.49576C-0.639049 4.11295 -0.800182 8.81021 1.94396 11.6471L11.3922 21.403C12.0026 22.0329 12.9938 22.0329 13.6041 21.403L23.0524 11.6471C25.8014 8.81021 25.6402 4.11295 22.5738 1.49576Z" fill="#E9EBE9"/>
-                      </svg>
-                  <p class="mt-1">Liked Songs</p>
-                  </a>
-                </li>
+          <!-- Navigation -->
+          <nav class="flex flex-row justify-center flex-wrap font-normal text-lg pt-7">
+              <ul class="flex-grow">
+                  <li>
+                      <a href="#" class = "flex justify-center space-x-5 mt-6 mb-3 text-white py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                            
+                          <span>Home</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="" class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                          </svg>
+                        <span>Search</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+                          </svg>
+                          <span>Queue</span>                          
+                      </a>
+                  </li>
+                  <li>
+                      <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 ">
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                          </svg>
+                          <span>Library</span>                          
+                      </a>
+                  </li>
               </ul>
-              </nav>
-            </div>
+              <!-- DIVIDER -->
+              <div class="mx-auto w-3/4 border-t-1 border-white mt-5 mb-6"></div>
+              <!-- <div class="absolute top-9 left-56 h-3/4 w-1 border-l border-white"></div>  -->
+              <ul class="text-white">
+                 <li><a href="" class="flex justify-center text-white space-x-4 pl-5 mt-6 mb-3 pr-5 rounded-full py-1 bg-custom-color-sidebar-brown hover:bg-custom-color-navbar-icons-hover focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                          <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                      </svg>                    
+                      <span>Create Playlist</span>                          
+                      </a>
+                  </li>
+                  <li>
+                      <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 hover:text-custom-color-sidebar-brown-hover" >
+                          <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                              <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                          </svg>                          
+                          <span>Liked Songs</span>  
+                      </a>
+                  </li>
+              </ul>
+          </nav>
         </aside>
 
         <!-- MAIN CONTENT -->
-        <main class="flex flex-col flex-grow pl-80 h-auto">
+        <main class="flex flex-col flex-grow pl-60 h-auto">
             <!-- TOP NAVBAR -->
-            <div class="sticky top-0 pt-16 z-10 w-full">
+            <div class="sticky top-0 flex flex-row items-end justify-end bg-custom-color space-x-7 pr-16 pb-3 pt-6 z-40 w-full">
               <div class="flex items-center w-auto pr-2 mr-8 mb-3 justify-end relative">
                 <nav class="w-52 flex items-center justify-between relative">
                   <ul>
                     <!--Notif button-->
                     <li class="inline-block"><a href="#" class= "flex"> 
-                      <svg class="w-6 h-6 ml-2" viewBox="0 0 25 28" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.5 28C14.471 28 16.0697 26.4332 16.0697 24.5H8.93026C8.93026 26.4332 10.529 28 12.5 28ZM24.5195 19.8127C23.4414 18.6774 21.4241 16.9695 21.4241 11.375C21.4241 7.12578 18.3839 3.72422 14.2846 2.88969V1.75C14.2846 0.783672 13.4855 0 12.5 0C11.5145 0 10.7154 0.783672 10.7154 1.75V2.88969C6.61609 3.72422 3.57592 7.12578 3.57592 11.375C3.57592 16.9695 1.55863 18.6774 0.480506 19.8127C0.145685 20.1655 -0.00275159 20.5871 3.85818e-05 21C0.00617696 21.8969 0.724367 22.75 1.79133 22.75H23.2087C24.2756 22.75 24.9944 21.8969 25 21C25.0028 20.5871 24.8543 20.1649 24.5195 19.8127Z" fill="#E9EBE9"/>
-                        </svg></a></li>
-                    <!--Settings buttons-->
-                    <li class="inline-block"><a href="#" class= "flex"> 
-                        <svg class="w-6 h-6" viewBox="0 0 26 27" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M25.6679 16.7443L23.3352 15.4052C23.5707 14.1423 23.5707 12.8468 23.3352 11.5839L25.6679 10.2448C25.9362 10.0924 26.0567 9.77663 25.9691 9.48268C25.3613 7.54478 24.3264 5.79197 22.9738 4.3331C22.7658 4.10991 22.4263 4.05548 22.1634 4.2079L19.8308 5.54701C18.8506 4.7087 17.7226 4.06092 16.5015 3.63633V0.963555C16.5015 0.658718 16.288 0.391985 15.9868 0.326663C13.9772 -0.119707 11.9183 -0.0979325 10.0073 0.326663C9.7061 0.391985 9.49255 0.658718 9.49255 0.963555V3.64177C8.27693 4.07181 7.14892 4.71959 6.16329 5.55245L3.8361 4.21334C3.56779 4.06092 3.23376 4.10991 3.02569 4.33854C1.67318 5.79197 0.63826 7.54478 0.0304517 9.48812C-0.062636 9.78207 0.0633062 10.0978 0.331618 10.2502L2.66429 11.5893C2.42883 12.8522 2.42883 14.1478 2.66429 15.4107L0.331618 16.7498C0.0633062 16.9022 -0.0571603 17.2179 0.0304517 17.5119C0.63826 19.4498 1.67318 21.2026 3.02569 22.6615C3.23376 22.8846 3.57326 22.9391 3.8361 22.7867L6.16877 21.4476C7.14893 22.2859 8.27693 22.9336 9.49802 23.3582V26.0364C9.49802 26.3413 9.71158 26.608 10.0127 26.6733C12.0223 27.1197 14.0812 27.0979 15.9923 26.6733C16.2934 26.608 16.507 26.3413 16.507 26.0364V23.3582C17.7226 22.9282 18.8506 22.2804 19.8362 21.4476L22.1689 22.7867C22.4372 22.9391 22.7712 22.8901 22.9793 22.6615C24.3318 21.208 25.3667 19.4552 25.9745 17.5119C26.0567 17.2125 25.9362 16.8968 25.6679 16.7443ZM12.997 17.8494C10.5822 17.8494 8.61643 15.8952 8.61643 13.4946C8.61643 11.094 10.5822 9.13973 12.997 9.13973C15.4118 9.13973 17.3776 11.094 17.3776 13.4946C17.3776 15.8952 15.4118 17.8494 12.997 17.8494Z" fill="#E9EBE9"/>
-                          </svg></a></li>
-                  </ul>
-                  <!--Profile button-->
-                  <div class="relative inline-block dropdown"> 
-                    <button class="bg-custom-color-song-button hover:bg-custom-color-song-button text-white text-base rounded-2xl py-1 px-4 z-10 inline-flex items-center" id="dropdownMenu"> 
-                      <img src="/assets/addplaylist-assets/profilesample.jpg" alt="profile pic" class="rounded-full h-10 w-10"> 
-                      <span class="ml-3">Profile</span> 
-                      <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
-                        <path d="M7 10l5 5 5-5z" /> 
-                      </svg> 
-                    </button> 
-                    <!--profile dropdown-->                
-                    <ul class="absolute hidden rounded-xl text-custom-color-song-font w-36 pt-1"> 
-                      <li><a class="rounded-t bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Account</a></li> 
-                      <li><a class="rounded-t bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Profile</a></li> 
-                      <li><a class="rounded-t bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Settings</a></li> 
-                      <li><a class="rounded-t bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Support</a></li>
-                      <hr class="bg-black">
-                      <li><a class="rounded-b bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Logout</a></li> 
-                    </ul> 
-                  </div>
+                      <svg class="text-white fill-current mr-2 w-6 h-7 hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
+                      </svg>
+                  </a>
+                  <!--Settings buttons-->
+                  <li class="inline-block"><a href="#" class= "flex"> 
+                    <svg class="text-white fill-current w-6 h-7 hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                      <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/>
+                    </svg>
+                  </a></li>
+                </ul>
+                <!--Profile button-->
+                <div class="relative inline-block dropdown"> 
+                  <button class="bg-custom-color-song-button hover:bg-custom-color-song-button text-white text-base rounded-2xl py-1 px-4 z-10 inline-flex items-center" id="dropdownMenu"> 
+                    <img src="/assets/song-assets/profilesample.jpg" alt="profile pic" class="rounded-full h-10 w-10"> 
+                    <span class="ml-3">Profile</span> 
+                    <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
+                      <path d="M7 10l5 5 5-5z" /> 
+                    </svg> 
+                  </button> 
+                  <!--profile dropdown-->                
+                  <ul class="absolute hidden text-custom-color-song-font w-36 pt-1"> 
+                    <li><a class="rounded-t bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Account</a></li> 
+                    <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Profile</a></li> 
+                    <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Settings</a></li> 
+                    <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Support</a></li>
+                    <hr class="bg-black">
+                    <li><a class="rounded-b bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Logout</a></li> 
+                  </ul> 
+                </div>
 
                   <script>
                     initDropdown();
@@ -150,7 +130,7 @@
               </div> 
             </div>
             <!-- CONTENTS -->
-            <div class="h-auto">
+            <div class="h-auto ml-10">
                 <!--first part-->
                 <div class="container flex flex-col">
                   <!--Album Main Content-->
@@ -158,12 +138,8 @@
                         <div class="flex relative w-64 h-64">
                             <div class="relative w-60 h-60 ml-6 border-2 border-custom-color-addpl-blur rounded-xl" >
                                 <div class="relative">
-                                   <!-- <div class="absolute w-60 h-60 bg-opacity-50 backdrop-blur-md rounded-3xl"></div> -->
-                                        <svg class="w-36 h-36 mt-10 ml-7" viewBox="0 0 171 171" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M34 163C48.3594 163 60 151.359 60 137C60 122.641 48.3594 111 34 111C19.6406 111 8 122.641 8 137C8 151.359 19.6406 163 34 163Z" stroke="#00939C" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M60 137V25.2L163 8V119.8" stroke="#00939C" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M137 146C151.359 146 163 134.136 163 119.5C163 104.864 151.359 93 137 93C122.641 93 111 104.864 111 119.5C111 134.136 122.641 146 137 146Z" stroke="#00939C" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
+                                  <a href=""><img src="/assets/addplaylist-assets/addplaylist.png" alt="Image blur" class="h-60 blur-lg rounded-sm">
+                                  <img src="/assets/addplaylist-assets/musicnote.png" alt="Image" class="absolute left-14 bottom-16 h-24 rounded-md mr-auto "></a>
                                     </div>
                             </div>                                                      
                         </div>
@@ -171,9 +147,9 @@
                             <h4 class="absolute text-custom-color-font-album top-24 left-50 text-2xl"> 
                                 Playlist
                             </h4>
-                            <h1 class="relative text-white h-12 left-55 top-36 text-4xl">
+                            <a href=""><h1 class="relative text-white h-12 left-55 top-36 text-4xl">
                                 Playlist
-                            </h1>
+                            </h1></a>
                             <!--Singer part-->
                             <div class="absolute flex items-center justify-start top-52">
                             <img src="/assets/addplaylist-assets/profilesample.jpg" alt="artist" class="rounded-full h-8 w-8 flex-inline-block">
@@ -185,30 +161,86 @@
                     </div>
                     
                     <div class="h-96">
-                        <hr>
-                        <h3 class="text-2xl font-normal pt-5 text-custom-color-song-font">Let’s find something for your playlist</h3>
-                        <div class="flex items-center pt-3">
-                            <div class="bg-custom-color-add-searchbar flex rounded-md">
-                            <svg class="ml-2 w-7 h-10" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M12.8333 22.1667C17.988 22.1667 22.1667 17.988 22.1667 12.8333C22.1667 7.67868 17.988 3.5 12.8333 3.5C7.67868 3.5 3.5 7.67868 3.5 12.8333C3.5 17.988 7.67868 22.1667 12.8333 22.1667Z" stroke="#001B29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                              <path d="M24.4998 24.5L19.4248 19.425" stroke="#001B29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                            <input type="text" placeholder="Search for songs" class="text-custom-color-add-searchfont w-80 ml-3 px-4 py-2 border bg-custom-color-add-searchbar border-custom-color-add-searchbar rounded-md focus:outline-none focus:ring-2 focus:ring-custom-color-add-searchbar focus:border-transparent">                                                    
+                        <hr class="mx-6">
+                        <h3 class="text-2xl font-normal ml-5 pt-5 text-custom-color-song-font">Let’s find something for your playlist</h3>
+                        <div class="flex flex-grow h-14 ml-5 text-xl py-5">
+                          <div class="relative w-96">
+                              <input
+                                class="block w-full py-2 pl-10 pr-3 leading-5 ext-custom-color-add-searchfont placeholder-gray-500 bg-custom-color-add-searchbar border border-custom-color-add-searchbar rounded-full shadow-sm focus:outline-none sm:text-sm"
+                                type="search"
+                                name="search"
+                                placeholder="Search for songs">
+                              <div class="absolute top-2 left-0 flex items-center justify-center pl-3">
+                                <svg class="w-5 h-5 text-gray-500" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M6.5 12C9.53757 12 12 9.53757 12 6.5C12 3.46243 9.53757 1 6.5 1C3.46243 1 1 3.46243 1 6.5C1 9.53757 3.46243 12 6.5 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                  <path d="M14.0001 14L11.0001 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                              </div>
+                          </div>
                         </div>
-                        </div>
+                      </div>
                           
                           
                     </div>
+                    <!-- FOOTER -->
+           <div class="flex flex-row flex-wrap font-normal text-base mt-auto h-96 z-40">
+            <div class="w-40 h-36 mx-5 my-2">
+                <ul class="text-custom-color-footer-text px-3 space-y-2">
+                    <li class="text-white py-3">Company</li>
+                    <li><a href="#" class="hover:text-white">About</a></li>
+                    <li><a href="#" class="hover:text-white">Jobs</a></li>
+                    <li><a href="#" class="hover:text-white">For The Record</a></li>
+                </ul>
+            </div>
+            <div class="w-32 h-36 mx-5 my-2">
+                <ul class="text-custom-color-footer-text px-3 space-y-2">
+                    <li class="text-white py-3">Communities</li>
+                    <li><a href="#" class="hover:text-white">Developers</a></li>
+                    <li><a href="#" class="hover:text-white">Advertising</a></li>
+                    <li><a href="#" class="hover:text-white">Investors</a></li>
+                </ul>
+            </div>
+            <div class="w-32 h-36 mx-5 my-2">
+                <ul class="text-custom-color-footer-text px-3 space-y-2">
+                    <li class="text-white py-3">Support</li>
+                    <li><a href="#" class="hover:text-white">Support</a></li>
+                    <li><a href="#" class="hover:text-white">Legal</a></li>
+                    <li><a href="#" class="hover:text-white">Privacy</a></li>
+                    <li><a href="#" class="hover:text-white">Cookies</a></li>
+                </ul>
+            </div>
 
-                
-                        <footer-component></footer-component>
-                        <script src="/include/footer.js"></script>
-                
+
+            <!-- SOCIAL ICONS -->
+            <div class="flex items-start flex-grow flex-wrap justify-end pr-6">
+                <button class="w-10 h-10 my-3 mx-3 bg-custom-color-footer-social-icons rounded-full flex items-center justify-center">
+                    <a href="exp.html" class="w-7 h-7">
+                        <svg class="text-white fill-current hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                        </svg>
+                    </a>
+                </button>
+
+                <button class="w-10 h-10 my-3 mx-3 bg-custom-color-footer-social-icons rounded-full flex items-center justify-center">
+                    <a href="exp.html" class="w-7 h-7 mb-1">
+                        <svg class="text-white fill-current hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                </button>
+
+                <button class="w-10 h-10 my-3 mx-3 bg-custom-color-footer-social-icons rounded-full flex items-center justify-center">
+                    <a href="exp.html" class="w-7 h-7">
+                        <svg class="text-white fill-current hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+                        </svg>
+                    </a>
+                </button>
+            </div>
+        </div>
 
                 </main>
 
                 <!-- PLAYBAR -->
-                <div class="w-screen fixed h-20 left-0 bg-custom-color-playbar opacity-80 rounded-3xl bottom-0  mt-auto">
+                <!--<div class="w-screen fixed h-20 left-0 bottom-0 z-50 bg-custom-color-playbar opacity-80 rounded-3xl  mt-auto">
                   <div class="flex">
                     <div class="inline-block w-60 h-20">
                       <div class="mt-2 ml-2 w-56 flex items-center">
@@ -251,7 +283,7 @@
                     </div>
                     <div class=" inline-block w-72">
                       <div class="mt-6 flex">
-                      <!--<svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M22.5738 1.49576C19.8981 -0.784512 15.9186 -0.374356 13.4625 2.15982L12.5006 3.15104L11.5387 2.15982C9.08751 -0.374356 5.10314 -0.784512 2.42736 1.49576C-0.639049 4.11295 -0.800182 8.81021 1.94396 11.6471L11.3922 21.403C12.0026 22.0329 12.9938 22.0329 13.6041 21.403L23.0524 11.6471C25.8014 8.81021 25.6402 4.11295 22.5738 1.49576Z" fill="#9A7F69"/>
                         </svg>
                         <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">

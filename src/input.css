@@ -5,33 +5,45 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
 @layer components {
-    .list {
-        display: flex;
-        align-items: center;
-        height: 35px;
-        gap: 2rem;
-        padding: 0.5rem;
-      }
-      
-      .list:hover {
-        background-color: #092431;
-        border-radius: 30px;
-        height: 35px;
-      }
-      
-      .play-button,
-      .heart-button {
-        display: none;
-      }
-      
-      .list:hover .number {
-        display: none;
-      }
-      
-      .list:hover .play-button,
-      .list:hover .heart-button {
-        display: block;
-        color: #9A7F69;
-      }
-      
+  .list {
+       display: flex;
+       align-items: center;
+       height: 35px;
+       gap: 2rem;
+       padding: 0.5rem;
+     }
+     
+     .list:hover {
+       background-color: #092431;
+       border-radius: 30px;
+       height: 35px;
+     }
+     
+     .play-button,
+     .heart-button,
+     .ellipsis-button {
+       display: none;
+     }
+     
+     .list:hover .number {
+       display: none;
+     }
+     
+     .list:hover .play-button,
+     .list:hover .heart-button,
+     .list:hover .ellipsis-button {
+       display: block;
+       color: #9A7F69;
+     }       
+
+     .dropdown {
+      position: relative;
+    }
+    
+    .dropdown > .flex-col {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 1;
+    }
 }
