@@ -99,16 +99,16 @@
                 </a>
 
                 <!--Profile button-->
-                <div class="flex -mb-1.5 dropdown"> 
-                    <button id="dropdownMenu" class="bg-custom-color-song-button hover:bg-custom-color-navbar-icons-hover text-white text-base rounded-full px-4 py-0.5 mb-0 inline-flex items-center" > 
-                      <img src="/assets/song-assets/profilesample.jpg" alt="profile pic" class="rounded-full h-10 w-10"> 
-                      <span class="ml-3">Profile</span> 
-                      <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"> 
-                        <path d="M7 10l5 5 5-5z" /> 
-                      </svg> 
+                <div id="dropdown-button" class="flex -mb-1.5 dropdown"> 
+                    <button  class="bg-custom-color-song-button hover:bg-custom-color-navbar-icons-hover text-white text-base rounded-full px-4 py-0.5 mb-0 inline-flex items-center" > 
+                        <img src="/assets/song-assets/profilesample.jpg" alt="profile pic" class="rounded-full h-10 w-10"> 
+                        <span class="ml-3">Profile</span> 
+                        <svg id="dropdown-icon" class="w-7 h-7 text-black fill-current mt-1.5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/>
+                        </svg>
                     </button> 
                     <!--profile dropdown-->                
-                    <ul class="absolute hidden text-custom-color-song-font w-36 pt-12 ml-0.5"> 
+                    <ul id="dropdown-menu" class="absolute hidden text-custom-color-song-font w-40 pt-12 ml-1"> 
                         <li><a class="rounded-t-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Account</a></li> 
                         <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Profile</a></li> 
                         <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Settings</a></li> 
@@ -369,6 +369,6 @@
 
    <!-- SCRIPTS -->
    <script src="/include/profile-hover.js">profileHover();</script>
-   <script src="/include/profile.js">initDropdown();</script>
+   <script src="/include/dropdownMenu.js">Dropdown();</script>
 </body>
 </html>
