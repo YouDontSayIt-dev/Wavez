@@ -17,7 +17,7 @@
     <div class="flex">
         <!-- SIDE NAVBAR -->
         <!-- <aside class="sm:hidden lg:"> -->
-        <aside class="hidden md:block w-60 fixed left-0 top-0 h-full z-50 bg-gradient-to-t from-custom-color-playlist-card-non-pinned-text to-custom-color">
+        <aside class="hidden lg:block w-60 fixed left-0 top-0 h-full z-50 bg-gradient-to-t from-custom-color-playlist-card-non-pinned-text to-custom-color">
 
             <!-- LOGO -->
             <a href="#">
@@ -85,18 +85,18 @@
         </aside>
 
         <!-- MAIN CONTENT -->
-        <main class="ml-0 flex flex-col flex-grow text-white h-auto bg-gradient-to-tr from-custom-color via-custom-color to-gray-600 md:ml-60">
+        <main class="ml-0 flex flex-col flex-grow text-white h-auto bg-gradient-to-tr from-custom-color via-custom-color to-gray-600 lg:ml-60">
             <!-- TOP NAVBAR -->
-            <div class="mb-10 justify-start sticky top-0 flex flex-row items-center md:mb-0 md:bg-custom-color md:space-x-7 md:justify-end md:pr-16 md:pb-3 md:pt-3 z-40">
+            <div class="mb-5 justify-start sticky top-0 flex flex-row items-center py-1 md:mb-0 bg-custom-color md:justify-end md:pr-16 md:pb-3 md:pt-3 z-40">
                 <!-- LOGO -->
                 <div class="pl-10 w-1/2 justify-start mt-2">
-                    <a href="#" class="block justify-start md:hidden">
+                    <a href="#" class="block justify-start lg:hidden">
                         <img src="/assets/wavesLogo.png" class="w-16 h-12" alt="Logo">
                     </a>
                 </div>
 
                 <!-- LEFT ITEMS  -->
-                <div class="w-1/2 justify-end flex flex-row space-x-6 items-center pr-10 my-2">
+                <div class="w-full justify-end flex flex-row space-x-5 items-center pr-5 md:pr-0 my-2">
                     <a href="#">
                         <svg class="text-white fill-current w-6 h-7 hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                             <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
@@ -108,7 +108,7 @@
                         </svg>
                     </a>
 
-                    <div class="flex md:hidden w-12 h-12 bg-custom-color-sidebar-brown   justify-center items-center rounded-full">
+                    <div class="flex md:hidden w-12 h-12 bg-custom-color-sidebar-brown justify-center items-center rounded-full">
                         <a href="#" class="block md:hidden">
                          <img class="w-10 h-10 rounded-full" src="/assets/addplaylist-assets/profilesample.jpg" alt="user">
                         </a>
@@ -138,15 +138,15 @@
         
             <!-- CONTENTS -->
             <!-- PLAYLIST HEADER -->
-            <div class="flex flex-grow h-14 ml-5 mt-5 text-4xl">Playlists</div>
+            <div class="flex flex-grow h-14 ml-5 md:mt-5 text-2xl">Playlists</div>
 
             <!-- PLAYLISTS LISTS -->
-            <div class="flex h-auto flex-wrap justify-start pb-10 text-white z-20 mr-10">
+            <div id="library-content" class="flex h-auto pb-5 flex-wrap justify-between px-5 text-white z-20 bg-red-100">
 
                 <!-- PINNED LIKED SONGS  -->
-                <div id="playlist-profile-liked-songs" class="flex flex-col w-452px h-64 ml-5 my-5 bg-cover rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/liked-songs-default.png);">
+                <div id="playlist-profile-liked-songs" class="w-full h-36 sm:w-8/12 md:w-1/4 lg:w-1/8 flex items-end flex-col mt-2 bg-cover rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/liked-songs-default.png);">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-liked" class="absolute bottom-14 right-3 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-navbar-icons-hover rounded-full flex items-center justify-center hover:scale-110 opacity-0 duration-300">
+                    <button id="play-btn-liked" class="absolute bottom-14 right-3 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-navbar-icons-hover rounded-full flex items-center justify-center hover:scale-110 opacity-100 duration-300">
                         <a href="exp.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
                         </a>
@@ -154,13 +154,13 @@
                     <div class="mt-auto bg-custom-color-playlist-card w-full h-1/3 rounded-b-lg bg-opacity-80">
 
                         <!-- LIST OF ARTISTS -->
-                        <p class="w-full h-1/2 text-center px-20 pt-1 text-sm">
+                        <p class="w-full h-1/2 text-center px-5 pt-1 text-xs sm:text-base overflow-hidden">
                             <span>Paramore, Issues, Lana Del Rey, Melanie
                                 Martinez, BLACKPINK, Billie Eilish, Sleeping...</span>
                         </p>
                         
                         <!-- LIKED SONGS -->
-                        <h1 class="w-full h-1/2 text-3xl text-center pb-3">Liked Songs</h1>
+                        <h1 class="w-full h-1/2 text-base text-center">Liked Songs</h1>
 
                         <!-- NUMBER OF SONGS  -->
                         <!-- <p class="w-full h-1/3 text-center py-3"><span>52</span> songs</p> -->
@@ -169,7 +169,7 @@
 
 
                 <!-- USER PLAYLISTS -->
-                <div id="playlist-profile-newjeans" class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-1/3 md:w-1/2 lg:w-1/6 flex flex-col mt-4 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
                     <button id="play-btn-newjeans" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
                         <a href="exp.html" class="w-6 h-6">
@@ -177,146 +177,92 @@
                         </a>
                     </button>
                     <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/newjeans-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
+                    <div class="max-w-full">
+                        <img src="/assets/playlist-assets/newjeans-playlist.png" class="w-auto h-full ml-auto mr-auto block pt-3 px-2">
                     </div>
                     <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    <div class="h-min w-full pt-2 px-3">
+                        <h1 class="text-base">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
                     </div>
                 </div>
 
-                <div id="playlist-profile-twice2" class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-1/3 md:w-1/2 lg:w-1/6 flex flex-col mt-4 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-twice2" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
                         <a href="exp.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
                         </a>
                     </button>
                     <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/twice2-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
+                    <div class="max-w-full">
+                        <img src="/assets/playlist-assets/newjeans-playlist.png" class="w-auto h-full ml-auto mr-auto block pt-3 px-2">
                     </div>
                     <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    <div class="h-min w-full pt-2 px-3">
+                        <h1 class="text-base">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
                     </div>
                 </div>
 
-                <div id="playlist-profile-twice" class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-1/3 md:w-1/2 lg:w-1/6 flex flex-col mt-4 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-twice" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
                         <a href="exp.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
                         </a>
                     </button>
                     <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/twice-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
+                    <div class="max-w-full">
+                        <img src="/assets/playlist-assets/newjeans-playlist.png" class="w-auto h-full ml-auto mr-auto block pt-3 px-2">
                     </div>
                     <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    <div class="h-min w-full pt-2 px-3">
+                        <h1 class="text-base">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
                     </div>
                 </div>
 
-                <div id="playlist-profile-theweekend" class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-1/3 md:w-1/2 lg:w-1/6 flex flex-col mt-4 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-theweekend" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
                         <a href="exp.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
                         </a>
                     </button>
                     <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/theweekend-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
+                    <div class="max-w-full">
+                        <img src="/assets/playlist-assets/newjeans-playlist.png" class="w-auto h-full ml-auto mr-auto block pt-3 px-2">
                     </div>
                     <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    <div class="h-min w-full pt-2 px-3">
+                        <h1 class="text-base">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
                     </div>
                 </div>
 
-                <div id="playlist-profile-taylor2" class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-1/3 md:w-1/2 lg:w-1/6 flex flex-col mt-4 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-taylor2" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
                         <a href="exp.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
                         </a>
                     </button>
                     <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/taylorswift2-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
+                    <div class="max-w-full">
+                        <img src="/assets/playlist-assets/newjeans-playlist.png" class="w-auto h-full ml-auto mr-auto block pt-3 px-2">
                     </div>
                     <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
-                    </div>
-                </div>
-
-                <div id="playlist-profile-taylor" class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
-                    <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-taylor" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
-                    </button>
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/taylorswift-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
-                    </div>
-                </div>
-
-                <div id="playlist-profile-randomguy" class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
-                    <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-randomguy" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
-                    </button>
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/randomguy-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
-                    </div>
-                </div>
-
-                <div id="playlist-profile-eminem" class="flex flex-col bg-custom-color-playlist-card-non-pinned w-52 h-64 my-5 ml-5 rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
-                    <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-eminem" class="absolute bottom-10 right-5 w-16 h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
-                    </button>
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-full h-48">
-                        <img src="/assets/playlist-assets/eminem-playlist.png" class="h-48 ml-auto mr-auto block pt-3">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="h-auto w-full pt-1 px-4">
-                        <h1 class="text-lg">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text">By Waves</p>
+                    <div class="h-min w-full pt-2 px-3">
+                        <h1 class="text-base">Playlist 1</h1>
+                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
                     </div>
                 </div>
             </div>
 
             <!-- FOOTER -->
-            <div class="flex flex-row flex-wrap font-normal text-base mt-auto h-96 z-40">
-                <div class="w-40 h-36 mx-5 my-2">
+            <div class="flex flex-col md:flex-row flex-wrap font-normal text-base mt-auto h-auto pb-32 z-40">
+                <div class="w-fit h-fit mx-5 my-2">
                     <ul class="text-custom-color-footer-text px-3 space-y-2">
                         <li class="text-white py-3">Company</li>
                         <li><a href="#" class="hover:text-white">About</a></li>
@@ -324,7 +270,7 @@
                         <li><a href="#" class="hover:text-white">For The Record</a></li>
                     </ul>
                 </div>
-                <div class="w-32 h-36 mx-5 my-2">
+                <div class="w-fit h-fit mx-5 my-2">
                     <ul class="text-custom-color-footer-text px-3 space-y-2">
                         <li class="text-white py-3">Communities</li>
                         <li><a href="#" class="hover:text-white">Developers</a></li>
@@ -332,7 +278,7 @@
                         <li><a href="#" class="hover:text-white">Investors</a></li>
                     </ul>
                 </div>
-                <div class="w-32 h-36 mx-5 my-2">
+                <div class="w-fit h-fit mx-5 my-2">
                     <ul class="text-custom-color-footer-text px-3 space-y-2">
                         <li class="text-white py-3">Support</li>
                         <li><a href="#" class="hover:text-white">Support</a></li>
@@ -344,7 +290,7 @@
 
 
                 <!-- SOCIAL ICONS -->
-                <div class="flex items-start flex-grow flex-wrap justify-end pr-6">
+                <div class="flex flex-grow flex-wrap justify-start md:justify-end pr-6 pl-5">
                     <button class="w-10 h-10 my-3 mx-3 bg-custom-color-footer-social-icons rounded-full flex items-center justify-center">
                         <a href="exp.html" class="w-7 h-7">
                             <svg class="text-white fill-current hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -378,5 +324,27 @@
 
     <script src="/include/profile-hover.js">profileHover();</script>
     <script src="/include/dropdownMenu.js">Dropdown();</script>
+    <script>
+        const libraryContent = document.getElementById('library-content');
+        const playlistProfiles = libraryContent.querySelectorAll('[id^="playlist-profile"]');
+
+        let isDivisibleByTwo = true;
+
+        for (let i = 0; i < playlistProfiles.length; i++) {
+        const idNumber = Number(playlistProfiles[i].id.replace('playlist-profile', ''));
+        if (idNumber % 2 !== 0) {
+            isDivisibleByTwo = false;
+            break;
+        }
+        }
+
+        console.log(playlistProfiles, isDivisibleByTwo);
+
+        if (isDivisibleByTwo === false){
+            console.log('not divisible by two');
+            // libraryContent.classList.remove("justify-center")
+            // libraryContent.classList.add("justify-start");
+        }
+    </script>
 </body>
 </html>

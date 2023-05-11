@@ -8,45 +8,91 @@ niyo para walang compatability issues kapag nag push kayo sa repo. Thanks! -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body class="p-0 m-0 font-alata h-screen bg-custom-color">
+  </head>
+  <body class="p-0 m-0 font-alata h-screen bg-custom-color">
     <div class="flex">
-        <!-- SIDE NAVBAR -->
-        <aside class="w-80 fixed left-0 top-0 h-full">
-            <!-- LOGO -->
-            <h1 class="text-4xl text-white">SIDEBAR</h1>
-            <!-- Navigation -->
-        </aside>
+      <!-- SIDE NAVBAR -->
+      <aside class="hidden lg:block w-80 fixed left-0 top-0 h-full">
+        <!-- LOGO -->
+        <h1 class="text-4xl text-white">SIDEBAR</h1>
+        <!-- Navigation -->
+      </aside>
 
-        <!-- MAIN CONTENT -->
-        <main class="flex flex-col flex-grow pl-80 text-white h-auto">
-            <!-- TOP NAVBAR -->
-            <div class="sticky top-0 pt-16 bg-gray-500">
-                <h1 class="text-4xl">Top Navbar</h1>
-            </div>
-
-            <!-- CONTENTS -->
-            <div class="h-96 bg-green-300">
-                <h1 class="text-4xl">Top Content</h1>
-            </div>
-            <div class="h-96 bg-yellow-400">
-                <h1 class="text-4xl">Middle Content</h1>
-            </div>
-            <div class="h-96 bg-pink-500">
-                <h1 class="text-4xl">Footer</h1>
-            </div>
-        </main>
-
-        <!-- PLAYBAR -->
-        <div class="w-screen fixed h-20 left-0 bg-cyan-600 bottom-0  mt-auto">
-            <h1 class="text-white text-4xl">Playbar</h1>
+      <!-- MAIN CONTENT -->
+      <main class="pl-0 flex flex-col flex-grow lg:pl-80 text-white h-auto">
+        <!-- TOP NAVBAR -->
+        <div class="sticky top-0 pt-16 bg-gray-500">
+          <h1 class="text-4xl">Top Navbar</h1>
         </div>
+
+        <!-- CONTENTS -->
+        <div class="h-96 bg-green-300">
+          <div class="flex flex-wrap">
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
+              <div class="bg-gray-200 h-56 relative">
+                <img
+                  src="/assets/playlist-assets/eminem-playlist.png"
+                  alt="Placeholder image"
+                  class="absolute inset-0 w-full h-2/4 object-contain max-w-full"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
+              <div class="bg-gray-200 h-32 relative">
+                <img
+                  src="/assets/playlist-assets/eminem-playlist.png"
+                  alt="Placeholder image"
+                  class="absolute inset-0 w-full h-full object-cover max-w-full"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
+              <div class="bg-gray-200 h-32 relative">
+                <img
+                  src="/assets/playlist-assets/eminem-playlist.png"
+                  alt="Placeholder image"
+                  class="absolute inset-0 w-full h-full object-cover max-w-full"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
+              <div class="bg-gray-200 h-32 relative">
+                <img
+                  src="/assets/playlist-assets/eminem-playlist.png"
+                  alt="Placeholder image"
+                  class="absolute inset-0 w-full h-full object-cover max-w-full"
+                />
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
+              <div class="bg-gray-200 h-32 relative">
+                <img
+                  src="/assets/playlist-assets/eminem-playlist.png"
+                  alt="Placeholder image"
+                  class="absolute inset-0 w-full h-full object-cover max-w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-96 bg-yellow-400">
+          <h1 class="text-4xl">Middle Content</h1>
+        </div>
+        <div class="h-96 bg-pink-500">
+          <h1 class="text-4xl">Footer</h1>
+        </div>
+      </main>
+
+      <!-- PLAYBAR -->
+      <div class="w-screen fixed h-20 left-0 bg-cyan-600 bottom-0 mt-auto">
+        <h1 class="text-white text-4xl">Playbar</h1>
+      </div>
     </div>
-</body>
+  </body>
 </html>
