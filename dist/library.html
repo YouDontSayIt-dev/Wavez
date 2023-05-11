@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <title>Playlists</title>
     <script src="https://kit.fontawesome.com/af7e1c2216.js" crossorigin="anonymous"></script>
-    <script src="/include/hover.js"></script>
+    <script src="/include/profile-hover.js"></script>
 </head>
 <body class="p-0 m-0 font-alata h-screen bg-custom-color">
     <div class="flex">
@@ -344,21 +344,6 @@
         </div>
     </div>
 
-    <!-- SCRIPTS -->
-    <script>
-        const parentDivs = document.querySelectorAll('[id^="playlist-profile"]');
-
-        parentDivs.forEach((parentDiv) => {
-        const childDiv = parentDiv.querySelector('[id^="play-btn"]');
-
-        parentDiv.addEventListener("mouseenter", () => {
-            childDiv.classList.add("opacity-100");
-        });
-
-        parentDiv.addEventListener("mouseleave", () => {
-            childDiv.classList.remove("opacity-100");
-        });
-        });
-    </script>
+    <script>profileHover();</script>
 </body>
 </html>
