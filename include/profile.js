@@ -18,5 +18,5 @@ function initDropdown() {
     })
   }
 
-  // Call the function to initialize the dropdown
-  initDropdown();
+// Call the function to initialize the dropdown
+initDropdown();
