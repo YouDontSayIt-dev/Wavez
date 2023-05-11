@@ -89,6 +89,15 @@ module.exports = {
         // custom-color for queue text
         'custom-color-queue-text': '#676F70',
 
+        // custom-color for settings text
+        'custom-color-settings-text': '#00101E',
+
+        // custom-color for settings text 2
+        'custom-color-settings-text-2': '#747474',
+
+        // custom-color for settings button
+        'custom-color-settings-button': '#D7E4EB',
+
         'custom-color-b-border': '#CAC6C7',
         'webheffect': 'rgb(9, 36, 49,0.5)',
         'webdropdown': 'rgb(5, 19, 26,0.9)',
