@@ -3,7 +3,7 @@ module.exports = {
   content: ["./dist/*.{html,js}", "./include/*.js"],
   theme: {
     borderWidth: {
-      1: '1px'
+      1: "1px",
     },
     extend: {
       colors: {
@@ -83,13 +83,15 @@ module.exports = {
         "custom-color-playbar": "#184550",
         //playbar color
 
-        // custom-color for playlist hover 
-        'custom-color-playlist-hover': '#001724',
+        // custom-color for playlist hover
+        "custom-color-playlist-hover": "#001724",
 
-        'custom-color-b-border': '#CAC6C7',
-        'webheffect': 'rgb(9, 36, 49,0.5)',
-        'webdropdown': 'rgb(5, 19, 26,0.9)',
+        // custom-color for delete icon
+        "custom-color-delete-icon": "#001B29",
 
+        "custom-color-b-border": "#CAC6C7",
+        webheffect: "rgb(9, 36, 49,0.5)",
+        webdropdown: "rgb(5, 19, 26,0.9)",
       },
       fontFamily: {
         alata: ["Alata", "sans-serif"],
@@ -100,7 +102,7 @@ module.exports = {
         "324px": "324px",
         "102px": "102px",
         "64px": "649px",
-        "15": "59.89px",
+        15: "59.89px",
         "43px": "43px",
         "45px": "45.51px",
         "145px": "145px",
@@ -108,7 +110,7 @@ module.exports = {
         "345px": "345.79px",
         "578px": "578px",
         "1619px": "1619px",
-        "79": "318px",
+        79: "318px",
         "265px": "265.65px",
         "240px": "240.4px",
         "253px": "253.97px",
