@@ -54,6 +54,8 @@ class topNavbar extends HTMLElement {
                     </div>
                 </div>
             </div>
+
+            
         `;
     }
 }
