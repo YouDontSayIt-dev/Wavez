@@ -98,6 +98,9 @@ module.exports = {
         // custom-color for settings button
         'custom-color-settings-button': '#D7E4EB',
 
+        // custom-color for delete icon
+        'custom-color-delete-icon': '#001B29',
+
         'custom-color-b-border': '#CAC6C7',
         'webheffect': 'rgb(9, 36, 49,0.5)',
         'webdropdown': 'rgb(5, 19, 26,0.9)',
