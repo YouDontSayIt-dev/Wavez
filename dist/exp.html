@@ -32,60 +32,29 @@ niyo para walang compatability issues kapag nag push kayo sa repo. Thanks! -->
         </div>
 
         <!-- CONTENTS -->
-        <div class="h-96 bg-green-300">
-          <div class="flex flex-wrap">
-            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
-              <div class="bg-gray-200 h-56 relative">
-                <img
-                  src="/assets/playlist-assets/eminem-playlist.png"
-                  alt="Placeholder image"
-                  class="absolute inset-0 w-full h-2/4 object-contain max-w-full"
-                />
-              </div>
-            </div>
-            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
-              <div class="bg-gray-200 h-32 relative">
-                <img
-                  src="/assets/playlist-assets/eminem-playlist.png"
-                  alt="Placeholder image"
-                  class="absolute inset-0 w-full h-full object-cover max-w-full"
-                />
-              </div>
-            </div>
-            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
-              <div class="bg-gray-200 h-32 relative">
-                <img
-                  src="/assets/playlist-assets/eminem-playlist.png"
-                  alt="Placeholder image"
-                  class="absolute inset-0 w-full h-full object-cover max-w-full"
-                />
-              </div>
-            </div>
-            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
-              <div class="bg-gray-200 h-32 relative">
-                <img
-                  src="/assets/playlist-assets/eminem-playlist.png"
-                  alt="Placeholder image"
-                  class="absolute inset-0 w-full h-full object-cover max-w-full"
-                />
-              </div>
-            </div>
-            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/8 p-4">
-              <div class="bg-gray-200 h-32 relative">
-                <img
-                  src="/assets/playlist-assets/eminem-playlist.png"
-                  alt="Placeholder image"
-                  class="absolute inset-0 w-full h-full object-cover max-w-full"
-                />
-              </div>
-            </div>
-          </div>
+        <div id="james" class="flex flex-nowrap overflow-auto w-full h-fit">
+          <div class="bg-red-500 w-96 h-20"></div>
+          <div class="bg-blue-500 w-96 h-20"></div>
+          <div class="bg-green-500 w-96 h-20"></div>
+          <div class="bg-yellow-500 w-96 h-20"></div>
+          <div class="bg-red-500 w-96 h-20"></div>
+          <div class="bg-blue-500 w-96 h-20"></div>
+          <div class="bg-green-500 w-96 h-20"></div>
+          <div class="bg-yellow-500 w-96 h-20"></div>
+          <div class="bg-red-500 w-96 h-20"></div>
+          <div class="bg-blue-500 w-96 h-20"></div>
+          <div class="bg-green-500 w-96 h-20"></div>
+          <div class="bg-yellow-500 w-96 h-20"></div>
         </div>
-        <div class="h-96 bg-yellow-400">
-          <h1 class="text-4xl">Middle Content</h1>
-        </div>
+
         <div class="h-96 bg-pink-500">
           <h1 class="text-4xl">Footer</h1>
+          <button id="scroll-left-btn" class="px-4 py-2 bg-gray-500 text-white">
+            Scroll Left
+          </button>
+          <button id="scroll-right-btn" class="px-4 py-2 bg-gray-500 text-white">
+            Scroll Right
+          </button>
         </div>
       </main>
 
@@ -93,6 +62,29 @@ niyo para walang compatability issues kapag nag push kayo sa repo. Thanks! -->
       <div class="w-screen fixed h-20 left-0 bg-cyan-600 bottom-0 mt-auto">
         <h1 class="text-white text-4xl">Playbar</h1>
       </div>
+
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var scrollLeftBtn = document.getElementById("scroll-left-btn");
+        var scrollRightBtn = document.getElementById("scroll-right-btn");
+        var container = document.getElementById("james");
+
+        console.log(container);
+
+        scrollLeftBtn.addEventListener("click", function () {
+          container.scrollLeft -= 50;
+        });
+
+        scrollRightBtn.addEventListener("click", function () {
+          container.scrollLeft += 50;
+        });
+
+        // add catch handlers to the Promises
+        window.addEventListener('unhandledrejection', function(event) {
+          console.warn('Unhandled promise rejection:', event.reason);
+        });
+      });
+    </script>
   </body>
 </html>

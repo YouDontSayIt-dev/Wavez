@@ -1,5 +1,5 @@
 function profileHover() {
-    const parentDivs = document.querySelectorAll('[id^="playlist-profile"], [id^="pinned-playlist-profile"]');
+    const parentDivs = document.querySelectorAll('[id^="playlist-profile"], [id^="pinned-playlist-profile"], [id^="playlist-categ"]');
 
 
     parentDivs.forEach((parentDiv) => {
