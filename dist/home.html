@@ -183,33 +183,29 @@
         </nav>
       </div>
 
-      <!--Main Content-->
+       <!--Main Content-->
 
-      <div class="flex flex-col flex-grow text-white h-auto">
-       <!-- TOP NAVBAR -->
-       <navbar-component></navbar-component>
-       <script src="/include/topNavbar.js"></script>
+       <div class="flex flex-col flex-grow text-white h-auto">
+        <!-- TOP NAVBAR -->
+
+        <navbar-component></navbar-component>
+        <script src="/include/topNavbar.js"></script>
 
         <!--Main Content-->
-        <div class="pl-9 pr-16">
+        <div class="pl-9 pr-16 bg-gradient-to-r from-custom-color via-custom-color to-gray-600">
           <!--Page Header-->
           <div>
-            <div class="relative">
-              <div>
-                <h1 class="text-4xl">Playlist</h1>
-              </div>
-              <div class="absolute top-6">
-                <h1 class="text-[40px]">Good Evening!</h1>
-              </div>
+            <div>
+              <h1 class="text-4xl">Good Evening!</h1>
             </div>
           </div>
 
-          <h1 class="text-[28px] mt-12">Top Picks</h1>
+          <h1 class="text-[28px] mt-2">Top Picks</h1>
           <!--Top Picks Container-->
           <div class="flex flex-row flex-wrap justify-between">
-            <div class="w-[365px] h-[480px] m-0 p-0">
+            <div class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div class="mb-2.5">
-                <h1 class="text-2xl text-[#797979]">Playlist</h1>
+                <h1 class="text-xl text-[#797979]">Playlist</h1>
               </div>
 
               <div class="relative flex flex-grow">
@@ -220,16 +216,16 @@
                 />
 
                 <div
-                  class="absolute h-[75px] w-full bg-toppick1-title-color rounded-b-[20px] bottom-0 flex justify-center items-center text-base text-center"
+                  class="absolute h-[75px] w-full bg-toppick1-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center"
                 >
                   <p>Goddesses</p>
                 </div>
               </div>
             </div>
 
-            <div class="w-[365px] h-[480px]mb-10 bottom-0">
+            <div class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div class="mb-2.5">
-                <h1 class="text-2xl text-[#797979]">New Release</h1>
+                <h1 class="text-xl text-[#797979]">New Release</h1>
               </div>
               <div class="relative flex flex-grow">
                 <img
@@ -238,7 +234,7 @@
                   alt=""
                 />
                 <div
-                  class="absolute h-[75px] w-full bg-toppick2-title-color rounded-b-[20px] bottom-0 flex flex-col justify-center items-center text-base text-center"
+                  class="absolute h-[75px] w-full bg-toppick2-title-color rounded-b-[17px] bottom-0 flex flex-col justify-center items-center text-base text-center"
                 >
                   <div class="uppercase w-full">portals</div>
                   <div class="w-full">Melanie Martinez</div>
@@ -246,9 +242,9 @@
               </div>
             </div>
 
-            <div class="w-[365px] h-[480px] mb-10">
+            <div class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div class="mb-2.5">
-                <h1 class="text-2xl text-[#797979]">Made For You</h1>
+                <h1 class="text-xl text-[#797979]">Made For You</h1>
               </div>
               <div class="relative flex flex-grow">
                 <img
@@ -257,7 +253,7 @@
                   alt=""
                 />
                 <div
-                  class="absolute h-[75px] w-full bg-toppick3-title-color rounded-b-[20px] bottom-0 flex justify-center items-center text-base text-center"
+                  class="absolute h-[75px] w-full bg-toppick3-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center"
                 >
                   <p>
                     Paramore, Issues, Lana Del Rey, Melanie Martinez, BLACKPINK,
@@ -267,9 +263,9 @@
               </div>
             </div>
 
-            <div class="w-[365px] h-[480px]mb-10">
+            <div class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div class="mb-2.5">
-                <h1 class="text-2xl text-[#797979]">Made For You</h1>
+                <h1 class="text-xl text-[#797979]">Made For You</h1>
               </div>
               <div class="relative flex flex-grow">
                 <img
@@ -278,7 +274,7 @@
                   alt=""
                 />
                 <div
-                  class="absolute h-[75px] w-full bg-toppick4-title-color rounded-b-[20px] bottom-0 flex justify-center items-center text-base text-center"
+                  class="absolute h-[75px] w-full bg-toppick4-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center"
                 >
                   <p>Suggested For You</p>
                 </div>
@@ -287,14 +283,14 @@
           </div>
 
           <div
-            class="text-[28px] mt-[30px] mb-[25px] flex justify-between items-center"
+            class="text-[28px] mt-[12px] mb-[25px] flex justify-between items-center"
           >
             <h1>Recently Played</h1>
-            <h1 class="text-[22px] text-[#9A7F69]"><a href="#">See All</a></h1>
+            <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover"><a href="#">See All</a></h1>
           </div>
           <!--Recently played Container-->
           <div class="flex flex-row flex-wrap justify-between">
-            <div class="h-[310px] w-[260px] mb-5">
+            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -308,7 +304,7 @@
               </div>
             </div>
 
-            <div class="h-[310px] w-[260px] mb-5">
+            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -322,7 +318,7 @@
               </div>
             </div>
 
-            <div class="h-[310px] w-[260px] mb-5">
+            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -336,7 +332,7 @@
               </div>
             </div>
 
-            <div class="h-[310px] w-[260px] mb-5">
+            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -350,7 +346,7 @@
               </div>
             </div>
 
-            <div class="h-[310px] w-[260px] mb-5">
+            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -366,15 +362,15 @@
           </div>
 
           <div
-            class="text-[28px] mt-[52px] mb-[25px] flex justify-between items-center"
+            class="text-[28px] mt-[12px] mb-[24px] flex justify-between items-center"
           >
             <h1>More Of What You Like</h1>
-            <h1 class="text-[22px] text-[#9A7F69]"><a href="#">See All</a></h1>
+            <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover"><a href="#">See All</a></h1>
           </div>
 
           <!--What you like Container-->
-          <div class="flex flex-row flex-wrap justify-between mb-[52px]">
-            <div class="h-[310px] w-[260px] mb-5">
+          <div class="flex flex-row flex-wrap justify-between mb-[44px]">
+            <div class="h-[310px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -388,7 +384,7 @@
               </div>
             </div>
 
-            <div class="h-[310px] w-[260px] mb-5">
+            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -402,7 +398,7 @@
               </div>
             </div>
 
-            <div class="h-[310px] w-[260px] mb-5">
+            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -416,7 +412,7 @@
               </div>
             </div>
 
-            <div class="h-[310px] w-[260px] mb-5">
+            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -430,7 +426,7 @@
               </div>
             </div>
 
-            <div class="h-[310px] w-[260px] mb-5">
+            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
               <div>
                 <img
                   class="h-full w-full"
@@ -445,10 +441,11 @@
             </div>
           </div>
 
-          <!-- FOOTER -->
-          <footer-component></footer-component>
-          <script src="/include/footer.js"></script>
         </div>
+
+        <!-- Footer -->
+        <footer-component></footer-component>
+        <script src="/include/footer.js"></script>
 
         <!-- PLAYBAR -->
         <div
@@ -458,7 +455,25 @@
         </div>
       </div>
     </div>
-      <script src="/include/profile-hover.js">profileHover();</script>
-      <script src="/include/dropdownMenu.js">Dropdown();</script>
+
+     <!-- SCRIPTS -->
+     <script>
+      const parentDivs = document.querySelectorAll('[id^="playlist-profile"]');
+
+      parentDivs.forEach((parentDiv) => {
+      const childDiv = parentDiv.querySelector('[id^="play-btn"]');
+
+      parentDiv.addEventListener("mouseenter", () => {
+          childDiv.classList.add("opacity-100");
+      });
+
+      parentDiv.addEventListener("mouseleave", () => {
+          childDiv.classList.remove("opacity-100");
+      });
+      });
+  </script>
+
+  <script src="/include/profile-hover.js">profileHover();</script>
+  <script src="/include/dropdownMenu.js">Dropdown();</script>
   </body>
 </html>
