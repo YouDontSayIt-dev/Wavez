@@ -1501,12 +1501,6 @@ video {
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-x-6 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1986,8 +1980,8 @@ video {
   padding-bottom: 0.625rem;
 }
 
-.pb-32 {
-  padding-bottom: 8rem;
+.pb-36 {
+  padding-bottom: 9rem;
 }
 
 .pb-5 {
@@ -2050,10 +2044,6 @@ video {
   padding-left: 100px;
 }
 
-.pr-10 {
-  padding-right: 2.5rem;
-}
-
 .pr-16 {
   padding-right: 4rem;
 }
@@ -2104,10 +2094,6 @@ video {
 
 .pt-7 {
   padding-top: 1.75rem;
-}
-
-.pb-36 {
-  padding-bottom: 9rem;
 }
 
 .text-center {
@@ -2796,17 +2782,6 @@ video {
     justify-content: flex-end;
   }
 
-  .md\:space-x-7 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(1.75rem * var(--tw-space-x-reverse));
-    margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:bg-custom-color {
-    --tw-bg-opacity: 1;
-    background-color: rgb(4 21 29 / var(--tw-bg-opacity));
-  }
-
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
@@ -2864,14 +2839,6 @@ video {
 
   .lg\:mr-10 {
     margin-right: 2.5rem;
-  }
-
-  .lg\:mr-2 {
-    margin-right: 0.5rem;
-  }
-
-  .lg\:mr-2\.5 {
-    margin-right: 0.625rem;
   }
 
   .lg\:mr-3 {
@@ -2942,14 +2909,6 @@ video {
     width: 24rem;
   }
 
-  .lg\:w-\[22\%\] {
-    width: 22%;
-  }
-
-  .lg\:w-\[45\%\] {
-    width: 45%;
-  }
-
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -2957,10 +2916,6 @@ video {
   .lg\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-
-  .lg\:pb-4 {
-    padding-bottom: 1rem;
   }
 
   .lg\:pl-0 {
@@ -2980,17 +2935,5 @@ video {
 @media (min-width: 1280px) {
   .xl\:flex {
     display: flex;
-  }
-
-  .xl\:w-8\/12 {
-    width: 66.666667%;
-  }
-
-  .xl\:w-\[14\.5\%\] {
-    width: 14.5%;
-  }
-
-  .xl\:w-\[30\%\] {
-    width: 30%;
   }
 }
