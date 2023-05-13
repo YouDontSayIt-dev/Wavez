@@ -434,14 +434,6 @@
 
     <script src="/include/profile-hover.js">profileHover();</script>
     <script src="/include/dropdownMenu.js">Dropdown();</script>
-    <script>
-        const divs = document.querySelectorAll('[id^="playlist-profile"]');
-
-        for (let i = 0; i < divs.length; i++) {
-        if ((i + 1) % 3 === 0) {
-            divs[i].classList.remove('sm:mr-2.5');
-        }
-        }
-    </script>
+    <script src="/include/byThree.js">byThree();</script>
 </body>
 </html>
