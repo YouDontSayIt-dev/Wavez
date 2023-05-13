@@ -87,7 +87,7 @@
         <!-- MAIN CONTENT -->
         <div class="ml-0 flex flex-col flex-grow text-white h-auto bg-gradient-to-tr from-custom-color via-custom-color to-gray-600 lg:ml-60">
             <!-- TOP NAVBAR -->
-            <div class="mb-5 justify-start sticky top-0 flex flex-row items-center py-1 md:mb-0 bg-custom-color md:justify-end md:pr-16 md:pb-3 md:pt-3 z-50">
+            <div class="mb-5 justify-start sticky top-0 flex flex-row items-center py-1 md:mb-0 bg-custom-color bg-opacity-95 md:justify-end md:pr-16 md:pb-3 md:pt-3 z-50">
                 <!-- LOGO -->
                 <div class="pl-10 w-1/2 justify-start mt-2">
                     <a href="#" class="block justify-start lg:hidden">
@@ -139,7 +139,7 @@
         
             <!-- CONTENTS -->
             <!-- PLAYLIST HEADER -->
-            <div class="flex flex-grow h-14 ml-5 md:mt-5 text-2xl md:text-3xl lg:text-4xl">Playlists</div>
+            <div class="flex flex-grow h-14 ml-5 md:mt-5 text-2xl md:text-3xl lg:text-4xl">Library</div>
 
             <!-- PLAYLISTS LISTS -->
             <div id="library-content" class="flex h-auto pb-5 flex-wrap justify-between sm:justify-start sm:px-7 lg:px-4 px-4 text-white z-20">
@@ -484,8 +484,20 @@
         </div>
 
         <!-- MENU BAR ON SM & MD -->
-        <div class="lg:hidden w-screen fixed h-14 left-0 bottom-0 mt-auto z-50 bg-black">
-            <h1 class="text-white text-4xl">MENU BAR</h1>
+        <div class="flex flex-row lg:hidden w-screen fixed h-14 left-0 bottom-0 mt-auto z-50 bg-black">
+            <div class="w-[20%] h-full">
+                <a href="#" class = "flex justify-center space-x-5 mt-6 mb-3 text-white py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                      </svg>
+                      
+                    <span>Home</span>
+                </a>
+            </div>
+            <div class="w-[20%] h-full"></div>
+            <div class="w-[20%] h-full"></div>
+            <div class="w-[20%] h-full"></div>
+            <div class="w-[20%] h-full"></div>            
         </div>
     </div>
 
