@@ -3,7 +3,7 @@ module.exports = {
   content: ["./dist/*.{html,js}", "./include/*.js"],
   theme: {
     borderWidth: {
-      1: '1px'
+      1: "1px",
     },
     extend: {
       colors: {
@@ -83,8 +83,11 @@ module.exports = {
         "custom-color-playbar": "#184550",
         //playbar color
 
-        // custom-color for playlist hover 
-        'custom-color-playlist-hover': '#001724',
+        // custom-color for playlist hover
+        "custom-color-playlist-hover": "#001724",
+
+        // custom-color for delete icon
+        "custom-color-delete-icon": "#001B29",
 
         // custom-color for queue text
         'custom-color-queue-text': '#676F70',
@@ -102,6 +105,9 @@ module.exports = {
         'webheffect': 'rgb(9, 36, 49,0.5)',
         'webdropdown': 'rgb(5, 19, 26,0.9)',
 
+        "custom-color-b-border": "#CAC6C7",
+        webheffect: "rgb(9, 36, 49,0.5)",
+        webdropdown: "rgb(5, 19, 26,0.9)",
       },
       fontFamily: {
         alata: ["Alata", "sans-serif"],
@@ -128,9 +134,8 @@ module.exports = {
         "890px": "890px",
         "119px": "-119px",
         "510px": "510px",
-        "452px": "452px",
+        "452px": "434px",
       },
     },
   },
-  plugins: [require("tailwindcss-filters")],
 };
