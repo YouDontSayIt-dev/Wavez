@@ -84,7 +84,7 @@
         </aside>
 
         <!-- MAIN CONTENT -->
-        <main class="ml-0 flex flex-col flex-grow text-white h-auto bg-gradient-to-tr from-custom-color via-custom-color to-gray-600 lg:ml-60">
+        <div class="ml-0 flex flex-col flex-grow text-white h-auto bg-gradient-to-tr from-custom-color via-custom-color to-gray-600 lg:ml-60">
             <!-- TOP NAVBAR -->
 
             <div class="mb-5 justify-start sticky top-0 flex flex-row items-center py-1 md:mb-0 bg-custom-color md:justify-end md:pr-16 md:pb-3 md:pt-3 z-50">
@@ -434,23 +434,10 @@
                     </button>
                 </div>
             </div>
-        </main>
-
-        <!-- PLAYBAR -->
-        <div class="w-screen fixed h-20 bottom-14 lg:bottom-0 lg:mt-auto z-50 bg-gradient-to-r from-red-400 to-pink-400">
-            <h1 class="text-white text-4xl">Playbar</h1>
         </div>
 
-        <!-- MENU BAR ON SM & MD -->
-        <div class="lg:hidden w-screen fixed h-14 left-0 bottom-0 mt-auto z-50 bg-black">
-            <h1 class="text-white text-4xl">MENU BAR</h1>
-        </div>
-
-        </main>
-
         <!-- PLAYBAR -->
-        <!-- PLAYBAR -->
-        <div class="w-[90%] ml-[80px] mr-[80px] pl-5 fixed h-[90px] bottom-5 z-50 bg-custom-color-playbar opacity-80 rounded-3xl  mt-auto grid grid-cols-4 items-center text-center">
+        <div class="w-[90%] ml-[80px] mr-[80px] pl-5 fixed h-[90px] bottom-16 lg:mt-auto lg:bottom-5 z-50 bg-custom-color-playbar opacity-80 rounded-3xl  mt-auto grid grid-cols-4 items-center text-center">
             <div class="w-56 flex items-center text-start">
                 <img src="/assets/addplaylist-assets/album pic.png" alt="album" class="flex-inline-block w-16 h-16 rounded-lg">
                 <div>
@@ -503,8 +490,13 @@
                         </svg> 
                          
                 </div>
-              </div>            
-    </div>
+            </div>            
+        </div>
+
+        <!-- MENU BAR ON SM & MD -->
+        <div class="lg:hidden w-screen fixed h-14 left-0 bottom-0 mt-auto z-50 bg-black">
+            <h1 class="text-white text-4xl">MENU BAR</h1>
+        </div>
     </div>
 
     <!-- SCRIPTS -->
