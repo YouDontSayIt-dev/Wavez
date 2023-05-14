@@ -112,6 +112,7 @@ module.exports = {
       fontFamily: {
         alata: ["Alata", "sans-serif"],
       },
+
       spacing: {
         "237px": "237px",
         "34px": "34px",
