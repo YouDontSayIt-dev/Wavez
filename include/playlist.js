@@ -92,6 +92,8 @@ let allplaylist = [
     }
 ]
 
+
+// !!!!!!!!!!!!!!! any change, profilepage.js
 let generateTrackList = () => {
     let count = 0;
     let content = document.getElementById('songlist');
@@ -135,8 +137,10 @@ let generateAllPlaylist = () => {
     return content.innerHTML = allplaylist.map((x) => {
         let {name, acc, img} = x;
         return `
-            <div class="fex flex-col text-sm mr-8 mb-5 hover:cursor-pointer 2xsmall:mr-5">
-                <img src="/assets/playlist-mg-assets/${img}" alt="Playlist image" class="h-44 rounded-md large:h-32 mid2:h-44 xsmall:h-36 2xsmall:h-32" >
+            <div class="fex flex-col text-sm mr-10 mb-5 hover:cursor-pointer 2xsmall:mr-5 sm:mr-5 md:mr-10">
+                <div class="w-44 large:w-32 mid2:w-44 xsmall:w-36 2xsmall:w-32">
+                    <img src="/assets/playlist-mg-assets/${img}" alt="Playlist image" class="rounded-md" >
+                </div>
                 <p class="text-custom-color-song-font mt-1">${name}</p>
                 <p class="text-custom-color-song-more">By ${acc}</p>
             </div>
