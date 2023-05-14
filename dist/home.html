@@ -1,479 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
-      rel="stylesheet"
-    />
-    <title>Home</title>
-    <script
-      src="https://kit.fontawesome.com/af7e1c2216.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body class="p-0 m-0 font-alata h-screen bg-custom-color">
-    <div class="container flex">
-      <!-- SIDE NAVBAR -->
-      <div
-        class="w-60 sticky top-0 h-screen bg-gradient-to-t from-custom-color-playlist-card-non-pinned-text to-custom-color text-white"
-      >
-        <!-- LOGO -->
-        <a href="#">
-          <img
-            src="/assets/wavesLogo.png"
-            class="mx-auto my-6 w-15 h-12"
-            alt="Logo"
-          />
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="x-icon" href="/assets/wavesLogo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+  <title>Home</title>
+  <script src="https://kit.fontawesome.com/af7e1c2216.js" crossorigin="anonymous"></script>
+</head>
 
-        <!-- Navigation -->
-        <nav
-          class="flex flex-row justify-center flex-wrap font-normal text-lg pt-7"
-        >
-          <ul class="flex-grow">
-            <li>
-              <a
-                href="#"
-                class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10 bg-custom-color-sidebar-brown hover:bg-black focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-custom-color-sidebar-brown-hover"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                  />
-                </svg>
+<body class="p-0 m-0 font-alata h-screen bg-custom-color">
+  <div class="container flex">
+    <!-- SIDE NAVBAR -->
+    <div
+      class="w-60 sticky top-0 h-screen bg-gradient-to-t from-custom-color-playlist-card-non-pinned-text to-custom-color text-white">
+      <!-- LOGO -->
+      <a href="#">
+        <img src="/assets/wavesLogo.png" class="mx-auto my-6 w-15 h-12" alt="Logo" />
+      </a>
 
-                <span>Home</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                  />
-                </svg>
-                <span>Search</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"
-                  />
-                </svg>
-                <span>Queue</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-                  />
-                </svg>
-                <span>Library</span>
-              </a>
-            </li>
-          </ul>
-          <!-- DIVIDER -->
-          <div class="mx-auto w-3/4 border-t-2 border-white mt-5 mb-6"></div>
+      <!-- Navigation -->
+      <nav class="flex flex-row justify-center flex-wrap font-normal text-lg pt-7">
+        <ul class="flex-grow">
+          <li>
+            <a href="/dist/home.html"
+              class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10  bg-custom-color-sidebar-brown  hover:bg-custom-color-navbar-icons-hover focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-white">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+              </svg>
 
-          <!-- <div class="absolute top-9 left-56 h-3/4 w-1 border-l border-white">
-              
-           </div> -->
-          <ul class="text-white">
-            <li>
-              <a
-                href=""
-                class="flex justify-center text-white space-x-1 mt-6 mb-3 rounded-full py-1 hover:text-custom-color-sidebar-brown-hover"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-                <span class="pl-5">Create Playlist</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href=""
-                class="flex justify-center text-white space-x-1 mt-6 mb-3 py-1 hover:text-custom-color-sidebar-brown-hover"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
-                  />
-                </svg>
-                <span class="pl-10">Liked Songs</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-       <!--Main Content-->
-
-       <div class="flex flex-col flex-grow text-white h-auto">
-        <!-- TOP NAVBAR -->
-
-        <navbar-component></navbar-component>
-        <script src="/include/topNavbar.js"></script>
-
-        <!--Main Content-->
-        <div class="pl-9 pr-16 bg-gradient-to-r from-custom-color via-custom-color to-gray-600">
-          <!--Page Header-->
-          <div>
-            <div>
-              <h1 class="text-4xl">Good Evening!</h1>
-            </div>
-          </div>
-
-          <h1 class="text-[28px] mt-2">Top Picks</h1>
-          <!--Top Picks Container-->
-          <div class="flex flex-row flex-wrap justify-between">
-            <div class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div class="mb-2.5">
-                <h1 class="text-xl text-[#797979]">Playlist</h1>
-              </div>
-
-              <div class="relative flex flex-grow">
-                <img
-                  class="w-full h-full"
-                  src="/assets/home-assets/toppick-1.png"
-                  alt=""
-                />
-
-                <div
-                  class="absolute h-[75px] w-full bg-toppick1-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center"
-                >
-                  <p>Goddesses</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div class="mb-2.5">
-                <h1 class="text-xl text-[#797979]">New Release</h1>
-              </div>
-              <div class="relative flex flex-grow">
-                <img
-                  class="w-full h-full"
-                  src="/assets/home-assets/toppick-2.png"
-                  alt=""
-                />
-                <div
-                  class="absolute h-[75px] w-full bg-toppick2-title-color rounded-b-[17px] bottom-0 flex flex-col justify-center items-center text-base text-center"
-                >
-                  <div class="uppercase w-full">portals</div>
-                  <div class="w-full">Melanie Martinez</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div class="mb-2.5">
-                <h1 class="text-xl text-[#797979]">Made For You</h1>
-              </div>
-              <div class="relative flex flex-grow">
-                <img
-                  class="w-full h-full"
-                  src="/assets/home-assets/toppick-3.png"
-                  alt=""
-                />
-                <div
-                  class="absolute h-[75px] w-full bg-toppick3-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center"
-                >
-                  <p>
-                    Paramore, Issues, Lana Del Rey, Melanie Martinez, BLACKPINK,
-                    Billie Eilish, Sleeping...
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div class="mb-2.5">
-                <h1 class="text-xl text-[#797979]">Made For You</h1>
-              </div>
-              <div class="relative flex flex-grow">
-                <img
-                  class="w-full h-full"
-                  src="/assets/home-assets/toppick-4.png"
-                  alt=""
-                />
-                <div
-                  class="absolute h-[75px] w-full bg-toppick4-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center"
-                >
-                  <p>Suggested For You</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="text-[28px] mt-[12px] mb-[25px] flex justify-between items-center"
-          >
-            <h1>Recently Played</h1>
-            <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover"><a href="#">See All</a></h1>
-          </div>
-          <!--Recently played Container-->
-          <div class="flex flex-row flex-wrap justify-between">
-            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/recent-1.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">Hostage</h1>
-                <h1 class="text-base text-[#797979]">Billie Eilish</h1>
-              </div>
-            </div>
-
-            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/recent-2.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">Rude Boy</h1>
-                <h1 class="text-base text-[#797979]">Rhianna</h1>
-              </div>
-            </div>
-
-            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/recent-3.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">Roger Rabbit</h1>
-                <h1 class="text-base text-[#797979]">Sleeping With Sirens</h1>
-              </div>
-            </div>
-
-            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/recent-4.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">Tally</h1>
-                <h1 class="text-base text-[#797979]">BLACKPINK</h1>
-              </div>
-            </div>
-
-            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/recent-5.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">Bulls In The Bronx</h1>
-                <h1 class="text-base text-[#797979]">Pierce The Veil</h1>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="text-[28px] mt-[12px] mb-[24px] flex justify-between items-center"
-          >
-            <h1>More Of What You Like</h1>
-            <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover"><a href="#">See All</a></h1>
-          </div>
-
-          <!--What you like Container-->
-          <div class="flex flex-row flex-wrap justify-between mb-[44px]">
-            <div class="h-[310px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/like-1.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">So High</h1>
-                <h1 class="text-base text-[#797979]">Doja Cat</h1>
-              </div>
-            </div>
-
-            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/like-2.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">Nxde</h1>
-                <h1 class="text-base text-[#797979]">(G)I-DLE</h1>
-              </div>
-            </div>
-
-            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/like-3.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">Teenage Dream: The complete Co...</h1>
-                <h1 class="text-base text-[#797979]">Katy Perry</h1>
-              </div>
-            </div>
-
-            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/like-4.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">SOS</h1>
-                <h1 class="text-base text-[#797979]">SZA</h1>
-              </div>
-            </div>
-
-            <div class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
-              <div>
-                <img
-                  class="h-full w-full"
-                  src="/assets/home-assets/like-5.png"
-                  alt=""
-                />
-              </div>
-              <div class="mt-2">
-                <h1 class="text-base">Fearless (Taylor’s Version)</h1>
-                <h1 class="text-base text-[#797979]">Taylor Swift</h1>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Footer -->
-        <footer-component></footer-component>
-        <script src="/include/footer.js"></script>
-
-        <!-- PLAYBAR -->
-        <div
-          class="w-screen fixed h-20 left-0 bottom-0 mt-auto z-50 bg-gradient-to-r from-red-400 to-pink-400"
-        >
-          <h1 class="text-white text-4xl">Playbar</h1>
-        </div>
-      </div>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="/dist/search-page.html"
+              class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+              </svg>
+              <span>Search</span>
+            </a>
+          </li>
+          <li>
+            <a href="/dist/queue.html"
+              class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+              </svg>
+              <span>Queue</span>
+            </a>
+          </li>
+          <li>
+            <a href="/dist/library.html"
+              class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+              <span>Library</span>
+            </a>
+          </li>
+        </ul>
+        <!-- DIVIDER -->
+        <div class="mx-auto w-3/4 border-t-1 border-white mt-5 mb-6"></div>
+        <!-- <div class="absolute top-9 left-56 h-3/4 w-1 border-l border-white"></div>  -->
+        <ul class="text-white">
+          <li><a href="/dist/addplaylist.html"
+              class="flex justify-center text-white space-x-4 pl-5 mt-6 mb-3 rounded-full py-1 hover:text-custom-color-sidebar-brown-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd"
+                  d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z"
+                  clip-rule="evenodd" />
+              </svg>
+              <span>Create Playlist</span>
+            </a>
+          </li>
+          <li>
+            <a href="/dist/likedsongs.html"
+              class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 hover:text-custom-color-sidebar-brown-hover">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path
+                  d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+              </svg>
+              <span>Liked Songs</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-     <!-- SCRIPTS -->
-     <script>
-      const parentDivs = document.querySelectorAll('[id^="playlist-profile"]');
+    <!--Main Content-->
 
-      parentDivs.forEach((parentDiv) => {
-      const childDiv = parentDiv.querySelector('[id^="play-btn"]');
+    <div class="flex flex-col flex-grow text-white h-auto">
+      <!-- TOP NAVBAR -->
 
-      parentDiv.addEventListener("mouseenter", () => {
-          childDiv.classList.add("opacity-100");
-      });
+      <navbar-component></navbar-component>
+      <script src="/include/topNavbar.js"></script>
 
-      parentDiv.addEventListener("mouseleave", () => {
-          childDiv.classList.remove("opacity-100");
-      });
-      });
-  </script>
+      <!--Main Content-->
+      <div class="pl-9 pr-16 bg-gradient-to-r from-custom-color via-custom-color to-gray-600">
+        <!--Page Header-->
+        <div>
+          <div>
+            <h1 class="text-4xl">Good Evening!</h1>
+          </div>
+        </div>
 
+        <h1 class="text-[28px] mt-2">Top Picks</h1>
+        <!--Top Picks Container-->
+        <div class="flex flex-row flex-wrap justify-between sm:justify-start">
+          <div id="playlist-profile-toppicks"
+            class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div class="mb-2.5">
+              <h1 class="text-xl text-[#797979]">Playlist</h1>
+            </div>
+
+
+            <div class="relative flex flex-grow">
+              <img class="w-full h-full" src="/assets/home-assets/toppick-1.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-toppicks"
+                class="absolute bottom-10 right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+              <div
+                class="absolute h-[75px] w-full bg-toppick1-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center">
+                <p>Goddesses</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="playlist-profile-newrelease"
+            class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div class="mb-2.5">
+              <h1 class="text-xl text-[#797979]">New Release</h1>
+            </div>
+            <div class="relative flex flex-grow">
+              <img class="w-full h-full" src="/assets/home-assets/toppick-2.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-newrelease"
+                class="absolute bottom-10 right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+              <div
+                class="absolute h-[75px] w-full bg-toppick2-title-color rounded-b-[17px] bottom-0 flex flex-col justify-center items-center text-base text-center">
+                <div class="uppercase w-full">portals</div>
+                <div class="w-full">Melanie Martinez</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="playlist-profile-made1"
+            class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div class="mb-2.5">
+              <h1 class="text-xl text-[#797979]">Made For You</h1>
+            </div>
+            <div class="relative flex flex-grow">
+              <img class="w-full h-full" src="/assets/home-assets/toppick-3.png" alt="" />\
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-made1"
+                class="absolute bottom-10 right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+              <div
+                class="absolute h-[75px] w-full bg-toppick3-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center">
+                <p>
+                  Paramore, Issues, Lana Del Rey, Melanie Martinez, BLACKPINK,
+                  Billie Eilish, Sleeping...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="playlist-profile-made2"
+            class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div class="mb-2.5">
+              <h1 class="text-xl text-[#797979]">Made For You</h1>
+            </div>
+            <div class="relative flex flex-grow">
+              <img class="w-full h-full" src="/assets/home-assets/toppick-4.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-made2"
+                class="absolute bottom-10 right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+              <div
+                class="absolute h-[75px] w-full bg-toppick4-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center">
+                <p>Suggested For You</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-[28px] mt-[12px] mb-[25px] flex justify-between items-center">
+          <h1>Recently Played</h1>
+          <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover"><a href="#">See All</a></h1>
+        </div>
+        <!--Recently played Container-->
+        <div class="flex flex-row flex-wrap justify-between sm:justify-start">
+          <div id="playlist-profile-recent1" class=" h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform
+            hover:scale-105 cursor-pointer ">
+            <div>
+              <img class=" h-full w-full relative" src="/assets/home-assets/recent-1.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-recent1"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+
+
+            <div class="mt-2">
+              <h1 class="text-base">Hostage</h1>
+              <h1 class="text-base text-[#797979]">Billie Eilish</h1>
+            </div>
+          </div>
+
+          <div id="playlist-profile-recent2"
+            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div>
+              <img class="h-full w-full relative" src="/assets/home-assets/recent-2.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-recent2"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+            <div class="mt-2">
+              <h1 class="text-base">Rude Boy</h1>
+              <h1 class="text-base text-[#797979]">Rhianna</h1>
+            </div>
+          </div>
+
+          <div id="playlist-profile-recent3"
+            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div>
+              <img class="h-full w-full relative" src="/assets/home-assets/recent-3.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-recent3"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+            <div class="mt-2">
+              <h1 class="text-base">Roger Rabbit</h1>
+              <h1 class="text-base text-[#797979]">Sleeping With Sirens</h1>
+            </div>
+          </div>
+
+          <div id="playlist-profile-recent4"
+            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div>
+              <img class="h-full w-full relative" src="/assets/home-assets/recent-4.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-recent4"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+            <div class="mt-2">
+              <h1 class="text-base">Tally</h1>
+              <h1 class="text-base text-[#797979]">BLACKPINK</h1>
+            </div>
+          </div>
+
+          <div id="playlist-profile-recent5"
+            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div>
+              <img class="h-full w-full relative" src="/assets/home-assets/recent-5.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-recent5"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+            <div class="mt-2">
+              <h1 class="text-base">Bulls In The Bronx</h1>
+              <h1 class="text-base text-[#797979]">Pierce The Veil</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-[28px] mt-[12px] mb-[24px] flex justify-between items-center">
+          <h1>More Of What You Like</h1>
+          <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover"><a href="#">See All</a></h1>
+        </div>
+
+        <!--What you like Container-->
+        <div id="playlist-profile-like1" class="flex flex-row flex-wrap justify-between sm:justify-start mb-[44px]">
+          <div
+            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div>
+              <img class="h-full w-full relative" src="/assets/home-assets/like-1.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-like1"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+            <div class="mt-2">
+              <h1 class="text-base">So High</h1>
+              <h1 class="text-base text-[#797979]">Doja Cat</h1>
+            </div>
+          </div>
+
+          <div id="playlist-profile-like2"
+            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div>
+              <img class="h-full w-full relative" src="/assets/home-assets/like-2.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-like2"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+            <div class="mt-2">
+              <h1 class="text-base">Nxde</h1>
+              <h1 class="text-base text-[#797979]">(G)I-DLE</h1>
+            </div>
+          </div>
+
+          <div id="playlist-profile-like3"
+            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div>
+              <img class="h-full w-full relative" src="/assets/home-assets/like-3.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-like3"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+            <div class="mt-2">
+              <h1 class="text-base">Teenage Dream: The complete Co...</h1>
+              <h1 class="text-base text-[#797979]">Katy Perry</h1>
+            </div>
+          </div>
+
+          <div id="playlist-profile-like4"
+            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div>
+              <img class="h-full w-full relative" src="/assets/home-assets/like-4.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-like4"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+            <div class="mt-2">
+              <h1 class="text-base">SOS</h1>
+              <h1 class="text-base text-[#797979]">SZA</h1>
+            </div>
+          </div>
+
+          <div id="playlist-profile-like5"
+            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            <div>
+              <img class="h-full w-full relative" src="/assets/home-assets/like-5.png" alt="" />
+
+              <!-- HOVER PLAY-BTN -->
+              <button id="play-btn-like5"
+                class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                <div href="" class="w-6 h-6">
+                  <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                      d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                  </svg>
+                </div>
+              </button>
+
+            </div>
+            <div class="mt-2">
+              <h1 class="text-base">Fearless (Taylor’s Version)</h1>
+              <h1 class="text-base text-[#797979]">Taylor Swift</h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer -->
+      <footer-component></footer-component>
+      <script src="/include/footer.js"></script>
+
+      <!-- PLAYBAR -->
+      <div class="w-screen fixed h-20 left-0 bottom-0 mt-auto z-50 bg-gradient-to-r from-red-400 to-pink-400">
+        <h1 class="text-white text-4xl">Playbar</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
   <script src="/include/profile-hover.js">profileHover();</script>
   <script src="/include/dropdownMenu.js">Dropdown();</script>
-  </body>
+</body>
+
 </html>
