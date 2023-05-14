@@ -12,6 +12,8 @@
     <link rel="icon" href="/assets/wavesLogo.png">
     <title>Wavez - Search</title>
     <script src="https://kit.fontawesome.com/af7e1c2216.js" crossorigin="anonymous"></script> 
+    <script src="/include/footer.js"></script>
+    <script src="/include/topNavbar.js"></script>
 </head>
 <body class="p-0 m-0 font-alata h-screen bg-custom-color">
     <div class="flex">
@@ -19,7 +21,7 @@
         <aside class="hidden lg:block w-60 fixed left-0 top-0 h-full z-50 bg-gradient-to-t from-custom-color-playlist-card-non-pinned-text to-custom-color">
 
             <!-- LOGO -->
-            <a href="#">
+            <a href="/dist/home">
                 <img src="/assets/wavesLogo.png" class="mx-auto my-6 w-15 h-12" alt="Logo">
             </a>
 
@@ -27,7 +29,7 @@
             <nav class="flex flex-row justify-center flex-wrap font-normal text-lg pt-7">
                 <ul class="flex-grow">
                     <li>
-                        <a href="#" class = "flex justify-center space-x-5 mt-6 mb-3 text-white py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <a href="/dist/home.html" class = "flex justify-center space-x-5 mt-6 mb-3 text-white py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                               </svg>
@@ -36,7 +38,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <a href="/dist/search-page.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10  bg-custom-color-sidebar-brown  hover:bg-custom-color-navbar-icons-hover focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                             </svg>
@@ -44,7 +46,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <a href="/dist/queue.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
                             </svg>
@@ -52,7 +54,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10  bg-custom-color-sidebar-brown  hover:bg-custom-color-navbar-icons-hover focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-white">
+                        <a href="/dist/library.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                             </svg>
@@ -64,7 +66,7 @@
                 <div class="mx-auto w-3/4 border-t-1 border-white mt-5 mb-6"></div>
                 <!-- <div class="absolute top-9 left-56 h-3/4 w-1 border-l border-white"></div>  -->
                 <ul class="text-white">
-                   <li><a href="" class="flex justify-center text-white space-x-4 pl-5 mt-6 mb-3 rounded-full py-1 hover:text-custom-color-sidebar-brown-hover">
+                   <li><a href="/dist/addplaylist.html" class="flex justify-center text-white space-x-4 pl-5 mt-6 mb-3 rounded-full py-1 hover:text-custom-color-sidebar-brown-hover">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                         </svg>                    
@@ -72,7 +74,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 hover:text-custom-color-sidebar-brown-hover" >
+                        <a href="/dist/likedsongs.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 hover:text-custom-color-sidebar-brown-hover" >
                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                 <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                             </svg>                          
@@ -86,57 +88,8 @@
         <!-- MAIN CONTENT -->
         <div class="ml-0 flex flex-col flex-grow text-white h-auto bg-gradient-to-tr from-custom-color via-custom-color to-gray-600 lg:ml-60">
             <!-- TOP NAVBAR -->
+            <navbar-component></navbar-component>
 
-            <div class="mb-5 justify-start sticky top-0 flex flex-row items-center py-1 md:mb-0 bg-custom-color md:justify-end md:pr-16 md:pb-3 md:pt-3 z-50">
-                <!-- LOGO -->
-                <div class="pl-10 w-1/2 justify-start mt-2">
-                    <a href="#" class="block justify-start lg:hidden">
-                        <img src="/assets/wavesLogo.png" class="w-16 h-12" alt="Logo">
-                    </a>
-                </div>
-
-                <!-- LEFT ITEMS  -->
-                <div class="w-full justify-end flex flex-row space-x-5 items-center pr-5 md:pr-0 my-2">
-                    <a href="#">
-                        <svg class="text-white fill-current w-6 h-7 hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"/>
-                        </svg>
-                    </a>
-                    <!-- <a href="#">
-                        <svg class="text-white fill-current w-6 h-7 hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/>
-                        </svg>
-                    </a> -->
-
-                    <div class="flex md:hidden w-12 h-12 bg-custom-color-sidebar-brown justify-center items-center rounded-full">
-                        <a href="#" class="block md:hidden">
-                         <img class="w-10 h-10 rounded-full" src="/assets/addplaylist-assets/profilesample.jpg" alt="user">
-                        </a>
-                    </div>
-
-                    <!--Profile button-->
-                    <div id="dropdown-button" class="hidden md:flex -mb-1.5 dropdown"> 
-                        <button  class="bg-custom-color-song-button hover:bg-custom-color-navbar-icons-hover text-white text-base rounded-full px-4 py-0.5 mb-0 inline-flex items-center" > 
-                            <img src="/assets/song-assets/profilesample.jpg" alt="profile pic" class="rounded-full h-10 w-10"> 
-                            <span class="ml-3">Profile</span> 
-                            <svg id="dropdown-icon" class="w-7 h-7 text-black fill-current mt-1.5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                <path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/>
-                            </svg>
-                        </button> 
-                        <!--profile dropdown-->                
-                        <ul id="dropdown-menu" class="absolute hidden text-custom-color-song-font w-40 pt-12 ml-1"> 
-                            <li><a class="rounded-t-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Account</a></li> 
-                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Profile</a></li> 
-                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Settings</a></li> 
-                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Support</a></li>
-                            <hr class="bg-black">
-                            <li><a class="rounded-b-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Logout</a></li> 
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        
             <!-- CONTENTS -->
 
             <!-- SEARCH BAR -->
@@ -173,128 +126,228 @@
 
                 <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-[32%] sm:h-min sm:mr-2.5 lg:mr-4 lg:w-52 lg:h-64 flex flex-col mt-2 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div href="/dist/playlist.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
+                        </div>
                     </button>
 
                     <!-- HOVER XMARK-BTN -->
                     <button id="xmark-btn" class="absolute top-2 right-2 w-8 h-8 pb-2.5 pl-1.5 bg-custom-color-delete-icon rounded-full flex items-center justify-center opacity-100 bg-opacity-50 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-5 h-5 mr-1.5 mt-0.5">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        </a>
+                        <div class="w-5 h-5 mr-1.5 mt-0.5">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        
+                        </div>
                     </button> 
-
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
-                        <img src="/assets/playlist-assets/twice-playlist.png">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
-                        <h1 class="text-base">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
-                    </div>
+                    
+                    <a href="/dist/playlist.html">
+                        <!-- PLAYLIST IMAGE -->
+                        <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
+                            <img src="/assets/playlist-assets/twice-playlist.png">
+                        </div>
+                        <!-- PLAYLIST INFO -->
+                        <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
+                            <h1 class="text-base">Playlist 1</h1>
+                            <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-[32%] sm:h-min sm:mr-2.5 lg:mr-4 lg:w-52 lg:h-64 flex flex-col mt-2 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div href="/dist/playlist.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
+                        </div>
                     </button>
 
                     <!-- HOVER XMARK-BTN -->
                     <button id="xmark-btn" class="absolute top-2 right-2 w-8 h-8 pb-2.5 pl-1.5 bg-custom-color-delete-icon rounded-full flex items-center justify-center opacity-100 bg-opacity-50 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-5 h-5 mr-1.5 mt-0.5">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        </a>
+                        <div class="w-5 h-5 mr-1.5 mt-0.5">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        
+                        </div>
                     </button> 
-
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
-                        <img src="/assets/playlist-assets/twice-playlist.png">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
-                        <h1 class="text-base">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
-                    </div>
+                    
+                    <a href="/dist/playlist.html">
+                        <!-- PLAYLIST IMAGE -->
+                        <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
+                            <img src="/assets/playlist-assets/twice-playlist.png">
+                        </div>
+                        <!-- PLAYLIST INFO -->
+                        <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
+                            <h1 class="text-base">Playlist 1</h1>
+                            <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-[32%] sm:h-min sm:mr-2.5 lg:mr-4 lg:w-52 lg:h-64 flex flex-col mt-2 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div href="/dist/playlist.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
+                        </div>
                     </button>
 
                     <!-- HOVER XMARK-BTN -->
                     <button id="xmark-btn" class="absolute top-2 right-2 w-8 h-8 pb-2.5 pl-1.5 bg-custom-color-delete-icon rounded-full flex items-center justify-center opacity-100 bg-opacity-50 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-5 h-5 mr-1.5 mt-0.5">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        </a>
+                        <div class="w-5 h-5 mr-1.5 mt-0.5">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        
+                        </div>
                     </button> 
-
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
-                        <img src="/assets/playlist-assets/twice-playlist.png">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
-                        <h1 class="text-base">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
-                    </div>
+                    
+                    <a href="/dist/playlist.html">
+                        <!-- PLAYLIST IMAGE -->
+                        <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
+                            <img src="/assets/playlist-assets/twice-playlist.png">
+                        </div>
+                        <!-- PLAYLIST INFO -->
+                        <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
+                            <h1 class="text-base">Playlist 1</h1>
+                            <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
+                        </div>
+                    </a>
                 </div>
 
                 <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-[32%] sm:h-min sm:mr-2.5 lg:mr-4 lg:w-52 lg:h-64 flex flex-col mt-2 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div href="/dist/playlist.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
+                        </div>
                     </button>
 
                     <!-- HOVER XMARK-BTN -->
                     <button id="xmark-btn" class="absolute top-2 right-2 w-8 h-8 pb-2.5 pl-1.5 bg-custom-color-delete-icon rounded-full flex items-center justify-center opacity-100 bg-opacity-50 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-5 h-5 mr-1.5 mt-0.5">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        </a>
+                        <div class="w-5 h-5 mr-1.5 mt-0.5">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        
+                        </div>
                     </button> 
-
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
-                        <img src="/assets/playlist-assets/twice-playlist.png">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
-                        <h1 class="text-base">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
-                    </div>
+                    
+                    <a href="/dist/playlist.html">
+                        <!-- PLAYLIST IMAGE -->
+                        <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
+                            <img src="/assets/playlist-assets/twice-playlist.png">
+                        </div>
+                        <!-- PLAYLIST INFO -->
+                        <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
+                            <h1 class="text-base">Playlist 1</h1>
+                            <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
+                        </div>
+                    </a>
                 </div>
-                
+
                 <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-[32%] sm:h-min sm:mr-2.5 lg:mr-4 lg:w-52 lg:h-64 flex flex-col mt-2 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div href="/dist/playlist.html" class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
+                        </div>
                     </button>
 
                     <!-- HOVER XMARK-BTN -->
                     <button id="xmark-btn" class="absolute top-2 right-2 w-8 h-8 pb-2.5 pl-1.5 bg-custom-color-delete-icon rounded-full flex items-center justify-center opacity-100 bg-opacity-50 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-5 h-5 mr-1.5 mt-0.5">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        </a>
+                        <div class="w-5 h-5 mr-1.5 mt-0.5">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        
+                        </div>
                     </button> 
-
-                    <!-- PLAYLIST IMAGE -->
-                    <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
-                        <img src="/assets/playlist-assets/twice-playlist.png">
-                    </div>
-                    <!-- PLAYLIST INFO -->
-                    <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
-                        <h1 class="text-base">Playlist 1</h1>
-                        <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
-                    </div>
+                    
+                    <a href="/dist/playlist.html">
+                        <!-- PLAYLIST IMAGE -->
+                        <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
+                            <img src="/assets/playlist-assets/twice-playlist.png">
+                        </div>
+                        <!-- PLAYLIST INFO -->
+                        <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
+                            <h1 class="text-base">Playlist 1</h1>
+                            <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
+                        </div>
+                    </a>
                 </div>
+
+                <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-[32%] sm:h-min sm:mr-2.5 lg:mr-4 lg:w-52 lg:h-64 flex flex-col mt-2 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div href="/dist/playlist.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </div>
+                    </button>
+
+                    <!-- HOVER XMARK-BTN -->
+                    <button id="xmark-btn" class="absolute top-2 right-2 w-8 h-8 pb-2.5 pl-1.5 bg-custom-color-delete-icon rounded-full flex items-center justify-center opacity-100 bg-opacity-50 hover:scale-110 duration-300">
+                        <div class="w-5 h-5 mr-1.5 mt-0.5">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        
+                        </div>
+                    </button> 
+                    
+                    <a href="/dist/playlist.html">
+                        <!-- PLAYLIST IMAGE -->
+                        <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
+                            <img src="/assets/playlist-assets/twice-playlist.png">
+                        </div>
+                        <!-- PLAYLIST INFO -->
+                        <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
+                            <h1 class="text-base">Playlist 1</h1>
+                            <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-[32%] sm:h-min sm:mr-2.5 lg:mr-4 lg:w-52 lg:h-64 flex flex-col mt-2 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div href="/dist/playlist.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </div>
+                    </button>
+
+                    <!-- HOVER XMARK-BTN -->
+                    <button id="xmark-btn" class="absolute top-2 right-2 w-8 h-8 pb-2.5 pl-1.5 bg-custom-color-delete-icon rounded-full flex items-center justify-center opacity-100 bg-opacity-50 hover:scale-110 duration-300">
+                        <div class="w-5 h-5 mr-1.5 mt-0.5">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        
+                        </div>
+                    </button> 
+                    
+                    <a href="/dist/playlist.html">
+                        <!-- PLAYLIST IMAGE -->
+                        <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
+                            <img src="/assets/playlist-assets/twice-playlist.png">
+                        </div>
+                        <!-- PLAYLIST INFO -->
+                        <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
+                            <h1 class="text-base">Playlist 1</h1>
+                            <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="playlist-profile-newjeans" class="w-[47%] h-min sm:w-[32%] sm:h-min sm:mr-2.5 lg:mr-4 lg:w-52 lg:h-64 flex flex-col mt-2 bg-custom-color-playlist-card-non-pinned rounded-lg hover:bg-custom-color-playlist-hover transition-all duration-300 transform hover:scale-105 cursor-pointer">
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-newjeans" class="absolute bottom-10 right-2 sm:right-5 w-12 h-12 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div href="/dist/playlist.html" class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </div>
+                    </button>
+
+                    <!-- HOVER XMARK-BTN -->
+                    <button id="xmark-btn" class="absolute top-2 right-2 w-8 h-8 pb-2.5 pl-1.5 bg-custom-color-delete-icon rounded-full flex items-center justify-center opacity-100 bg-opacity-50 hover:scale-110 duration-300">
+                        <div class="w-5 h-5 mr-1.5 mt-0.5">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>                        
+                        </div>
+                    </button> 
+                    
+                    <a href="/dist/playlist.html">
+                        <!-- PLAYLIST IMAGE -->
+                        <div class="w-10/12 sm:w-9/12 mx-auto mt-4">
+                            <img src="/assets/playlist-assets/twice-playlist.png">
+                        </div>
+                        <!-- PLAYLIST INFO -->
+                        <div class="w-full pt-2 pb-1 sm:pb-0 px-3">
+                            <h1 class="text-base">Playlist 1</h1>
+                            <p class="text-custom-color-playlist-card-non-pinned-text text-sm">By Waves</p>
+                        </div>
+                    </a>
+                </div>
+
 
             </div>
 
@@ -308,132 +361,78 @@
             <div class="flex h-auto pb-5 flex-wrap justify-between sm:justify-start sm:px-7 lg:px-4 px-4 text-white z-20">
                 <!-- PLAYLISTS BY CATEGORIES -->
                 <div id="playlist-categ-POP" class="flex flex-col bg-cover w-[47%] h-32 sm:mr-2.5 sm:w-[32%] sm:h-40 md:w-[23%] md:h-44 md:mr-3 lg:mr-4 lg:w-52 lg:h-48 mt-2 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
-                    <h1 class="text-4xl">POP</h1>
+                    <a href="/dist/playlist.html"><h1 class="text-4xl">POP</h1></a>
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-newjeans" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
+                        </div>
                     </button>
                 </div>
 
                 <div id="playlist-categ-KPOP" class="flex flex-col bg-cover w-[47%] h-32 sm:mr-2.5 sm:w-[32%] sm:h-40 md:w-[23%] md:h-44 md:mr-3 lg:mr-4 lg:w-52 lg:h-48 mt-2 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
-                    <h1 class="text-4xl">KPOP</h1>
+                    <a href="/dist/playlist.html"><h1 class="text-4xl">K-POP</h1></a>
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-POP" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
+                        </div>
                     </button>
                 </div>
 
                 <div id="playlist-categ-EDM" class="hidden sm:flex flex-col bg-cover w-[47%] h-32 sm:mr-2.5 sm:w-[32%] sm:h-40 md:w-[23%] md:h-44 md:mr-3 lg:mr-4 lg:w-52 lg:h-48 mt-2 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
-                    <h1 class="text-4xl">EDM</h1>
+                    <a href="/dist/playlist.html"><h1 class="text-4xl">EDM</h1></a>
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-EDM" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
+                        </div>
                     </button>
                 </div>
 
                 <div id="playlist-categ-OPM" class="hidden md:flex flex-col bg-cover w-[47%] h-32 sm:mr-2.5 sm:w-[32%] sm:h-40 md:w-[23%] md:h-44 md:mr-3 lg:mr-4 lg:w-52 lg:h-48 mt-2 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
-                    <h1 class="text-4xl">OPM</h1>
+                    <a href="/dist/playlist.html"><h1 class="text-4xl">OPM</h1></a>
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-OPM" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="playlist-categ-HIPHOP" class="hidden lg:flex flex-col bg-cover w-[47%] h-32 sm:mr-2.5 sm:w-[32%] sm:h-40 md:w-[23%] md:h-44 md:mr-3 lg:mr-4 lg:w-52 lg:h-48 mt-2 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
+                    <a href="/dist/playlist.html"><h1 class="text-4xl">HIPHOP</h1></a>
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-HIPHOP" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="playlist-categ-RNB" class="hidden lg:flex flex-col bg-cover w-[47%] h-32 sm:mr-2.5 sm:w-[32%] sm:h-40 md:w-[23%] md:h-44 md:mr-3 lg:mr-4 lg:w-52 lg:h-48 mt-2 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
+                    <a href="/dist/playlist.html"><h1 class="text-4xl">RNB</h1></a>
+                    <!-- HOVER PLAY-BTN -->
+                    <button id="play-btn-RNB" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div class="w-6 h-6">
+                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        </div>
                     </button>
                 </div>
 
                 <div id="playlist-categ-INDIE" class="hidden lg:flex flex-col bg-cover w-[47%] h-32 sm:mr-2.5 sm:w-[32%] sm:h-40 md:w-[23%] md:h-44 md:mr-3 lg:mr-4 lg:w-52 lg:h-48 mt-2 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
-                    <h1 class="text-4xl">INDIE</h1>
+                    <a href="/dist/playlist.html"><h1 class="text-4xl">INDIE</h1></a>
                     <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
+                    <button id="play-btn-INDIE" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                        <div class="w-6 h-6">
                             <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
-                    </button>
-                </div>
-                
-                <div id="playlist-categ-HIPHOP" class="hidden lg:flex flex-col bg-cover w-[47%] h-32 sm:mr-2.5 sm:w-[32%] sm:h-40 md:w-[23%] md:h-44 md:mr-3 lg:mr-4 lg:w-52 lg:h-48 mt-2 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
-                    <h1 class="text-4xl">HIPHOP</h1>
-                    <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
-                    </button>
-                </div>
-
-                <div id="playlist-categ-RNB" class="hidden xl:flex flex-col bg-cover w-[47%] h-32 sm:mr-2.5 sm:w-[32%] sm:h-40 md:w-[23%] md:h-44 md:mr-3 lg:mr-4 lg:w-52 lg:h-48 mt-2 rounded-lg justify-center items-center hover:bg-custom-color-playlist-hover  transition-all duration-300 transform hover:scale-105 cursor-pointer" style="background-image: url(/assets/search-assets/categories-bg.png);">
-                    <h1 class="text-4xl">RNB</h1>
-                    <!-- HOVER PLAY-BTN -->
-                    <button id="play-btn-newjeans" class="absolute bottom-2 right-1 w-12 h-12 sm:right-2 sm:w-16 sm:h-16 pb-2.5 pl-1.5 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center opacity-0 hover:scale-110 duration-300">
-                        <a href="exp.html" class="w-6 h-6">
-                            <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        </a>
-                    </button>
-                </div>
-
-            </div>
-
-            <!-- FOOTER -->
-
-            <div class="flex flex-col md:flex-row flex-wrap font-normal text-sm sm:text-base mt-auto h-auto pb-32 z-40">
-                <div class="w-fit h-fit mx-5 my-2">
-                    <ul class="text-custom-color-footer-text px-3 space-y-2">
-                        <li class="text-white py-3">Company</li>
-                        <li><a href="#" class="hover:text-white">About</a></li>
-                        <li><a href="#" class="hover:text-white">Jobs</a></li>
-                        <li><a href="#" class="hover:text-white">For The Record</a></li>
-                    </ul>
-                </div>
-                <div class="w-fit h-fit mx-5 my-2">
-                    <ul class="text-custom-color-footer-text px-3 space-y-2">
-                        <li class="text-white py-3">Communities</li>
-                        <li><a href="#" class="hover:text-white">Developers</a></li>
-                        <li><a href="#" class="hover:text-white">Advertising</a></li>
-                        <li><a href="#" class="hover:text-white">Investors</a></li>
-                    </ul>
-                </div>
-                <div class="w-fit h-fit mx-5 my-2">
-                    <ul class="text-custom-color-footer-text px-3 space-y-2">
-                        <li class="text-white py-3">Support</li>
-                        <li><a href="#" class="hover:text-white">Support</a></li>
-                        <li><a href="#" class="hover:text-white">Legal</a></li>
-                        <li><a href="#" class="hover:text-white">Privacy</a></li>
-                        <li><a href="#" class="hover:text-white">Cookies</a></li>
-                    </ul>
-                </div>
-
-
-                <!-- SOCIAL ICONS -->
-                <div class="flex flex-grow flex-wrap justify-start md:justify-end pr-6 pl-5">
-                    <button class="w-10 h-10 my-3 mx-3 bg-custom-color-footer-social-icons rounded-full flex items-center justify-center">
-                        <a href="exp.html" class="w-7 h-7">
-                            <svg class="text-white fill-current hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
-                            </svg>
-                        </a>
-                    </button>
-    
-                    <button class="w-10 h-10 my-3 mx-3 bg-custom-color-footer-social-icons rounded-full flex items-center justify-center">
-                        <a href="exp.html" class="w-7 h-7 mb-1">
-                            <svg class="text-white fill-current hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
-                        </a>
-                    </button>
-    
-                    <button class="w-10 h-10 my-3 mx-3 bg-custom-color-footer-social-icons rounded-full flex items-center justify-center">
-                        <a href="exp.html" class="w-7 h-7">
-                            <svg class="text-white fill-current hover:text-custom-color-navbar-icons-hover" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
-                            </svg>
-                        </a>
+                        </div>
                     </button>
                 </div>
             </div>
+
+           <!-- FOOTER -->
+            <footer-component></footer-component>
         </div>
 
         <!-- PLAYBAR -->
@@ -494,14 +493,54 @@
         </div>
 
         <!-- MENU BAR ON SM & MD -->
-        <div class="lg:hidden w-screen fixed h-14 left-0 bottom-0 mt-auto z-50 bg-black">
-            <h1 class="text-white text-4xl">MENU BAR</h1>
+        <div class="flex flex-row lg:hidden w-screen fixed h-14 left-0 text-white bottom-0 mt-auto z-50 bg-custom-color">
+            <div class="w-[20%] flex flex-col justify-center items-center">
+                <a href="/dist/home.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-9 h-9">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                    </svg>
+                </a>
+                <span class="text-xs">Home</span>
+            </div>
+            <div class="w-[20%] flex flex-col justify-center items-center">
+                <a href="/dist/search-page.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-9 h-9">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </a>
+                <span class="text-xs">Search</span>
+            </div>
+            <div class="w-[20%] flex flex-col justify-center items-center">
+                <a href="/dist/queue.html" class="hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-9 h-9">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+                    </svg>
+                </a>
+                <span class="text-xs">Queue</span>
+            </div>
+            <div class="w-[20%] flex flex-col justify-center items-center">
+                <a href="/dist/library.html" class="hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-9 h-9">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                </a>
+                <span class="text-xs">Library</span>
+            </div>
+            <div class="w-[20%] flex flex-col justify-center items-center">
+                <a href="/dist/addplaylist.html" class="hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-9 h-9">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg> 
+                </a>
+                <!-- THIS IS ADD PLAYLIST NOT PLAYLIST  -->
+                <span class="text-xs overflow-hidden">Playlist</span>
+            </div>
         </div>
     </div>
 
     <!-- SCRIPTS -->
     <script src="/include/profile-hover.js">profileHover();</script>
     <script src="/include/dropdownMenu.js">Dropdown();</script>
-    <script src="/include/searchpage.js">byThree();</script>
+    <script src="/include/byThree.js">byThree();</script>
 </body>
 </html>

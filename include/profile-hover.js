@@ -6,11 +6,11 @@ function profileHover() {
     const childDiv = parentDiv.querySelector('[id^="play-btn"]');
 
     parentDiv.addEventListener("mouseenter", () => {
-        childDiv.classList.add("opacity-100");
+        childDiv.classList.add("lg:opacity-100");
     });
 
     parentDiv.addEventListener("mouseleave", () => {
-        childDiv.classList.remove("opacity-100");
+        childDiv.classList.remove("lg:opacity-100");
     });
     });
 }
