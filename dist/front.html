@@ -4,28 +4,31 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-        <title>Document</title>
-        <script src="https://kit.fontawesome.com/af7e1c2216.js" crossorigin="anonymous"></script>
-        <script src="/include/header.js"></script>
-        <script src="/include/footer.js"></script>
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+                <title>Document</title>
+                    <script src="https://kit.fontawesome.com/af7e1c2216.js" crossorigin="anonymous"></script>
+                    <script src="/include/header.js"></script>
+                    <script src="/include/footer.js"></script>
     </head>
     <header-component></header-component>
-    <hr class="border-solid">
+        <hr class="border-solid w-full">
     <body class="bg-custom-color">
-        <div class="flex items-center font-alata text-white my-5 mx-5">
+        <div class="flex  items-start font-alata text-white my-4 mx-4 md:justify-center  md:flex-col md:items-center lg:flex-row lg:items-center">
             <div class = "flex flex-col items-center ">
-                <h class="text-[96px] leading-[120px] text-center mx-5 my-5">Music For Everyone</h>
-                <p class="text-[24px] leading-[33px] mx-5 my-5">Wavez is a music provider that is also a spotify clone.</p>
-                <div class = "px-8 py-4 text-black font-[19px] leading-[26px] ">
-                    <button class="bg-custom-color-sidebar-brown rounded-full py-2 px-4 font-bold">GET STARTED</button>
-                </div>
+                <h class="text-[52px] leading-[90px] text-start py-2 px-2 mx-1 my-1 md:text-[54px] lg:text-[60px] lg:text-center ">Music For Everyone</h>
+                    <div class="hidden md:block lg:hidden ">
+                        <img src="/assets/Soundwave.png" alt="soundwave" class="md:w-[2000px] h-[150px] overflow-hidden">
+                    </div>
+                <p class="text-[14px] leading-[33px] mx-5 my-1 md:text-[18px] lg:text-[20px]">Wavez is a music provider that is also a spotify clone.</p>
+                    <div class = "w-[200px] h-auto px-3 py-4 text-black text-[16px] leading-[26px] md:w-[260px] md:text-[18] lg:w-[320px] lg:py-6 lg:text-[24px]">
+                        <button class="w-[90%] h-[60px] text-[16px] md:text-[18px] lg:text-[22px] bg-custom-color-sidebar-brown rounded-full py-2 px-4 font-bold">GET STARTED</button>
+                    </div>
 
             </div>
-            <div class="flex flex-shrink-1">
-                <div class="">
-                    <img src="/assets/Soundwave.png" alt="soundwave" class="w-[1243px] h-[550px]">
+            <div class="flex">
+                <div class="hidden lg:h-auto lg:block lg:max-w-full">
+                    <img src="/assets/Soundwave.png" alt="soundwave" class="md:w-[900px] h-[200px] lg:w-[1243px] lg:h-[550px]">
                 </div>
             </div>
 
