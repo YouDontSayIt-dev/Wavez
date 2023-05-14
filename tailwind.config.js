@@ -6,6 +6,16 @@ module.exports = {
       1: "1px",
     },
     extend: {
+      screens: {
+        '2xlarge': {'max': '1415px'},
+        'xlarge': {'max': '1279px'},
+        'large': {'max': '1023px'},
+        'mid': {'max': '931px'},
+        'mid2': {'max': '776px'},
+        'small': {'max': '540px'},
+        'xsmall': {'max': '430px'},
+        '2xsmall': {'max': '373px'},
+      },
       colors: {
         "custom-color": "#04151D",
         "input-color": "rgb(33, 49, 60)",
@@ -104,10 +114,7 @@ module.exports = {
         'custom-color-b-border': '#CAC6C7',
         'webheffect': 'rgb(9, 36, 49,0.5)',
         'webdropdown': 'rgb(5, 19, 26,0.9)',
-
-        "custom-color-b-border": "#CAC6C7",
-        webheffect: "rgb(9, 36, 49,0.5)",
-        webdropdown: "rgb(5, 19, 26,0.9)",
+        'webtopartist': 'rgb(0, 11, 17,.8)'
       },
       fontFamily: {
         alata: ["Alata", "sans-serif"],
