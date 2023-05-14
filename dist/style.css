@@ -2939,6 +2939,20 @@ video {
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+
+  .lg\:opacity-0 {
+    opacity: 0;
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:lg\:opacity-0 {
+      opacity: 0;
+    }
+  }
+
+  .lg\:opacity-100 {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 1280px) {
