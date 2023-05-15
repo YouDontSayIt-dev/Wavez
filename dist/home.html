@@ -113,7 +113,7 @@
       <script src="/include/topNavbar.js"></script>
 
       <!--Main Content-->
-      <div class="pl-9 pr-16 bg-gradient-to-r from-custom-color via-custom-color to-gray-600">
+      <div class="pl-9 xl:pr-16 pr-9 bg-gradient-to-r from-custom-color via-custom-color to-gray-600">
         <!--Page Header-->
         <div>
           <div>
@@ -123,9 +123,138 @@
 
         <h1 class="text-[28px] mt-2">Top Picks</h1>
         <!--Top Picks Container-->
-        <div class="flex flex-row flex-wrap justify-between sm:justify-start">
+        <div class="w-[450px] sm:hidden">
+
+
+          <div
+            class="carrousel grid grid-flow-col scroll-auto gap-[1.2rem] overscroll-x-contain snap-mandatory snap-x overflow-y-hidden">
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[300px] flex items-center justify-center">
+              <div id="playlist-profile-toppicks-mb"
+                class="xl:w-[275px] xl:h-[350px] lg:w-[325px] lg:h-[375px] md:w-[310px] md:h-[350px] sm:w-[265px] sm:h-[350px] sm:mb-6 md:mb-16 xl:mb-5 sm:mr-4 md:mr-9 lg:mr-6 xl:mr-4 snap-start  hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div class="mb-2.5">
+                  <h1 class="text-xl text-[#797979]">Playlist</h1>
+                </div>
+
+
+                <div class="relative flex flex-grow">
+                  <img class="w-full h-full" src="/assets/home-assets/toppick-1.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-toppicks-mb"
+                    class="absolute bottom-10 right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                  <div
+                    class="absolute h-[75px] w-full bg-toppick1-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center">
+                    <p>Goddesses</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[300px] flex items-center justify-center">
+              <div id="playlist-profile-newrelease-mb"
+                class="xl:w-[275px] xl:h-[350px] lg:w-[325px] lg:h-[375px] md:w-[310px] md:h-[350px] sm:w-[265px] sm:h-[350px] sm:mb-6 md:mb-16 xl:mb-5 sm:mr-4 md:mr-9 lg:mr-6 xl:mr-4 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div class="mb-2.5">
+                  <h1 class="text-xl text-[#797979]">New Release</h1>
+                </div>
+                <div class="relative flex flex-grow">
+                  <img class="w-full h-full" src="/assets/home-assets/toppick-2.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-newrelease-mb"
+                    class="absolute bottom-10 right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                  <div
+                    class="absolute h-[75px] w-full bg-toppick2-title-color rounded-b-[17px] bottom-0 flex flex-col justify-center items-center text-base text-center">
+                    <div class="uppercase w-full">portals</div>
+                    <div class="w-full">Melanie Martinez</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[300px] flex items-center justify-center">
+              <div id="playlist-profile-made1-mb"
+                class="xl:w-[275px] xl:h-[350px] lg:w-[325px] lg:h-[375px] md:w-[310px] md:h-[350px] sm:w-[265px] sm:h-[350px] sm:mb-6 md:mb-16 xl:mb-5 sm:mr-4 md:mr-9 lg:mr-6 xl:mr-4 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div class="mb-2.5">
+                  <h1 class="text-xl text-[#797979]">Made For You</h1>
+                </div>
+                <div class="relative flex flex-grow">
+                  <img class="w-full h-full" src="/assets/home-assets/toppick-3.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-made1-mb"
+                    class="absolute bottom-10 right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                  <div
+                    class="absolute h-[75px] w-full bg-toppick3-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center">
+                    <p>
+                      Paramore, Issues, Lana Del Rey, Melanie Martinez, BLACKPINK,
+                      Billie Eilish, Sleeping...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[300px] flex items-center justify-center">
+              <div id="playlist-profile-made2-mb"
+                class="xl:w-[275px] xl:h-[350px] lg:w-[325px] lg:h-[375px] md:w-[310px] md:h-[350px] sm:w-[265px] sm:h-[350px] sm:mb-6 md:mb-16 xl:mb-5 sm:mr-4 md:mr-9 lg:mr-6 xl:mr-4 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div class="mb-2.5">
+                  <h1 class="text-xl text-[#797979]">Made For You</h1>
+                </div>
+                <div class="relative flex flex-grow">
+                  <img class="w-full h-full" src="/assets/home-assets/toppick-4.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-made2-mb"
+                    class="absolute bottom-10 right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                  <div
+                    class="absolute h-[75px] w-full bg-toppick4-title-color rounded-b-[17px] bottom-0 flex justify-center items-center text-base text-center">
+                    <p>Suggested For You</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--FOR SM AND UP-->
+        <div class="sm:flex hidden flex-row flex-wrap justify-between sm:justify-start lg:items-center lg:m-auto">
           <div id="playlist-profile-toppicks"
-            class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class="xl:w-[275px] xl:h-[350px] lg:w-[325px] lg:h-[375px] md:w-[310px] md:h-[350px] sm:w-[265px] sm:h-[350px] sm:mb-6 md:mb-16 xl:mb-5 sm:mr-4 md:mr-9 lg:mr-6 xl:mr-4 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div class="mb-2.5">
               <h1 class="text-xl text-[#797979]">Playlist</h1>
             </div>
@@ -153,7 +282,7 @@
           </div>
 
           <div id="playlist-profile-newrelease"
-            class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class="xl:w-[275px] xl:h-[350px] lg:w-[325px] lg:h-[375px] md:w-[310px] md:h-[350px] sm:w-[265px] sm:h-[350px] sm:mb-6 md:mb-16 xl:mb-5 sm:mr-4 md:mr-9 lg:mr-6 xl:mr-4 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div class="mb-2.5">
               <h1 class="text-xl text-[#797979]">New Release</h1>
             </div>
@@ -180,12 +309,12 @@
           </div>
 
           <div id="playlist-profile-made1"
-            class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class="xl:w-[275px] xl:h-[350px] lg:w-[325px] lg:h-[375px] md:w-[310px] md:h-[350px] sm:w-[265px] sm:h-[350px] sm:mb-6 md:mb-16 xl:mb-5 sm:mr-4 md:mr-9 lg:mr-6 xl:mr-4 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div class="mb-2.5">
               <h1 class="text-xl text-[#797979]">Made For You</h1>
             </div>
             <div class="relative flex flex-grow">
-              <img class="w-full h-full" src="/assets/home-assets/toppick-3.png" alt="" />\
+              <img class="w-full h-full" src="/assets/home-assets/toppick-3.png" alt="" />
 
               <!-- HOVER PLAY-BTN -->
               <button id="play-btn-made1"
@@ -209,7 +338,7 @@
           </div>
 
           <div id="playlist-profile-made2"
-            class="w-[275px] h-[350px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class="xl:w-[275px] xl:h-[350px] lg:w-[325px] lg:h-[375px] md:w-[310px] md:h-[350px] sm:w-[265px] sm:h-[350px] sm:mb-6 md:mb-16 xl:mb-5 sm:mr-4 md:mr-9 lg:mr-6 xl:mr-4 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div class="mb-2.5">
               <h1 class="text-xl text-[#797979]">Made For You</h1>
             </div>
@@ -237,12 +366,150 @@
 
         <div class="text-[28px] mt-[12px] mb-[25px] flex justify-between items-center">
           <h1>Recently Played</h1>
-          <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover"><a href="#">See All</a></h1>
+          <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover hidden sm:inline"><a href="#">See All</a>
+          </h1>
         </div>
         <!--Recently played Container-->
-        <div class="flex flex-row flex-wrap justify-between sm:justify-start">
-          <div id="playlist-profile-recent1" class=" h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform
-            hover:scale-105 cursor-pointer ">
+
+        <div class="w-[450px] sm:hidden">
+          <div
+            class="carrousel grid grid-flow-col scroll-auto gap-[1.2rem] overscroll-x-contain snap-mandatory snap-x overflow-y-hidden">
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-recent1-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class=" h-full w-full relative" src="/assets/home-assets/recent-1.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-recent1-mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+
+
+                <div class="mt-2">
+                  <h1 class="text-base">Hostage</h1>
+                  <h1 class="text-base text-[#797979]">Billie Eilish</h1>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-recent2-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class="h-full w-full relative" src="/assets/home-assets/recent-2.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-recent2-mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+                <div class="mt-2">
+                  <h1 class="text-base">Rude Boy</h1>
+                  <h1 class="text-base text-[#797979]">Rhianna</h1>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-recent3-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class="h-full w-full relative" src="/assets/home-assets/recent-3.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-recent3mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+                <div class="mt-2">
+                  <h1 class="text-base">Roger Rabbit</h1>
+                  <h1 class="text-base text-[#797979]">Sleeping With Sirens</h1>
+                </div>
+              </div>
+            </div>
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-recent4-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class="h-full w-full relative" src="/assets/home-assets/recent-4.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-recent4-mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+                <div class="mt-2">
+                  <h1 class="text-base">Tally</h1>
+                  <h1 class="text-base text-[#797979]">BLACKPINK</h1>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-recent5-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class="h-full w-full relative" src="/assets/home-assets/recent-5.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-recent5-mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+                <div class="mt-2">
+                  <h1 class="text-base">Bulls In The Bronx</h1>
+                  <h1 class="text-base text-[#797979]">Pierce The Veil</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--FOR SM AND UP-->
+        <div class="sm:flex hidden flex-row flex-wrap justify-between sm:justify-start ">
+          <div id="playlist-profile-recent1"
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class=" h-full w-full relative" src="/assets/home-assets/recent-1.png" alt="" />
 
@@ -267,7 +534,7 @@
           </div>
 
           <div id="playlist-profile-recent2"
-            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class="h-full w-full relative" src="/assets/home-assets/recent-2.png" alt="" />
 
@@ -290,7 +557,7 @@
           </div>
 
           <div id="playlist-profile-recent3"
-            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class="h-full w-full relative" src="/assets/home-assets/recent-3.png" alt="" />
 
@@ -313,7 +580,7 @@
           </div>
 
           <div id="playlist-profile-recent4"
-            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class="h-full w-full relative" src="/assets/home-assets/recent-4.png" alt="" />
 
@@ -336,7 +603,7 @@
           </div>
 
           <div id="playlist-profile-recent5"
-            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class="h-full w-full relative" src="/assets/home-assets/recent-5.png" alt="" />
 
@@ -361,13 +628,150 @@
 
         <div class="text-[28px] mt-[12px] mb-[24px] flex justify-between items-center">
           <h1>More Of What You Like</h1>
-          <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover"><a href="#">See All</a></h1>
+          <h1 class="text-[22px] hover:text-custom-color-sidebar-brown-hover hidden sm:inline"><a href="#">See All</a>
+          </h1>
         </div>
 
         <!--What you like Container-->
-        <div id="playlist-profile-like1" class="flex flex-row flex-wrap justify-between sm:justify-start mb-[44px]">
+        <div class="w-[450px] sm:hidden">
           <div
-            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class="carrousel grid grid-flow-col scroll-auto gap-[1.2rem] overscroll-x-contain snap-mandatory snap-x overflow-y-hidden">
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-like1-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class="h-full w-full relative" src="/assets/home-assets/like-1.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-like1-mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+                <div class="mt-2">
+                  <h1 class="text-base">So High</h1>
+                  <h1 class="text-base text-[#797979]">Doja Cat</h1>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-like2-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class="h-full w-full relative" src="/assets/home-assets/like-2.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-like2-mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+                <div class="mt-2">
+                  <h1 class="text-base">Nxde</h1>
+                  <h1 class="text-base text-[#797979]">(G)I-DLE</h1>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-like3-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class="h-full w-full relative" src="/assets/home-assets/like-3.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-like3-mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+                <div class="mt-2">
+                  <h1 class=" text-sm sm:text-base">Teenage Dream</h1>
+                  <h1 class="text-base text-[#797979]">Katy Perry</h1>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-like4-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class="h-full w-full relative" src="/assets/home-assets/like-4.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-like4-mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+                <div class="mt-2">
+                  <h1 class="text-base">SOS</h1>
+                  <h1 class="text-base text-[#797979]">SZA</h1>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="snap-start rounded-[30px] min-h-[270px] min-w-[190px] flex items-center justify-center">
+              <div id="playlist-profile-like5-mb"
+                class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
+                <div>
+                  <img class="h-full w-full relative" src="/assets/home-assets/like-5.png" alt="" />
+
+                  <!-- HOVER PLAY-BTN -->
+                  <button id="play-btn-like5-mb"
+                    class="absolute bottom-[70px] right-2 sm:right-5 w-24 h-24 sm:w-16 sm:h-16 pb-2.5 pl-1.5 z-50 bg-custom-color-sidebar-brown-hover rounded-full flex items-center justify-center lg:opacity-0 hover:scale-110 duration-300">
+                    <div href="" class="w-6 h-6">
+                      <svg class="text-white fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                        <path
+                          d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z" />
+                      </svg>
+                    </div>
+                  </button>
+
+                </div>
+                <div class="mt-2">
+                  <h1 class="text-sm sm:text-base">Fearless (Taylor’s Version)</h1>
+                  <h1 class="text-base text-[#797979]">Taylor Swift</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--FOR SM AND UP-->
+        <div class="sm:flex hidden flex-row flex-wrap justify-between sm:justify-start mb-[44px]">
+
+          <div id="playlist-profile-like1"
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class="h-full w-full relative" src="/assets/home-assets/like-1.png" alt="" />
 
@@ -390,7 +794,7 @@
           </div>
 
           <div id="playlist-profile-like2"
-            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class="h-full w-full relative" src="/assets/home-assets/like-2.png" alt="" />
 
@@ -413,7 +817,7 @@
           </div>
 
           <div id="playlist-profile-like3"
-            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class="h-full w-full relative" src="/assets/home-assets/like-3.png" alt="" />
 
@@ -436,7 +840,7 @@
           </div>
 
           <div id="playlist-profile-like4"
-            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class="h-full w-full relative" src="/assets/home-assets/like-4.png" alt="" />
 
@@ -459,7 +863,7 @@
           </div>
 
           <div id="playlist-profile-like5"
-            class="h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer">
+            class=" md:h-[270px] md:w-[220px] sm:h-[240px] sm:w-[175px] sm:mr-3 sm:mb-5 md:mb-8 xl:mb-5 hover:transition-all duration-195 transform hover:scale-105 cursor-pointer ">
             <div>
               <img class="h-full w-full relative" src="/assets/home-assets/like-5.png" alt="" />
 
@@ -540,8 +944,8 @@
       <div class="hidden relative items-center mt-3 mb-2 md:flex">
         <p class="text-white hidden md:block">2:00</p>
         <!-- <svg class="w-96 h-2 ml-3 mr-3" viewBox="0 0 740 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="1" x2="740" y2="1" stroke="#E9EBE9" stroke-opacity="0.6" stroke-width="2"/>
-          </svg>   -->
+          <line y1="1" x2="740" y2="1" stroke="#E9EBE9" stroke-opacity="0.6" stroke-width="2"/>
+      </svg>   -->
         <div class="w-[100%] ml-5 mr-5">
           <input class="hidden md:w-[100%] md:block" type="range" min="0" max="356" value="200">
         </div>
@@ -595,7 +999,7 @@
   </div>
 
   <!-- MENU BAR ON SM & MD -->
-  <div class="flex flex-row lg:hidden w-screen fixed h-14 left-0 text-white bottom-0 mt-auto z-50 bg-custom-color">
+  <div class="flex flex-row lg:hidden w-full fixed h-14 left-0 text-white bottom-0 mt-auto z-50 bg-custom-color">
     <div class="w-[20%] flex flex-col justify-center items-center">
       <a href="/dist/home.html">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
@@ -648,6 +1052,8 @@
       <span class="text-xs overflow-hidden">Playlist</span>
     </div>
   </div>
+
+
 
   <!-- SCRIPTS -->
   <script src="/include/profile-hover.js">profileHover();</script>
