@@ -78,34 +78,36 @@
         </aside>
 
         <!-- MAIN CONTENT -->
-        <main class="flex flex-col flex-grow pl-80 text-white h-auto">
+        <main class=" flex flex-col flex-grow md:pl-80 text-white">
             <!-- TOP NAVBAR -->
             <navbar-component></navbar-component>
             <script src="/include/topNavbar.js"></script>
 
             <!-- CONTENTS -->
             <!-- Playing Music -->
-            <div class="h-[600px] pt-15 font-alata flex flex-col">
+            <div class="h-[570px] pt-15 font-alata flex flex-col">
                 <div class="flex">
-                <h1 class="text-3xl">Settings</h1>
+                    <h1 class="text-[28px] pl-5">Settings</h1>
                 </div>
-                <div class="flex justify-between px-10 py-10">
-                <div class="flex flex-row pl-[100px]">
-                    <div class="flex flex-col justify-center text-lg">
-                        <div>Language</div>
-                        <div class="text-custom-color-settings-text-2">Choose language - Changes will be applied after restarting the website</div>
+                <div class="flex justify-between flex-col lg:flex-row lg:justify-center lg:items-center pr-20">
+                    <div class="w-auto h-auto flex flex-row pt-10 justify-center">
+                        <div class="w-auto h-auto flex flex-col pl-20 pr-10 text-start justify-center text-lg ">
+                            <p class="text-[16px]">Language</p>
+                            <p class="pb-5 text-[14px] text-custom-color-settings-text-2">Choose language - Changes will be applied after restarting the website</p>
+                        </div>
+                    </div>
+                    <div class="w-[100%] ml-20 lg:justify-center ">
+                        <button class="w-[180px] flex justify-center items-center bg-custom-color-settings-button border focus:outline-none shadow-custom-color-queue-text rounded focus:ring ring-white">
+                                <p class="px-2 py-2 text-[16px] text-custom-color-settings-text text-start flex-grow">English</p>
+                                    <span class="border-l p-2 hover:bg-custom-color-settings-button ">
+                                        <svg class="w-7 h-7 text-black fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                            <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/>
+                                        </svg>
+                                    </span>
+                        </button>
                     </div>
                 </div>
-                <button class="relative flex justify-start items-center bg-custom-color-settings-button border focus:outline-none shadow-custom-color-queue-text
-                rounded focus:ring ring-white">
-                <p class="px-4 text-lg text-custom-color-settings-text">English</p>
-                <span class="border-l p-2 hover:bg-custom-color-settings-button pl-[100px]">
-                    <svg class="w-7 h-7 text-black fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                        <path d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/>
-                    </svg>
-                </span>
-                </button>
-                </div>
+                
             </div>
             <!-- Footer -->
             <footer-component></footer-component>
@@ -113,7 +115,7 @@
         </main>
 
         <!-- PLAYBAR -->
-        <div class="w-[90%] ml-[80px] mr-[80px] pl-5 fixed h-[90px] bottom-5 z-50 bg-custom-color-playbar opacity-80 rounded-3xl  mt-auto grid grid-cols-4 items-center text-center">
+        <!-- <div class="w-[90%] ml-[80px] mr-[80px] pl-5 fixed h-[90px] bottom-5 z-50 bg-custom-color-playbar opacity-80 rounded-3xl  mt-auto grid grid-cols-4 items-center text-center">
           <div class="w-56 flex items-center text-start">
               <img src="/assets/addplaylist-assets/album pic.png" alt="album" class="flex-inline-block w-16 h-16 rounded-lg">
               <div>
@@ -141,9 +143,9 @@
               </div>
               <div class="flex relative items-center mt-3 ml-48 mr-48">
               <p class="text-white">2:00</p>
-              <!-- <svg class="w-96 h-2 ml-3 mr-3" viewBox="0 0 740 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <svg class="w-96 h-2 ml-3 mr-3" viewBox="0 0 740 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="1" x2="740" y2="1" stroke="#E9EBE9" stroke-opacity="0.6" stroke-width="2"/>
-                </svg> -->
+                </svg> 
                 <div class="w-96">
                   <input class="w-[370px]" type="range" min="0" max="356" value="200">
                 </div>
@@ -167,7 +169,7 @@
                        
               </div>
             </div>            
-      </div>
+      </div> -->
     </div>
     <script src="/include/profile-hover.js">profileHover();</script>
     <script src="/include/dropdownMenu.js">Dropdown();</script>
