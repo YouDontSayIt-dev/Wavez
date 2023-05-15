@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="x-icon" href="/assets/wavesLogo.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+
+  <title>Sign Up</title>
+</head>
+
+<body>
+  <div class="min-h-screen bg-custom-color py-20 max-md">
+    <div class="container mx-auto">
+      <!--Main Container-->
+      <div class="w-full sm:w-7/12 lg:w-6/12  bg-[#e9ebe9] rounded-3xl mx-auto">
+        <div class="w-full lg:py-15 lg:px-12 py-10 px-8">
+          <!--Logo Container-->
+          <div class="flex flex-row align-middle justify-center mb-3 relative lg:static">
+            <img src="/assets/wavesLogo.png" class="shrink-0 w-[200px] h-[150px] lg:w-[115px] lg:h-[90px] lg:static" />
+            <h1
+              class="font-alata font-bold text-5xl tracking-widest text-[#07405b] text-center absolute top-[40px] lg:static lg:self-center">
+              WAVEZ
+            </h1>
+          </div>
+
+          <h1 class="text-xl font-medium text-center">
+            Sign up for free to start listening.
+          </h1>
+          <hr class="h-px my-8 bg-black border-8" />
+
+
+          <h1 class="uppercase text-2xl font-bold tracking-widest text-center text-[#252B42] mb-5">
+            Sign up Form
+          </h1>
+
+          <!--Form Container-->
+          <form action="">
+            <label for="email" class="uppercase text-base font-medium mb-1 text-[#252B4">
+              Email
+            </label>
+            <div class="mb-3">
+              <input
+                class="w-full h-9 rounded-lg py-3 px-3 text-sm font-alata border-solid border border-neutral-500 transition ease-in-out border-current outline-none bg-input-bg-color focus:ring-blue-500 focus:border-blue-500 focus:border-2 hover:bg-slate-200 placeholder:text-xs"
+                type="email" name="email" id="email" placeholder="Email" autofocus required />
+            </div>
+
+            <label for="password" class="uppercase text-base font-medium mb-1 text-[#252B4">
+              Password
+            </label>
+            <div class="mb-3">
+              <input
+                class="w-full h-9 rounded-lg py-3 px-3 text-sm font-alata border-solid border border-neutral-500 transition ease-in-out border-current outline-none bg-input-bg-color focus:ring-blue-500 focus:border-blue-500 focus:border-2 hover:bg-slate-200 placeholder:text-xs"
+                type="password" name="password" id="password" placeholder="Password" required />
+            </div>
+            <label for="profilename" class="uppercase text-base font-medium mb-1 text-[#252B4">
+              Profile Name
+            </label>
+            <div class="mb-3">
+              <input
+                class="w-full h-9 rounded-lg py-3 px-3 text-sm font-alata border-solid border border-neutral-500 transition ease-in-out border-current outline-none bg-input-bg-color focus:ring-blue-500 focus:border-blue-500 focus:border-2 hover:bg-slate-200 placeholder:text-xs"
+                type="text" name="profilename" id="profilename" placeholder="Profile name" required />
+            </div>
+            <h1 class="uppercase text-base font-medium mb-1 text-[#252B4">
+              Date of Birth
+            </h1>
+
+            <div class="flex flex-row space-x-4 w-full">
+              <div class="w-1/4">
+                <label for="day" class="text-sm font-medium">Day</label>
+                <input type="number" name="day" id="day" min="1" max="31" required placeholder="DD"
+                  class="w-full h-11 rounded-lg py-3 px-3 text-sm font-alata border-solid border border-neutral-500 transition ease-in-out border-current outline-none bg-input-bg-color focus:ring-blue-500 focus:border-blue-500 focus:border-2 hover:bg-slate-200 placeholder:text-sm placeholder:text-black" />
+              </div>
+              <div class="w-1/2">
+                <label for="month" class="text-sm font-medium">Month</label>
+                <select name="month" id="month"
+                  class="w-full h-11 rounded-lg py-3 px-3 text-sm font-alata border-solid border border-neutral-500 transition ease-in-out border-current outline-none bg-input-bg-color focus:ring-blue-500 focus:border-blue-500 focus:border-2 hover:bg-slate-200"
+                  required>
+                  <option value="" disabled selected hidden>Month</option>
+                  <option value="1" class="">January</option>
+                  <option value="2">Febuary</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+              </div>
+              <div class="w-1/4">
+                <label for="year" class="text-sm font-medium">Year</label>
+                <input type="number" name="year" id="year" min="1900" max="2500" required placeholder="YYYY"
+                  class="w-full h-11 rounded-lg py-3 px-3 text-sm font-alata border-solid border border-neutral-500 transition ease-in-out border-current outline-none bg-input-bg-color focus:ring-blue-500 focus:border-blue-500 focus:border-2 hover:bg-slate-200 placeholder:text-sm placeholder:text-black" />
+              </div>
+            </div>
+            <div class="flex align-middle justify-center mt-5 mb-7">
+              <button type="submit"
+                class="w-36 h-9 rounded-full bg-button-color font-alata font-normal text-sm leading-8 tracking-wide border-none hover:shadow-lg hover:scale-105 active:scale-y-[2px] active:shadow-[0_0_2px_0_rgba(47,79,79,0.3)]">
+                SIGN UP
+              </button>
+            </div>
+          </form>
+
+          <!--Social Container-->
+          <div class="flex justify-center align-middle">
+            <h2 class="mt-2.5 text-center text-xs font-alata font-normal border-b-2 border-black w-25">
+              SIGN UP WITH
+            </h2>
+          </div>
+          <!--Social Container-->
+          <div class="flex justify-center align-middle space-x-15 mt-3 px-3">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f text-[30px]"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-apple text-[30px]"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-google text-[30px]"></i>
+            </a>
+          </div>
+
+          <div class="mt-4 flex justify-center align-middle font-alata font-normal text-xs leading-6">
+            <h3>
+              Already have an account? <span class="text-[#e9ebe9]">.</span>
+            </h3>
+            <a href="login.html" class="text-red-900 hover:text-red-600">
+              Log in.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

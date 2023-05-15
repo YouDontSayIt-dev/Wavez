@@ -1,8 +1,8 @@
-# Repository Introduction
-This is a repository for the final requirement for the subject Web Development
+# Branch Introduction
+This is a consolidation branch made for merging the updates of the website for the subject Web Development
 
-## Repository Description
-The languages being used in this course is Hypertext Markup Language (HTML), Cascading Style Sheets (CSS), and Javascript (JS). To look for the laboratory activities, kindly browse the branches of this repository to locate the specific activity. 
+## Branch Description
+The languages being used in this course is Hypertext Markup Language (HTML), Cascading Style Sheets (CSS), and Javascript (JS). This is a consolidation branch for merging updates.
 
 ## Project Description
 Waves is a music website application that aims to provide users music through their web browsers
