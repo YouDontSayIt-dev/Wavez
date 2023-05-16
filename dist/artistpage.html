@@ -13,7 +13,7 @@
 </head>
 <body class="bg-custom-color font-alata text-custom-color-song-more">
      <!-- SIDE NAVBAR -->
-    <aside class="hidden lg:block w-60 fixed left-0 top-0 h-full z-50  bg-custom-color from-custom-color-playlist-card-non-pinned-text to-custom-color">
+    <aside class="hidden lg:block w-60 fixed left-0 top-0 h-full z-50  bg-opacity-0 from-custom-color-playlist-card-non-pinned-text to-custom-color">
 
         <!-- LOGO -->
         <a href="/dist/home.html">
@@ -49,7 +49,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/dist/library.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 rounded-full ml-10 mr-10  bg-custom-color-sidebar-brown  hover:bg-custom-color-navbar-icons-hover focus:bg-black focus:outline-none active:bg-custom-color-sidebar-brown hover:text-white">
+                    <a href="/dist/library.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                         </svg>
@@ -58,8 +58,8 @@
                 </li>
             </ul>
             <!-- DIVIDER -->
-            <div class="mx-auto w-3/4 border-t-1 border-white mt-5 mb-6"></div>
-            <!-- <div class="absolute top-9 left-56 h-3/4 w-1 border-l border-white"></div>  -->
+            <div class="mx-auto w-3/4 border-t-1 bg-gray-400 border-gray-400 mt-5 mb-6"></div>
+            <div class="absolute ml-3 top-4 left-56 h-[85%] border-l bg-gray-400 w-[1px] border-gray-400"></div>
             <ul class="text-white">
                <li><a href="/dist/addplaylist.html" class="flex justify-center text-white space-x-4 pl-5 mt-6 mb-3 rounded-full py-1 hover:text-custom-color-sidebar-brown-hover">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -80,7 +80,7 @@
         </nav>
     </aside>
     
-    <main class="flex flex-col flex-grow ml-60 text-white h-auto">
+    <main class="flex-col flex-grow ml-60 text-white h-auto">
         <div class="flex mb-5 flex-col mid2:pl-10 small:pl-0 bg-[url('/assets/artist-assets/paramoreee.jpeg')] bg-no-repeat bg-left bg-cover">
             <!-- TOP NAVBAR -->
             <navbar-component></navbar-component>
