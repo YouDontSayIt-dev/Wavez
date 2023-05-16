@@ -1704,6 +1704,10 @@ video {
   justify-content: space-evenly;
 }
 
+.justify-items-start {
+  justify-items: start;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -2983,6 +2987,10 @@ video {
     margin-left: 0px;
   }
 
+  .sm\:mr-3 {
+    margin-right: 0.75rem;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -3008,6 +3016,10 @@ video {
     height: min-content;
   }
 
+  .sm\:h-\[150px\] {
+    height: 150px;
+  }
+
   .sm\:w-16 {
     width: 4rem;
   }
@@ -3026,6 +3038,10 @@ video {
 
   .sm\:w-\[60\%\] {
     width: 60%;
+  }
+
+  .sm\:w-\[150px\] {
+    width: 150px;
   }
 
   .sm\:snap-x {
