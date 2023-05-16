@@ -6,7 +6,7 @@ class topNavbar extends HTMLElement {
     connectedCallback(){
         this.innerHTML = `
         <!-- TOP NAVBAR -->
-            <div class="mb-5 justify-start sticky top-0 flex flex-row items-center py-1 md:mb-0 bg-custom-color bg-opacity-95 md:justify-end md:pr-16 md:pb-3 md:pt-3 z-50">
+            <div class="mb-5 justify-start sticky top-0 flex flex-row items-center py-1 md:mb-0 bg-custom-color bg-opacity-0 md:justify-end md:pr-16 md:pb-3 md:pt-3 z-50">
                 <!-- LOGO -->
                 <div class="pl-10 w-1/2 justify-start mt-2">
                     <a href="#" class="block justify-start lg:hidden">
