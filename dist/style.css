@@ -1431,6 +1431,10 @@ video {
   width: 100vw;
 }
 
+.w-\[220px\] {
+  width: 220px;
+}
+
 .min-w-\[190px\] {
   min-width: 190px;
 }
@@ -1820,11 +1824,6 @@ video {
 .bg-gray-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 114 128 / var(--tw-bg-opacity));
-}
-
-.bg-green-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
 }
 
 .bg-green-500 {
@@ -2536,6 +2535,42 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 640px) {
+  .sm\:container {
+    width: 100%;
+  }
+
+  @media (min-width: 640px) {
+    .sm\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .sm\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .sm\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .sm\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .sm\:container {
+      max-width: 1536px;
+    }
+  }
 }
 
 .placeholder\:text-sm::-moz-placeholder {
@@ -3343,6 +3378,10 @@ video {
     height: auto;
   }
 
+  .lg\:h-\[250px\] {
+    height: 250px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -3417,6 +3456,10 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[220px\] {
+    width: 220px;
   }
 
   .lg\:max-w-full {
@@ -3613,6 +3656,26 @@ video {
     height: 350px;
   }
 
+  .xl\:h-\[270px\] {
+    height: 270px;
+  }
+
+  .xl\:h-\[2px\] {
+    height: 2px;
+  }
+
+  .xl\:h-\[250px\] {
+    height: 250px;
+  }
+
+  .xl\:h-\[260px\] {
+    height: 260px;
+  }
+
+  .xl\:h-\[100px\] {
+    height: 100px;
+  }
+
   .xl\:w-36 {
     width: 9rem;
   }
@@ -3625,6 +3688,22 @@ video {
     width: 275px;
   }
 
+  .xl\:w-\[2px\] {
+    width: 2px;
+  }
+
+  .xl\:w-\[250px\] {
+    width: 250px;
+  }
+
+  .xl\:w-\[220px\] {
+    width: 220px;
+  }
+
+  .xl\:w-\[200px\] {
+    width: 200px;
+  }
+
   .xl\:gap-x-3 {
     -moz-column-gap: 0.75rem;
          column-gap: 0.75rem;
@@ -3632,6 +3711,16 @@ video {
 
   .xl\:pr-16 {
     padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .\32xl\:w-\[275px\] {
+    width: 275px;
   }
 }
 
