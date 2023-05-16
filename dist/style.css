@@ -1330,6 +1330,10 @@ video {
   height: 11rem;
 }
 
+.h-\[220px\] {
+  height: 220px;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1604,6 +1608,22 @@ video {
   cursor: pointer;
 }
 
+.snap-x {
+  scroll-snap-type: x var(--tw-scroll-snap-strictness);
+}
+
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+
+.snap-center {
+  scroll-snap-align: center;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
 .grid-flow-row-dense {
   grid-auto-flow: row dense;
 }
@@ -1626,6 +1646,10 @@ video {
 
 .flex-row {
   flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -1732,6 +1756,18 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.overscroll-x-contain {
+  overscroll-behavior-x: contain;
+}
+
+.scroll-auto {
+  scroll-behavior: auto;
 }
 
 .break-words {
@@ -2030,6 +2066,10 @@ video {
   background-image: url('/assets/artist-assets/paramoreee.jpeg');
 }
 
+.bg-\[url\(\'\/assets\/artist-assets\/paramore\.jpg\'\)\] {
+  background-image: url('/assets/artist-assets/paramore.jpg');
+}
+
 .from-custom-color {
   --tw-gradient-from: #04151D var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(4 21 29 / 0) var(--tw-gradient-to-position);
@@ -2075,6 +2115,10 @@ video {
 
 .bg-left {
   background-position: left;
+}
+
+.bg-top {
+  background-position: top;
 }
 
 .bg-no-repeat {
@@ -2898,6 +2942,10 @@ video {
     right: 1.25rem;
   }
 
+  .sm\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+
   .sm\:mx-7 {
     margin-left: 1.75rem;
     margin-right: 1.75rem;
@@ -2929,6 +2977,10 @@ video {
 
   .sm\:mr-5 {
     margin-right: 1.25rem;
+  }
+
+  .sm\:ml-0 {
+    margin-left: 0px;
   }
 
   .sm\:flex {
@@ -2976,6 +3028,18 @@ video {
     width: 60%;
   }
 
+  .sm\:snap-x {
+    scroll-snap-type: x var(--tw-scroll-snap-strictness);
+  }
+
+  .sm\:grid-flow-row {
+    grid-auto-flow: row;
+  }
+
+  .sm\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
   .sm\:justify-start {
     justify-content: flex-start;
   }
@@ -2983,6 +3047,14 @@ video {
   .sm\:gap-x-3 {
     -moz-column-gap: 0.75rem;
          column-gap: 0.75rem;
+  }
+
+  .sm\:overflow-hidden {
+    overflow: hidden;
+  }
+
+  .sm\:overscroll-auto {
+    overscroll-behavior: auto;
   }
 
   .sm\:px-7 {
@@ -3001,6 +3073,10 @@ video {
 
   .sm\:pl-5 {
     padding-left: 1.25rem;
+  }
+
+  .sm\:pr-0 {
+    padding-right: 0px;
   }
 
   .sm\:text-3xl {
@@ -3265,6 +3341,10 @@ video {
     margin-top: auto;
   }
 
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3341,6 +3421,10 @@ video {
     width: auto;
   }
 
+  .lg\:w-11\/12 {
+    width: 91.666667%;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
   }
@@ -3355,6 +3439,10 @@ video {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
   }
 
   .lg\:self-center {
@@ -3430,6 +3518,11 @@ video {
 
   .lg\:text-\[60px\] {
     font-size: 60px;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   @media (min-width: 1024px) {

@@ -80,8 +80,8 @@
         </nav>
     </aside>
     
-    <main class="flex flex-col flex-grow ml-60 text-white h-auto">
-        <div class="flex mb-5 flex-col mid2:pl-10 small:pl-0 bg-[url('/assets/artist-assets/paramoreee.jpeg')] bg-no-repeat bg-left bg-cover">
+    <main class="flex flex-col flex-grow lg:ml-60 text-white h-auto">
+        <div class="flex mb-5 flex-col sm:pr-0 small:pl-0 bg-[url('/assets/artist-assets/paramore.jpg')] bg-no-repeat bg-center bg-cover">
             <!-- TOP NAVBAR -->
             <navbar-component></navbar-component>
             <script src="/include/topNavbar.js"></script>  
@@ -112,18 +112,17 @@
                 </button>
             </span>
         </div>
-        <div class="grid-cols-3 auto-rows-max container flex flex-col-reverse md:flex-row px-6 mx-auto mt-1 space-y-0">
+        <div class="grid-cols-3 auto-rows-max container flex flex-col md:flex-row px-6 mx-auto mt-1 space-y-0">
             <!-- New Release -->
             <div>
-                <p class="text-base text-custom-color-song-font my-3">
-                    New Release <span class="ml-345px">Top Tracks</span>
-                </p>
-                <div class="flex small:ml-10 xsmall:ml-5">
-                    <div id="playlist-profile-recent1" class=" h-[270px] w-[220px] mb-5 hover:transition-all duration-195 transform
+                <div class="flex small:ml-10 xsmall:ml-5 flex-col">
+                    <p class="text-base text-custom-color-song-font my-3 relative">
+                        New Release 
+                    </p>
+                    <div class=" h-[220px] w-[220px] mb-5 hover:transition-all duration-195 transform
                     hover:scale-105 cursor-pointer ">
-                    <div>
-                      <img class=" h-full w-full relative rounded-xl" src="/assets/artist-assets/thisiswhy.png" alt="" />
-        
+                        <img class=" h-full w-full relative rounded-xl" src="/assets/artist-assets/thisiswhy.png" alt="" />
+                    </div>
                 </div>
             </div> 
     
@@ -145,7 +144,10 @@
             </div>
     
             <!-- Top Tracks -->
-            <div class="h-auto w-6/12 pb-5 font-alata flex flex-col ml-20">
+            <div class="h-auto w-6/12 pb-5 font-alata flex flex-col ml-20 sm:ml-0">
+                <p class="text-base text-custom-color-song-font my-3">
+                    Top Tracks 
+                </p>
                 <!-- Top 1-->
                 <div class="grid grid-cols-4 items-center">
                     <div class="flex flex-row col-span-4 items-center md:col-span-2">
@@ -216,12 +218,12 @@
         </div>
     
         <!-- Albums -->
-        <div class="flex flex-row h-auto mb-3">
+        <div class="flex flex-row h-auto mb-3 ">
             <div class="w-auto h-10">
               <h4 class="absolute w-auto h-9 text-custom-color-song-font"> Albums </h4>
             </div>
             
-            <div class="flex flex-row container text-base capitalize mt-12 w-auto justify-between items-center">
+            <div class="flex flex-row container text-base capitalize mt-12 w-auto justify-between items-center sm:overflow-hidden sm:overscroll-auto">
               <!--Album 1-->
               <div class="flex flex-col w-auto h-auto justify-start">
                 <a href=""><img src="/assets/artist-assets/thisiswhy.png" alt="Album 1" class="h-44 w-44 relative rounded-xl">
@@ -240,19 +242,19 @@
                 <p class="relative flex text-custom-color-song-font"> Paramore </p></a>
                 <a href=""><p class="text-custom-color-font-album text-sm">2013 · 17 Songs </p></a>
               </div> 
-              <!--Album 3-->
+              <!--Album 4-->
               <div class="flex flex-col w-auto h-auto justify-start  ml-5">
                 <a href="" ><img src="/assets/artist-assets/brand.jpeg" alt="Album 3" class="h-44 w-44 relative rounded-xl">
                 <p class="relative flex text-custom-color-song-font"> Brand New Eyes </p></a>
                 <a href=""><p class="text-custom-color-font-album text-sm">2009 · 11 Songs </p></a>
               </div>
-              <!--Album 4-->
+              <!--Album 5-->
               <div class="flex flex-col w-auto h-auto justify-start  ml-5">
                 <a href="" ><img src="/assets/artist-assets/riooot.jpeg" alt="Album 3" class="h-44 w-44 relative rounded-xl">
                 <p class="relative flex text-custom-color-song-font"> Riot! </p></a>
                 <a href=""><p class="text-custom-color-font-album text-sm">2007 · 14 Songs  </p></a>
               </div>
-              <!--Album 5-->
+              <!--Album 6-->
               <div class="flex flex-col w-auto h-auto justify-start  ml-5">
                 <a href="" ><img src="/assets/artist-assets/all we know.jpeg" alt="Album 3" class="h-44 w-44 relative rounded-xl">
                 <p class="relative flex text-custom-color-song-font"> All We Know </p></a>
