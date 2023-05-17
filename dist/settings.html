@@ -10,10 +10,10 @@
 <body class="p-0 m-0 font-alata h-screen bg-custom-color">
     <div class="flex">
         <!-- SIDE NAVBAR -->
-        <aside class="hidden md:block w-60 fixed left-0 top-0 h-full z-50 bg-gradient-to-t from-custom-color-playlist-card-non-pinned-text to-custom-color">
+        <aside class="hidden md:block w-60 fixed left-0 top-0 h-full z-50 bg-opacity-0 from-custom-color-playlist-card-non-pinned-text to-custom-color">
 
             <!-- LOGO -->
-            <a href="#">
+            <a href="/dist/home.html">
                 <img src="/assets/wavesLogo.png" class="mx-auto my-6 w-15 h-12" alt="Logo">
             </a>
 
@@ -21,7 +21,7 @@
             <nav class="flex flex-row justify-center flex-wrap font-normal text-lg pt-7">
                 <ul class="flex-grow">
                     <li>
-                        <a href="#" class = "flex justify-center space-x-5 mt-6 mb-3 text-white py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <a href="/dist/home.html" class = "flex justify-center space-x-5 mt-6 mb-3 text-white py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                               </svg>
@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <a href="/dist/search-page.html" class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                             </svg>
@@ -38,7 +38,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <a href="/dist/queue.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
                             </svg>
@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <a href="/dist/library.html" class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                             </svg>
@@ -55,10 +55,10 @@
                     </li>
                 </ul>
                 <!-- DIVIDER -->
-                <div class="mx-auto w-3/4 border-t-1 border-white mt-5 mb-6"></div>
-                <!-- <div class="absolute top-9 left-56 h-3/4 w-1 border-l border-white"></div>  -->
+                <div class="mx-auto w-3/4 border-t-1 bg-gray-400 border-gray-400 mt-5 mb-6"></div>
+                <div class="absolute ml-3 top-4 left-56 h-[85%] border-l bg-gray-400 w-[1px] border-gray-400"></div>
                 <ul class="text-white">
-                   <li><a href="" class="flex justify-center text-white space-x-4 pl-5 mt-6 mb-3 rounded-full py-1 hover:text-custom-color-sidebar-brown-hover">
+                   <li><a href="/dist/addplaylist.html" class="flex justify-center text-white space-x-4 pl-5 mt-6 mb-3 rounded-full py-1 hover:text-custom-color-sidebar-brown-hover">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
                         </svg>                    
@@ -66,7 +66,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 hover:text-custom-color-sidebar-brown-hover" >
+                        <a href="/dist/likedsongs.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 hover:text-custom-color-sidebar-brown-hover" >
                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                                 <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
                             </svg>                          
@@ -78,13 +78,13 @@
         </aside>
 
         <!-- MAIN CONTENT -->
-        <main class=" flex flex-col flex-grow md:pl-80 text-white">
+        <div class="flex-col flex-grow md:pl-80 text-white">
             <!-- TOP NAVBAR -->
             <navbar-component></navbar-component>
             <script src="/include/topNavbar.js"></script>
 
             <!-- CONTENTS -->
-            <!-- Playing Music -->
+            <!-- Settings -->
             <div class="h-[570px] pt-15 font-alata flex flex-col">
                 <div class="flex">
                     <h1 class="text-[28px] pl-5">Settings</h1>
@@ -96,7 +96,7 @@
                             <p class="pb-5 text-[14px] text-custom-color-settings-text-2">Choose language - Changes will be applied after restarting the website</p>
                         </div>
                     </div>
-                    <div class="w-[100%] ml-20 lg:justify-center ">
+                    <div class="flex w-[100%] ml-10 justify-center md:justify-center lg:flex-grow lg:justify-end">
                         <button class="w-[180px] flex justify-center items-center bg-custom-color-settings-button border focus:outline-none shadow-custom-color-queue-text rounded focus:ring ring-white">
                                 <p class="px-2 py-2 text-[16px] text-custom-color-settings-text text-start flex-grow">English</p>
                                     <span class="border-l p-2 hover:bg-custom-color-settings-button ">
@@ -112,65 +112,15 @@
             <!-- Footer -->
             <footer-component></footer-component>
             <script src="/include/footer.js"></script>
-        </main>
-
-        <!-- PLAYBAR -->
-        <!-- <div class="w-[90%] ml-[80px] mr-[80px] pl-5 fixed h-[90px] bottom-5 z-50 bg-custom-color-playbar opacity-80 rounded-3xl  mt-auto grid grid-cols-4 items-center text-center">
-          <div class="w-56 flex items-center text-start">
-              <img src="/assets/addplaylist-assets/album pic.png" alt="album" class="flex-inline-block w-16 h-16 rounded-lg">
-              <div>
-                <a href="" class="flex-inline-block ml-6 text-custom-color-song-font text-base">King Of The Heart</a>
-                <p class="flex-inline-block ml-6 text-sm text-custom-color-add-searchfont"> Pierce The Viel</p>
-              </div>
-            </div>
-            <div class="flex-col col-span-2">
-              <div class="flex items-center mt-2 ml-60 mr-60 justify-between">
-                <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 5.46992V4.68867C0 4.04145 0.524658 3.51679 1.17188 3.51679H18.75V1.17304C18.75 0.129733 20.0146 -0.391507 20.7505 0.344381L24.6568 4.25063C25.1144 4.7083 25.1144 5.45029 24.6568 5.90791L20.7505 9.81416C20.0174 10.5472 18.75 10.0332 18.75 8.98554V6.64179H1.17188C0.524658 6.64179 0 6.11714 0 5.46992ZM23.8281 12.8918H6.25V10.548C6.25 9.50732 4.98721 8.98164 4.24946 9.71938L0.343213 13.6256C-0.114404 14.0833 -0.114404 14.8253 0.343213 15.2829L4.24946 19.1892C4.98325 19.9229 6.25 19.4073 6.25 18.3605V16.0168H23.8281C24.4753 16.0168 25 15.4921 25 14.8449V14.0637C25 13.4165 24.4753 12.8918 23.8281 12.8918Z" fill="#E9EBE9"/>
-                  </svg>
-                  <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.71863 6.98486L16.3593 0.344238C16.8182 -0.114746 17.5604 -0.114746 18.0145 0.344238L19.118 1.44775C19.577 1.90674 19.577 2.64893 19.118 3.10303L14.4159 7.81494L19.1229 12.522C19.5819 12.981 19.5819 13.7231 19.1229 14.1772L18.0194 15.2856C17.5604 15.7446 16.8182 15.7446 16.3641 15.2856L9.72351 8.64502C9.25965 8.18604 9.25965 7.44385 9.71863 6.98486ZM0.34363 8.64502L6.98426 15.2856C7.44324 15.7446 8.18543 15.7446 8.63953 15.2856L9.74304 14.1821C10.202 13.7231 10.202 12.981 9.74304 12.5269L5.0409 7.81494L9.74793 3.10791C10.2069 2.64893 10.2069 1.90674 9.74793 1.45264L8.64441 0.344238C8.18543 -0.114746 7.44324 -0.114746 6.98914 0.344238L0.348513 6.98486C-0.115354 7.44385 -0.115354 8.18604 0.34363 8.64502Z" fill="#E9EBE9"/>
-                    </svg>
-                    <svg width="22" height="25" viewBox="0 0 22 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M20.7227 10.4818L3.53516 0.3207C2.13867 -0.504495 0 0.296286 0 2.3373V22.6547C0 24.4857 1.9873 25.5893 3.53516 24.6713L20.7227 14.515C22.2559 13.6117 22.2607 11.3852 20.7227 10.4818Z" fill="#E9EBE9"/>
-                      </svg>
-                      <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.74365 8.64502L3.10303 15.2856C2.64404 15.7446 1.90186 15.7446 1.44775 15.2856L0.344238 14.1821C-0.114746 13.7231 -0.114746 12.981 0.344238 12.5269L5.05127 7.81982L0.344238 3.11279C-0.114746 2.65381 -0.114746 1.91162 0.344238 1.45752L1.44287 0.344238C1.90186 -0.114746 2.64404 -0.114746 3.09814 0.344238L9.73877 6.98486C10.2026 7.44385 10.2026 8.18604 9.74365 8.64502ZM19.1187 6.98486L12.478 0.344238C12.019 -0.114746 11.2769 -0.114746 10.8228 0.344238L9.71924 1.44775C9.26025 1.90674 9.26025 2.64893 9.71924 3.10303L14.4263 7.81006L9.71924 12.5171C9.26025 12.9761 9.26025 13.7183 9.71924 14.1724L10.8228 15.2759C11.2817 15.7349 12.0239 15.7349 12.478 15.2759L19.1187 8.63525C19.5776 8.18604 19.5776 7.44385 19.1187 6.98486Z" fill="#E9EBE9"/>
-                        </svg>
-                        <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M24.4666 11.0512L20.5335 14.9843C20.1674 15.3504 19.5738 15.3504 19.2077 14.9843L15.2746 11.0512C14.9085 10.6851 14.9085 10.0915 15.2746 9.72542L15.6974 9.30265C16.0709 8.92913 16.6791 8.9378 17.0419 9.32187L18.6206 10.9934V3.87944H11.2944C11.0458 3.87943 10.8073 3.78067 10.6315 3.60487L10.0065 2.97987C9.41593 2.38925 9.83421 1.37944 10.6694 1.37944H20.1831C20.7008 1.37944 21.1206 1.79917 21.1206 2.31694V10.9934L22.6993 9.32187C23.062 8.93784 23.6703 8.92913 24.0438 9.30265L24.4666 9.72542C24.8327 10.0915 24.8327 10.6851 24.4666 11.0512ZM14.1096 11.654C14.0225 11.567 13.9192 11.4979 13.8054 11.4508C13.6917 11.4037 13.5698 11.3794 13.4467 11.3794H6.12058V4.26542L7.69933 5.93698C8.06206 6.32101 8.67026 6.32972 9.04382 5.95616L9.46655 5.53343C9.83269 5.16729 9.83269 4.5737 9.46655 4.20761L5.53351 0.2746C5.16737 -0.0915332 4.57378 -0.0915332 4.20769 0.2746L0.2746 4.20765C-0.0915332 4.57378 -0.0915332 5.16737 0.2746 5.53347L0.697334 5.9562C1.07085 6.32972 1.67909 6.32104 2.04183 5.93702L3.62058 4.26542V12.9419C3.62058 13.4597 4.0403 13.8794 4.55808 13.8794H14.0717C14.9069 13.8794 15.3252 12.8696 14.7346 12.279L14.1096 11.654Z" fill="#E9EBE9"/>
-                          </svg>                                                                 
-              </div>
-              <div class="flex relative items-center mt-3 ml-48 mr-48">
-              <p class="text-white">2:00</p>
-               <svg class="w-96 h-2 ml-3 mr-3" viewBox="0 0 740 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="1" x2="740" y2="1" stroke="#E9EBE9" stroke-opacity="0.6" stroke-width="2"/>
-                </svg> 
-                <div class="w-96">
-                  <input class="w-[370px]" type="range" min="0" max="356" value="200">
-                </div>
-              <p class="text-white">3:56</p>
-              </div>
-              </div>
-              <div class="w-72 ml-auto">
-              <div class="flex flex-row justify-evenly">
-              <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.5738 1.49576C19.8981 -0.784512 15.9186 -0.374356 13.4625 2.15982L12.5006 3.15104L11.5387 2.15982C9.08751 -0.374356 5.10314 -0.784512 2.42736 1.49576C-0.639049 4.11295 -0.800182 8.81021 1.94396 11.6471L11.3922 21.403C12.0026 22.0329 12.9938 22.0329 13.6041 21.403L23.0524 11.6471C25.8014 8.81021 25.6402 4.11295 22.5738 1.49576Z" fill="#9A7F69"/>
-                </svg>
-                <svg width="25" height="22" viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M22.6562 0H16.4062C15.1123 0 14.0625 1.0498 14.0625 2.34375V8.59375C14.0625 9.8877 15.1123 10.9375 16.4062 10.9375H20.3125V14.0625C20.3125 15.7861 18.9111 17.1875 17.1875 17.1875H16.7969C16.1475 17.1875 15.625 17.71 15.625 18.3594V20.7031C15.625 21.3525 16.1475 21.875 16.7969 21.875H17.1875C21.5039 21.875 25 18.3789 25 14.0625V2.34375C25 1.0498 23.9502 0 22.6562 0ZM8.59375 0H2.34375C1.0498 0 0 1.0498 0 2.34375V8.59375C0 9.8877 1.0498 10.9375 2.34375 10.9375H6.25V14.0625C6.25 15.7861 4.84863 17.1875 3.125 17.1875H2.73438C2.08496 17.1875 1.5625 17.71 1.5625 18.3594V20.7031C1.5625 21.3525 2.08496 21.875 2.73438 21.875H3.125C7.44141 21.875 10.9375 18.3789 10.9375 14.0625V2.34375C10.9375 1.0498 9.8877 0 8.59375 0Z" fill="#E9EBE9"/>
-                  </svg>
-                <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.78125 3.51562H21.0938C21.5252 3.51562 21.875 3.16587 21.875 2.73438V0.78125C21.875 0.349756 21.5252 0 21.0938 0H0.78125C0.349756 0 0 0.349756 0 0.78125V2.73438C0 3.16587 0.349756 3.51562 0.78125 3.51562ZM0.78125 11.3281H21.0938C21.5252 11.3281 21.875 10.9784 21.875 10.5469V8.59375C21.875 8.16226 21.5252 7.8125 21.0938 7.8125H0.78125C0.349756 7.8125 0 8.16226 0 8.59375V10.5469C0 10.9784 0.349756 11.3281 0.78125 11.3281ZM0.78125 19.1406H21.0938C21.5252 19.1406 21.875 18.7909 21.875 18.3594V16.4062C21.875 15.9748 21.5252 15.625 21.0938 15.625H0.78125C0.349756 15.625 0 15.9748 0 16.4062V18.3594C0 18.7909 0.349756 19.1406 0.78125 19.1406Z" fill="#E9EBE9"/>
-                    </svg>
-                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.4995 0.343802L6.15527 4.68755H1.17188C0.524414 4.68755 0 5.21197 0 5.85943V12.8907C0 13.5377 0.524414 14.0626 1.17188 14.0626H6.15527L10.4995 18.4058C11.2334 19.1397 12.5 18.6241 12.5 17.5772V1.1729C12.5 0.124564 11.2324 -0.38862 10.4995 0.343802ZM16.5151 5.62115C15.9497 5.31206 15.2363 5.51568 14.9229 6.08257C14.6108 6.64947 14.8174 7.36187 15.3843 7.67486C16.0146 8.02154 16.4062 8.6729 16.4062 9.37505C16.4062 10.0772 16.0146 10.7286 15.3848 11.0748C14.8179 11.3877 14.6113 12.1002 14.9233 12.667C15.2373 13.2364 15.9512 13.4385 16.5156 13.1285C17.894 12.3692 18.7505 10.9312 18.7505 9.37456C18.7505 7.81792 17.894 6.38042 16.5151 5.62115Z" fill="#E9EBE9"/>
-                      </svg> 
-                       
-              </div>
-            </div>            
-      </div> -->
+        </div>
     </div>
+    <!-- PLAYBAR -->
+    <playbar-component></playbar-component>
+    <script src="/include/playbar.js"></script>
+
+    <!-- MENU BAR -->
+    <menubar-component></menubar-component>
+    <script src="/include/menubar.js"></script>
     <script src="/include/profile-hover.js">profileHover();</script>
     <script src="/include/dropdownMenu.js">Dropdown();</script>
 </body>
