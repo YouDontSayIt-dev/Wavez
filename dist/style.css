@@ -664,6 +664,10 @@ video {
   top: 40px;
 }
 
+.top-4 {
+  top: 1rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -868,10 +872,6 @@ video {
 
 .ml-3 {
   margin-left: 0.75rem;
-}
-
-.ml-345px {
-  margin-left: 345.79px;
 }
 
 .ml-4 {
@@ -1142,16 +1142,16 @@ video {
   height: 200px;
 }
 
+.h-\[220px\] {
+  height: 220px;
+}
+
 .h-\[24\.16px\] {
   height: 24.16px;
 }
 
 .h-\[26px\] {
   height: 26px;
-}
-
-.h-\[270px\] {
-  height: 270px;
 }
 
 .h-\[2px\] {
@@ -1206,6 +1206,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[85\%\] {
+  height: 85%;
 }
 
 .min-h-\[270px\] {
@@ -1429,6 +1433,10 @@ video {
   width: 100vw;
 }
 
+.w-\[1px\] {
+  width: 1px;
+}
+
 .min-w-\[190px\] {
   min-width: 190px;
 }
@@ -1494,8 +1502,8 @@ video {
   grid-auto-rows: max-content;
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-cols-4 {
@@ -1508,10 +1516,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-col-reverse {
-  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -1552,6 +1556,10 @@ video {
 
 .justify-evenly {
   justify-content: space-evenly;
+}
+
+.justify-items-start {
+  justify-items: start;
 }
 
 .gap-2 {
@@ -1751,6 +1759,17 @@ video {
   border-color: transparent;
 }
 
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
 .bg-\[\#e9ebe9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(233 235 233 / var(--tw-bg-opacity));
@@ -1897,6 +1916,11 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
+.bg-gray-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-0 {
   --tw-bg-opacity: 0;
 }
@@ -1913,8 +1937,8 @@ video {
   --tw-bg-opacity: 0.95;
 }
 
-.bg-\[url\(\'\/assets\/artist-assets\/paramoreee\.jpeg\'\)\] {
-  background-image: url('/assets/artist-assets/paramoreee.jpeg');
+.bg-\[url\(\'\/assets\/artist-assets\/paramore\.jpg\'\)\] {
+  background-image: url('/assets/artist-assets/paramore.jpg');
 }
 
 .bg-\[url\(\'\/assets\/login-img\.png\'\)\] {
@@ -1960,10 +1984,6 @@ video {
 
 .bg-center {
   background-position: center;
-}
-
-.bg-left {
-  background-position: left;
 }
 
 .bg-no-repeat {
@@ -2901,6 +2921,10 @@ video {
     padding-left: 1.25rem;
   }
 
+  .sm\:pr-0 {
+    padding-right: 0px;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2959,6 +2983,10 @@ video {
     margin-top: 1.25rem;
   }
 
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2989,6 +3017,10 @@ video {
 
   .md\:h-\[350px\] {
     height: 350px;
+  }
+
+  .md\:h-\[220px\] {
+    height: 220px;
   }
 
   .md\:w-14 {
@@ -3041,6 +3073,14 @@ video {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
+  }
+
+  .md\:w-44 {
+    width: 11rem;
   }
 
   .md\:flex-row {
@@ -3140,6 +3180,16 @@ video {
     font-size: 54px;
   }
 
+  .md\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .md\:text-\[18\] {
     color: 18;
   }
@@ -3222,6 +3272,10 @@ video {
 
   .lg\:ml-2 {
     margin-left: 0.5rem;
+  }
+
+  .lg\:ml-20 {
+    margin-left: 5rem;
   }
 
   .lg\:ml-3 {
@@ -3600,6 +3654,10 @@ video {
     line-height: 1.75rem;
   }
 
+  .lg\:text-\[18px\] {
+    font-size: 18px;
+  }
+
   .lg\:text-custom-color-song-font {
     --tw-text-opacity: 1;
     color: rgb(233 235 233 / var(--tw-text-opacity));
@@ -3887,6 +3945,10 @@ video {
 
   .\32xsmall\:hidden {
     display: none;
+  }
+
+  .\32xsmall\:h-32 {
+    height: 8rem;
   }
 
   .\32xsmall\:w-32 {
