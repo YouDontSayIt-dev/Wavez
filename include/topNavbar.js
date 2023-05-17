@@ -44,12 +44,12 @@ class topNavbar extends HTMLElement {
                         </button> 
                         <!--profile dropdown-->                
                         <ul id="dropdown-menu" class="absolute hidden text-custom-color-song-font w-40 pt-12 ml-1"> 
-                            <li><a class="rounded-t-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Account</a></li> 
-                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Profile</a></li> 
-                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Settings</a></li> 
-                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Support</a></li>
+                            <li><a class=" hidden rounded-t-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Account</a></li> 
+                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="/dist/profile.html">Profile</a></li> 
+                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="/dist/settings.html">Settings</a></li> 
+                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="/dist/footer-pages/support.html">Support</a></li>
                             <hr class="bg-black">
-                            <li><a class="rounded-b-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Logout</a></li> 
+                            <li><a class="rounded-b-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="/dist/front.html">Logout</a></li> 
                         </ul>
                     </div>
                 </div>

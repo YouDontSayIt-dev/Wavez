@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />    
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+    <title>Artist</title>
+</head>
+<body class="bg-custom-color font-alata text-custom-color-song-more">
+
+  <!-- SIDE NAVBAR -->
+    <aside class="hidden lg:block w-60 fixed left-0 top-0 h-full z-50 bg-opacity-0 from-custom-color-playlist-card-non-pinned-text to-custom-color">
+
+        <!-- LOGO -->
+        <a href="/dist/home.html">
+            <img src="/assets/wavesLogo.png" class="mx-auto my-6 w-15 h-12" alt="Logo">
+        </a>
+
+        <!-- Navigation -->
+        <nav class="flex flex-row justify-center flex-wrap font-normal text-lg pt-7">
+            <ul class="flex-grow">
+                <li>
+                    <a href="/dist/home.html" class = "flex justify-center space-x-5 mt-6 mb-3 text-white py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                        </svg>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/dist/search-page.html" class="flex text-white justify-center space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                      <span>Search</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/dist/queue.html" class="flex justify-center text-white space-x-4 pl-5 mt-6 mb-3 rounded-full py-1 hover:text-custom-color-sidebar-brown-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+                        </svg>
+                        <span>Queue</span>                          
+                    </a>
+                </li>
+                <li>
+                    <a href="/dist/library.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 px-10 hover:text-custom-color-sidebar-brown-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                        <span>Library</span>                          
+                    </a>
+                </li>
+            </ul>
+            <!-- DIVIDER -->
+            <div class="mx-auto w-3/4 border-t-1 bg-gray-400 border-gray-400 mt-5 mb-6"></div>
+            <div class="absolute ml-3 top-4 left-56 h-[85%] border-l bg-gray-400 w-[1px] border-gray-400"></div>
+            <ul class="text-white">
+               <li><a href="/dist/addplaylist.html" class="flex justify-center text-white space-x-4 pl-5 mt-6 mb-3 rounded-full py-1 hover:text-custom-color-sidebar-brown-hover">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 9a.75.75 0 00-1.5 0v2.25H9a.75.75 0 000 1.5h2.25V15a.75.75 0 001.5 0v-2.25H15a.75.75 0 000-1.5h-2.25V9z" clip-rule="evenodd" />
+                    </svg>                    
+                    <span>Create Playlist</span>                          
+                    </a>
+                </li>
+                <li>
+                    <a href="/dist/likedsongs.html" class="flex justify-center text-white space-x-5 mt-6 mb-3 py-1 hover:text-custom-color-sidebar-brown-hover" >
+                        <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+                        </svg>                          
+                        <span>Liked Songs</span>  
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    
+
+    <div class=" flex-col flex-grow lg:ml-60 text-white h-auto">
+        <navbar-component></navbar-component>
+            <script src="/include/topNavbar.js"></script>
+        <div class="flex mb-5 flex-col sm:pr-0 small:pl-0 bg-[url('/assets/artist-assets/paramore.jpg')] bg-no-repeat bg-center bg-cover">
+            <!-- TOP NAVBAR -->
+            <div class="flex mb-5 small:flex-col sm:pl-5 h-30 mt-20">
+                <div class="flex flex-col justify-center ml-7 2xsmall:pl-0 small:mx-auto small:mt-5 small:items-center">
+                    <p class="text-neutral-400">Artist</p>
+                    <p class="my-2 text-6xl text-custom-color-song-font mid:text-5xl small:text-3xl">Paramore</p>
+                    <p class="mt-1 text-neutral-400">19,285,196 monthly listeners</p> 
+                </div>
+            </div>
+        </div>
+       
+     <!--buttons-->
+        <div class="items-center lg:mt-4 relative flex flex-col md:flex-row lg:h-15 p-3">
+            <div class="flex lg:grow">
+                <!--play button-->
+                <div class="inline-block">
+                    <button class="bg-custom-color-song-button hover:bg-custom-color-song-hover text-custom-color-song-font text-base ml-6 py-1 h-8 px-2 rounded-2xl flex">
+                    <svg class="w-6 h-6 mr-1 flex" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M5 3l10 7-10 7V3z" />
+                    </svg>
+                        Play
+                    </button>
+                </div>
+                <!--shuffle button-->
+                <div class="inline-block">
+                    <button type="button" class="bg-custom-color hover:bg-custom-color-song-button text-custom-color-song-add text-base w-auto ml-3 py-1 px-2 h-8 rounded-2xl flex">
+                        Follow
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid-cols-2 auto-rows-max container flex flex-col md:flex-col lg:flex-row px-6 mt-1 space-y-0 justify-left">
+            <!-- New Release -->
+            <div class="flex flex-row grid-cols-2">
+                <div class="flex  flex-col ">
+                    <p class="text-base text-custom-color-song-font my-3 relative">
+                        New Release 
+                    </p>
+                    <div class=" h-[150px] w-[150px]  md:h-[220px] md:w-[220px]   mb-5 mt-3 hover:transition-all duration-195 transform
+                    hover:scale-105 cursor-pointer ">
+                        <img class=" h-full w-full relative rounded-xl" src="/assets/artist-assets/thisiswhy.png" alt="" />
+                    </div>
+                </div>
+                <div class="flex flex-col pl-3 pt-20">
+                    <p class="text-neutral-400 text-[10px] md:text-sm md:mt-12">10 Feb 2023</p>
+                    <p class="my-2 text-custom-color-song-font text-xl md:text-2xl font-alata w-auto">This Is Why</p>
+                    <p class="text-neutral-400 text-xs md:text-xl">10 Songs</p> 
+        
+                    <span class="inline-flex rounded-md shadow-sm mt-4">
+                        <button type="button" class="inline-flex items-center px-2 py-1 h-8 border border-transparent text-base font-medium text-custom-color-song-add bg-custom-color hover:bg-custom-color-song-button rounded-2xl">
+                          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" clip-rule="evenodd" />
+                          </svg> 
+                          Add
+                        </button>
+                      </span>
+        
+                </div>
+            </div> 
+    
+            <!-- Top Tracks -->
+            <div class="h-auto md:w-6/12 pb-5 font-alata flex flex-col lg:ml-20">
+                <p class="text-base text-custom-color-song-font my-3">
+                    Top Tracks 
+                </p>
+                <!-- Top 1-->
+                <div class="grid grid-cols-4 items-center flex-row">
+                    <div class="flex flex-row col-span-4 items-center md:col-span-2">
+                        <p class="w-auto h-auto m-4 p-3 text-lg text-custom-color-queue-text">1</p>
+                        <img src="/assets/artist-assets/riooot.jpeg" class="w-[20%] h-[20%] m-3 rounded-md">
+                        <div class="flex flex-grow flex-col justify-center pl-2">
+                            <p class="text-xs md:text-sm lg:text-[18px]">Misery Business</p>
+                        </div>
+                        <div class="space-y-2 md:hidden pr-5">
+                            <p class="text-custom-color-queue-text ml-8 text-sm">3:56</p>
+                        </div>
+                    </div>
+                    <div class="hidden text-start md:block col-span">
+                        <p class="text-custom-color-queue-text text-xs md:text-sm ml-14">Riot!</p>
+                    </div>
+                    <div class="hidden md:block md:pl-[100px]">
+                        <p class="text-custom-color-queue-text ml-8">3:56</p>
+                    </div>
+                </div>
+    
+                <!-- Top 2-->
+                <div class="grid grid-cols-4 items-center">
+                    <div class="flex flex-row col-span-4 items-center md:col-span-2">
+                        <p class="w-auto h-auto m-4 p-3 text-lg text-custom-color-queue-text">2</p>
+                        <img src="/assets/artist-assets/self.jpeg" class="w-[20%] h-[20%] m-2 rounded-md">
+                        <div class="flex flex-grow flex-col justify-center pl-2">
+                            <p class="text-xs md:text-sm lg:text-[18px]">Still Into You</p>
+                        </div>
+                        <div class="space-y-2 md:hidden pr-5">
+                            <p class="text-custom-color-queue-text ml-8 text-sm">3:56</p>
+                        </div>
+                    </div>
+                    <div class="hidden text-start md:block col-span">
+                        <p class="text-custom-color-queue-text text-xs md:text-sm ml-14">Paramore</p>
+                    </div>
+                    <div class="hidden md:block md:pl-[100px]">
+                        <p class="text-custom-color-queue-text ml-8">3:56</p>
+                    </div>
+                </div>
+    
+                <!-- Top 3-->
+                <div class="grid grid-cols-4 items-center">
+                    <div class="flex flex-row col-span-4 items-center md:col-span-2">
+                        <p class="w-auto h-auto m-4 p-3 text-lg text-custom-color-queue-text">3</p>
+                        <img src="/assets/artist-assets/brand.jpeg" class="w-[20%] h-[20%] m-2 rounded-md">
+                        <div class="flex flex-grow flex-col justify-center pl-2">
+                            <p class="text-xs md:text-sm lg:text-[18px]">All I Wanted</p>
+                        </div>
+                        <div class="space-y-2 md:hidden pr-5">
+                            <p class="text-custom-color-queue-text ml-8 text-sm">3:56</p>
+                        </div>
+                    </div>
+                    <div class="hidden text-start md:block col-span">
+                        <p class="text-custom-color-queue-text ml-14 text-xs md:text-sm">Brand New Eyes</p>
+                    </div>
+                    <div class="hidden md:block md:pl-[100px]">
+                        <p class="text-custom-color-queue-text ml-8">3:56</p>
+                    </div>
+                </div>
+            </div>  
+           
+        </div>
+    
+        <!-- Albums -->
+        <div class="flex flex-wrap h-auto px-4 ml-2">
+            <div class="w-auto h-10">
+              <h4 class="absolute w-auto h-9 text-custom-color-song-font"> Albums </h4>
+            </div>
+            
+            <div class="flex flex-wrap container text-base capitalize mt-3 w-auto justify-between items-center s">
+                <!-- Album 1 -->
+                <div class="fex flex-col text-sm mr-10 mb-5 hover:cursor-pointer 2xsmall:mr-5 sm:mr-5 md:mr-10">
+                    <div class="w-44 large:w-32 mid2:w-44 xsmall:w-36 2xsmall:w-32">
+                        <img src="/assets/artist-assets/thisiswhy.png" alt="album 1" class="rounded-md" >
+                    </div>
+                    <p class="text-custom-color-song-font mt-1">This Is Why</p>
+                    <p class="text-custom-color-song-more text-xs md:text-sm">2023 · 10 Songs </p>
+                </div>
+                <!-- Album 2 -->
+                <div class="fex flex-col text-sm mr-10 mb-5 hover:cursor-pointer 2xsmall:mr-5 sm:mr-5 md:mr-10">
+                    <div class="w-44 large:w-32 mid2:w-44 xsmall:w-36 2xsmall:w-32">
+                        <img src="/assets/artist-assets/after.png" alt="album 2" class="rounded-md" >
+                    </div>
+                    <p class="text-custom-color-song-font mt-1">After Laughter</p>
+                    <p class="text-custom-color-song-more text-xs md:text-sm">2017 · 12 Songs </p>
+                </div>
+                <!-- Album 3 -->
+                <div class="fex flex-col text-sm mr-10 mb-5 hover:cursor-pointer 2xsmall:mr-5 sm:mr-5 md:mr-10">
+                    <div class="w-44 large:w-32 mid2:w-44 xsmall:w-36 2xsmall:w-32">
+                        <img src="/assets/artist-assets/self.jpeg" alt="album 3" class="rounded-md" >
+                    </div>
+                    <p class="text-custom-color-song-font mt-1">Paramore</p>
+                    <p class="text-custom-color-song-more text-xs md:text-sm">2013 · 17 Songs </p>
+                </div>
+                <!-- Album 4 -->
+                <div class="fex flex-col text-sm mr-10 mb-5 hover:cursor-pointer 2xsmall:mr-5 sm:mr-5 md:mr-10">
+                    <div class="w-44 large:w-32 mid2:w-44 xsmall:w-36 2xsmall:w-32">
+                        <img src="/assets/artist-assets/brand.jpeg" alt="album 4" class="rounded-md" >
+                    </div>
+                    <p class="text-custom-color-song-font mt-1">Brand New Eyes</p>
+                    <p class="text-custom-color-song-more text-xs md:text-sm">2009 · 11 Songs </p>
+                </div>
+                <!-- Album 5 -->
+                <div class="fex flex-col text-sm mr-10 mb-5 hover:cursor-pointer 2xsmall:mr-5 sm:mr-5 md:mr-10">
+                    <div class="w-44 large:w-32 mid2:w-44 xsmall:w-36 2xsmall:w-32">
+                        <img src="/assets/artist-assets/riooot.jpeg" alt="album 5" class="rounded-md" >
+                    </div>
+                    <p class="text-custom-color-song-font mt-1">Riot!</p>
+                    <p class="text-custom-color-song-more text-xs md:text-sm">2007 · 14 Songs </p>
+                </div>
+                <!-- Album 6 -->
+                <div class="fex flex-col text-sm mr-10 mb-5 hover:cursor-pointer 2xsmall:mr-5 sm:mr-5 md:mr-10">
+                    <div class="w-44 large:w-32 mid2:w-44 xsmall:w-36 2xsmall:w-32">
+                        <img src="/assets/artist-assets/all we know.jpeg" alt="album 6" class="rounded-md" >
+                    </div>
+                    <p class="text-custom-color-song-font mt-1">All We Know</p>
+                    <p class="text-custom-color-song-more text-xs md:text-sm">2005 · 10 Songs </p>
+                </div>
+                
+            </div>
+    
+        </div>
+         
+        <!-- FOOTER -->
+        <footer-component></footer-component>
+        <script src="/include/footer.js"></script>
+    </div>
+
+    <playbar-component></playbar-component>
+    <script src="/include/playbar.js"></script>
+
+    <!-- MENU BAR -->
+    <menubar-component></menubar-component>
+    <script src="/include/menubar.js"></script>
+    <script src="/include/profilepage.js"></script>
+    <script src="/include/profile.js"></script>
+    <script src="/include/dropdownMenu.js">Dropdown();</script>
+    <script src="/include/byThree.js">byThree();</script>
+    <script src="https://kit.fontawesome.com/4cb9a52f1f.js"></script>
+</body>
+</html>
