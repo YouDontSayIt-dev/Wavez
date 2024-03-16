@@ -10,7 +10,7 @@ class topNavbar extends HTMLElement {
                 <!-- LOGO -->
                 <div class="pl-10 w-1/2 justify-start mt-2">
                     <a href="#" class="block justify-start lg:hidden">
-                        <img src="/assets/wavesLogo.png" class="w-16 h-12" alt="Logo">
+                        <img src="assets/wavesLogo.png" class="w-16 h-12" alt="Logo">
                     </a>
                 </div>
 
@@ -29,14 +29,14 @@ class topNavbar extends HTMLElement {
 
                     <div class="flex md:hidden w-12 h-12 bg-custom-color-sidebar-brown justify-center items-center rounded-full">
                         <a href="#" class="block md:hidden">
-                         <img class="w-10 h-10 rounded-full" src="/assets/addplaylist-assets/profilesample.jpg" alt="user">
+                         <img class="w-10 h-10 rounded-full" src="assets/addplaylist-assets/profilesample.jpg" alt="user">
                         </a>
                     </div>
 
                     <!--Profile button-->
                     <div id="dropdown-button" class="hidden md:flex -mb-1.5 dropdown"> 
                         <button  class="bg-custom-color-song-button hover:bg-custom-color-navbar-icons-hover text-white text-base rounded-full px-4 py-0.5 mb-0 inline-flex items-center" > 
-                            <img src="/assets/song-assets/profilesample.jpg" alt="profile pic" class="rounded-full h-10 w-10"> 
+                            <img src="assets/song-assets/profilesample.jpg" alt="profile pic" class="rounded-full h-10 w-10"> 
                             <span class="ml-3">Profile</span> 
                             <svg id="dropdown-icon" class="w-7 h-7 text-black fill-current mt-1.5 ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                                 <path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/>
@@ -44,12 +44,12 @@ class topNavbar extends HTMLElement {
                         </button> 
                         <!--profile dropdown-->                
                         <ul id="dropdown-menu" class="absolute hidden text-custom-color-song-font w-40 pt-12 ml-1"> 
-                            <li><a class=" hidden rounded-t-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Account</a></li> 
-                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="/dist/profile.html">Profile</a></li> 
-                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="/dist/settings.html">Settings</a></li> 
-                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="/dist/footer-pages/support.html">Support</a></li>
+                            <li><a class="lg:hidden rounded-t-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="#">Account</a></li> 
+                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="profile.html">Profile</a></li> 
+                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="settings.html">Settings</a></li> 
+                            <li><a class="bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="footer-pages/support.html">Support</a></li>
                             <hr class="bg-black">
-                            <li><a class="rounded-b-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="/dist/front.html">Logout</a></li> 
+                            <li><a class="rounded-b-2xl bg-custom-color-song-button hover:bg-custom-color-song-hover py-2 px-4 block whitespace-no-wrap" href="front.html">Logout</a></li> 
                         </ul>
                     </div>
                 </div>

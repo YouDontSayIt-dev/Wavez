@@ -10,26 +10,26 @@ class Footer extends HTMLElement {
                 <div class="w-fit h-fit mx-5 my-2">
                     <ul class="text-custom-color-footer-text px-3 space-y-2">
                         <li class="text-white py-3">Company</li>
-                        <li><a href="/dist/footer-pages/about.html" class="hover:text-white">About</a></li>
-                        <li><a href="/dist/footer-pages/jobs.html" class="hover:text-white">Jobs</a></li>
-                        <li><a href="/dist/footer-pages/for-the-record.html" class="hover:text-white">For The Record</a></li>
+                        <li><a href="footer-pages/about.html" class="hover:text-white">About</a></li>
+                        <li><a href="footer-pages/jobs.html" class="hover:text-white">Jobs</a></li>
+                        <li><a href="footer-pages/for-the-record.html" class="hover:text-white">For The Record</a></li>
                     </ul>
                 </div>
                 <div class="w-fit h-fit mx-5 my-2">
                     <ul class="text-custom-color-footer-text px-3 space-y-2">
                         <li class="text-white py-3">Communities</li>
-                        <li><a href="/dist/footer-pages/developers.html" class="hover:text-white">Developers</a></li>
-                        <li><a href="/dist/footer-pages/advertising.html" class="hover:text-white">Advertising</a></li>
-                        <li><a href="/dist/footer-pages/investors.html" class="hover:text-white">Investors</a></li>
+                        <li><a href="footer-pages/developers.html" class="hover:text-white">Developers</a></li>
+                        <li><a href="footer-pages/advertising.html" class="hover:text-white">Advertising</a></li>
+                        <li><a href="footer-pages/investors.html" class="hover:text-white">Investors</a></li>
                     </ul>
                 </div>
                 <div class="w-fit h-fit mx-5 my-2">
                     <ul class="text-custom-color-footer-text px-3 space-y-2">
                         <li class="text-white py-3">Support</li>
-                        <li><a href="/dist/footer-pages/support.html" class="hover:text-white">Support</a></li>
-                        <li><a href="/dist/footer-pages/legal.html" class="hover:text-white">Legal</a></li>
-                        <li><a href="/dist/footer-pages/privacy.html" class="hover:text-white">Privacy</a></li>
-                        <li><a href="/dist/footer-pages/cookies.html" class="hover:text-white">Cookies</a></li>
+                        <li><a href="footer-pages/support.html" class="hover:text-white">Support</a></li>
+                        <li><a href="footer-pages/legal.html" class="hover:text-white">Legal</a></li>
+                        <li><a href="footer-pages/privacy.html" class="hover:text-white">Privacy</a></li>
+                        <li><a href="footer-pages/cookies.html" class="hover:text-white">Cookies</a></li>
                     </ul>
                 </div>
 

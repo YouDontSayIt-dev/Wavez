@@ -44,7 +44,7 @@ let generateTopArtistList = () => {
         return `
             <div class="flex flex-col rounded-md bg-webtopartist">
                 <div class="w-32 my-4 mx-3 large:w-28 md:w-24"> 
-                    <img src="/assets/playlist-mg-assets/${image}" alt="" class="rounded-full">
+                    <img src="assets/playlist-mg-assets/${image}" alt="" class="rounded-full">
                 </div>
                 <p class="ml-2 text-custom-color-song-font">${artist}</p>
                 <p class="ml-2 mb-2">Artist</p>
@@ -67,7 +67,7 @@ let generateTopTrackList = () => {
             <p class="w-1/12 text-base pl-10 my-auto large:pl-8 mid:pl-6 mid2:pl-6 xsmall:pl-3">${count}</p>
             <!-- Img and Title/Artist -->
             <div class="flex w-4/12 xlarge:pl-4 mid:w-8/12 small:w-10/12"> 
-                <img src="/assets/playlist-mg-assets/${image}" alt="Song" class="w-12 rounded-md"> 
+                <img src="assets/playlist-mg-assets/${image}" alt="Song" class="w-12 rounded-md"> 
                 <div class="flex flex-col justify-center ml-4">
                     <p class="text-custom-color-song-font">${name}</p>
                     <p>${artist}</p>

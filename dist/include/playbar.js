@@ -8,7 +8,7 @@ class playbar extends HTMLElement {
         <!-- PLAYBAR -->
         <div class="w-[calc(100%-20px)] mr-2 ml-2 pl-5 pr-5 pb-0 fixed h-[90px] bottom-16 lg:mt-auto lg:bottom-5 z-50 bg-custom-color-playbar opacity-80 rounded-3xl mt-auto grid grid-cols-4 grid-flow-row-dense items-center text-center">
             <div class="w-[150px] flex items-center text-start md:w-[200px] lg:w-auto">
-                <img src="/assets/addplaylist-assets/album pic.png" alt="album" class="flex-inline-block w-10 h-10 rounded-lg md:w-14 md:h-14">
+                <img src="assets/addplaylist-assets/album pic.png" alt="album" class="flex-inline-block w-10 h-10 rounded-lg md:w-14 md:h-14">
                 <div class="ml-2 ">
                     <a href="" class="flex-inline-block text-custom-color-song-font text-[14px] md:text-[20px]">King Of The Heart</a>
                     <p class="flex-inline-block text-[12px] md:text-[18px] text-custom-color-add-searchfont"> Pierce The Viel</p>

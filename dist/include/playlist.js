@@ -105,7 +105,7 @@ let generateTrackList = () => {
                 <p class="w-1/12 text-base pl-10 my-auto large:pl-8 mid:pl-6 mid2:pl-6 xsmall:pl-3">${count}</p>
                 <!-- Img and Title/Artist -->
                 <div class="flex w-4/12 xlarge:pl-4 mid:w-8/12 small:w-10/12"> 
-                    <img src="/assets/playlist-mg-assets/${image}" alt="Song" class="w-12 rounded-md"> 
+                    <img src="assets/playlist-mg-assets/${image}" alt="Song" class="w-12 rounded-md"> 
                     <div class="flex flex-col justify-center ml-4">
                         <p class="text-custom-color-song-font">${name}</p>
                         <p>${artist}</p>
@@ -139,7 +139,7 @@ let generateAllPlaylist = () => {
         return `
             <div class="fex flex-col text-sm mr-10 mb-5 hover:cursor-pointer 2xsmall:mr-5 sm:mr-5 md:mr-10">
                 <div class="w-44 large:w-32 mid2:w-44 xsmall:w-36 2xsmall:w-32">
-                    <img src="/assets/playlist-mg-assets/${img}" alt="Playlist image" class="rounded-md" >
+                    <img src="assets/playlist-mg-assets/${img}" alt="Playlist image" class="rounded-md" >
                 </div>
                 <p class="text-custom-color-song-font mt-1">${name}</p>
                 <p class="text-custom-color-song-more">By ${acc}</p>
