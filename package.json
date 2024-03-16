@@ -81,10 +81,10 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject",
+    "eject": "react-scripts eject"
   },
   "author": "",
   "license": "ISC"
